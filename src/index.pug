@@ -1,7 +1,10 @@
 extends templates/layout.pug
 
+block variables
+    - var static_folder_path = 'static'
+
 block append scripts
     script(type='text/javascript').
         $(document).ready(function(){
-        window.location = '/pt';
+        window.location = '#{base_url}';
         });

@@ -4,21 +4,22 @@ var gulp        = require('gulp'),
     fs          = require('fs');
     deploy      = require('gulp-gh-pages');
 
-gulp.task('copy_cname', function () {
-    return gulp.src(['./src/CNAME'], 
+gulp.task('copy-cname', function () {
+    return gulp.src(['./CNAME'], 
                     {base: '.'})
-            .pipe(gulp.dest('dist'))
-    })
-gulp.task('copy_static', function () {
+            .pipe(gulp.dest('dist/'))
+});
+
+gulp.task('copy-static', function () {
     return gulp.src(['./src/styles/**/*.*',
                      './src/fonts/**/*.*',
                      './src/scripts/**/*.*',
                      './src/images/**/*.*'],
-                    {base: '.'})
-            .pipe(gulp.dest('dist/static'))
-    })
+                    {base: './src/'})
+            .pipe(gulp.dest('dist/static/'))
+});
 
-gulp.task('build_base', function() {
+gulp.task('build-base', function() {
     return gulp.src('src/index.pug')
         .pipe(data(function(file) {
             return JSON.parse(fs.readFileSync('src/data/datasource.pt.json'))
@@ -57,7 +58,7 @@ gulp.task('build-fr', function() {
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', ['copy_cname', 'copy_static', 'build_base', 'build-pt', 'build-en', 'build-fr'], function () {
+gulp.task('deploy', gulp.series('copy-cname', 'copy-static', 'build-base', 'build-pt', 'build-en', 'build-fr'), function () {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
