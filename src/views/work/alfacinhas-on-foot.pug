@@ -1,0 +1,108 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['alfacinhas-on-foot'].title
+    - var static_folder_path = '../../static/'
+    - var selected_menu_option = works['alfacinhas-on-foot'].menu_item_id
+    - var selected_works_is_active = true
+
+block view_content
+    // fixed-column
+    .fixed-column
+        .bg.bg-bottom(data-bg=static_folder_path + '/images/work/alfacinhas-on-foot/thumbnail.jpg')
+        // <div class="column-title">
+        // <h2><i>Alfacinhas</i> on foot</h2>
+        // </div>
+    // fixed-column end
+    // column-wrap
+    .column-wrap.serv-column
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{works['alfacinhas-on-foot'].title}
+                // section-title end
+                .fl-wrap
+                    p #{works['alfacinhas-on-foot'].text.line_1}
+                    p #{works['alfacinhas-on-foot'].text.line_2}
+                    blockquote
+                        p #{works['alfacinhas-on-foot'].text.quote_1}
+                    p #{works['alfacinhas-on-foot'].text.line_3}
+                    p #{works['alfacinhas-on-foot'].text.line_4}
+                    .gallery-items.boxed-folio.hid-port-info.three-columns
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1797_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1797.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1753_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1753.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1655_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1655.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1848_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1848.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1763_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1763.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1715_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/work/alfacinhas-on-foot/DSCF1715.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                    ul.fl-wrap.contact-list
+                        li
+                            span #{works['alfacinhas-on-foot'].details.location.title} : 
+                            a(href=works['alfacinhas-on-foot'].details.location.url target='_blank') #{works['alfacinhas-on-foot'].details.location.value}
+                        li
+                            span #{works['alfacinhas-on-foot'].details.date.title}  : 
+                            a(href='#') #{works['alfacinhas-on-foot'].details.date.value}
+                        li
+                            span #{works['alfacinhas-on-foot'].details.gear.title}   : 
+                            a(href='#') #{works['alfacinhas-on-foot'].details.gear.value} 
+        // content end
+    // column wrap

@@ -1,0 +1,18 @@
+extends ../templates/view.pug
+
+block variables
+    - var title = terms_conditions.title
+    - var static_folder_path = '../static/'
+    - var selected_menu_option = terms_conditions.menu_item_id
+
+block view_content
+    // content
+    .content
+        section
+            .container
+                .section-title
+                    h2 #{terms_conditions.title}
+                div
+                    p #{terms_conditions.text.line_1}
+                    p #{terms_conditions.text.line_2}
+    // content end

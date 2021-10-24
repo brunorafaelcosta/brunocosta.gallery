@@ -1,0 +1,31 @@
+extends ../templates/view.pug
+
+block variables
+    - var static_folder_path = '../static/'
+    - var selected_menu_option = home.menu_item_id
+
+block view_content
+    // fullheight-carousel-holder
+    .fullheight-carousel-holder.fl-wrap.full-height
+        .customNavigation
+            a.prev-slide.transition
+                i.fa.fa-angle-left
+            a.next-slide.transition
+                i.fa.fa-angle-right
+        // fullheight-carousel
+        .fullheight-carousel.mousecontr
+            each selected_work_item in selected_works
+                // item
+                .item
+                    .carousel-item
+                        style(type='text/css').
+                            @media (min-width: 0px) { #carousel-item-#{selected_work_item.id} { background-image: url('#{static_folder_path}/images/#{selected_work_item.mobile_thumbnail_url}'); } }
+                            @media (min-width: 1366px) { #carousel-item-#{selected_work_item.id} { background-image: url('#{static_folder_path}/images/#{selected_work_item.thumbnail_url}'); } }
+                        div(id="carousel-item-" + selected_work_item.id, class="bg")
+                            a.fill-div(href=base_url + '/work/' + works[selected_work_item.id].slug)
+                        .thumb-info
+                            h3
+                                a(href=base_url + '/work/' + works[selected_work_item.id].slug) #{works[selected_work_item.id].title}
+            // item end
+        // fullheight-carousel end
+    // fullheight-carousel-holder end

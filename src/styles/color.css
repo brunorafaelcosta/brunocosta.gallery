@@ -1,0 +1,106 @@
+body{
+	color: #000;
+	background:#fff;
+}
+.tm-loader #circle{
+	border: 2px solid  #ccc;
+}
+.tm-loader #circle   {
+	border-bottom: 2px solid #000;
+}
+blockquote p {
+	color:#494949;
+}
+.contact-form-holder:before , .info-wrap , .fixed-filter , .content-holder  , .column-wrap , .content  , header , .nav-button .nbs:before , .nav-inner ,footer , section , article.single-article , #portfolio_horizontal_container , .owl-thumbs , .owl-thumb-item:before , .gallery_horizontal  , .vis-pan , .back-link{
+	background:#fff;
+}
+.header-info ul li  span  , .section-title h2 span , .share-holder  span , .inf-mob-btn span, .header-lang ul li a {
+	color:#aaa;
+}
+.header-info ul li  a , .footer-social li a span , .policy-box , .column-filter .gallery-filters a , .contact-list li span {
+	color: #404040;
+}
+.nav-button .nav-text  , .serv-item  span , .custom-skillbar-title span , .fixed-filter .gallery-filters a , .show-thumbs , .show-info , .art-date  , .blog-cat li  , .post-author-wrap span {
+	color:#9B9B9B;
+}
+.nav-button span , .custom-skillbar , #respond #submit:hover  {
+	background:#000;
+}
+.sliding-menu a , .num-holder2  {
+	color: #404040;
+}
+.sliding-menu a.act-link , .sliding-menu a:hover , .team-info p  , .contact-list li a   , .thecomment .comment-text span.date{
+	color:#999;
+}
+.sliding-menu a.act-link:before{
+	background:#ccc;
+}
+.btn {
+	color:#fff;
+	border:2px solid #404040;
+	background:#404040;
+}
+.skill-name  , .fixed-filter .gallery-filters a.gallery-filter-active  , .inline-filter .gallery-filters a.gallery-filter-active , #contact-form input[type="text"] , #contact-form textarea , #comment-form input[type="text"]  , #comment-form textarea  , #success_page p  , .post-author-wrap p , #respond h3 a  , #respond input , .to-top{
+	color:#000;
+}
+.skillbar-bg {
+	background:#eee;
+}
+.team-social li a , .serv-item h3  {
+	color:#292929;
+}
+.team-info h4 {
+	color: #bcbcbc;
+}
+.inline-filter .gallery-filters a  , .pagination-blog a{
+	color:#666;
+}
+.show-info:before  , .post-comments-wrap span.reply a {
+	background:#292929;
+}
+#contact-form #submit {
+ 
+	border:2px solid #404040;
+	background:#404040;
+}
+.close-contact:after , .close-contact:before  , .close-info:before , .close-info:after{
+	background:#999;
+}
+.share-holder.trns-share span , .post-comments-wrap span.reply a , #respond h3 small a   , #respond #submit,.wpcf7 .wpcf7-submit  , #contact-form #submit , #respond #submit:hover{
+	color:#fff;
+}
+.share-icon {
+	color: #444;
+}
+.pagination-blog a.current-page, .pagination-blog a:hover {
+    color:#fff;
+	background:#404040;
+}
+.post-author {
+	border-top:1px solid #eee;
+}
+.thecomment  , .post-author , .artcicle-list  , .serv-item {
+	border-bottom:1px  solid #eee;
+}
+.thecomment .comment-text em i {
+	color:#f3bd00;
+}
+#respond input  , #respond textarea{
+	border:1px solid #eee;
+	background:#f9f9f9;
+}
+#respond #submit,.wpcf7 .wpcf7-submit {
+	background:#333;
+}
+ 
+.to-top:hover {
+	color:rgba(0,0,0,0.71)
+ 
+}
+@media only screen and  (max-width: 1036px) {
+.header-info ul , .column-filter  {
+ 
+	background:#fff;
+ 
+}	
+} 

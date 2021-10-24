@@ -1,0 +1,195 @@
+{
+    "base_url": "/pt",
+
+    "basetitle": "Bruno Costa - Galeria",
+
+    "meta": {
+        "keywords": "Galeria Bruno Costa, Bruno Costa, Galeria, Fotografia, Portfolio",
+        "description": "Galeria Bruno Costa",
+        "author": "Bruno Costa"
+    },
+
+    "languages": [
+        {
+            "title": "PT",
+            "base_url": "/pt",
+            "is_selected": true
+        },
+        {
+            "title": "EN",
+            "base_url": "/en"
+        },
+        {
+            "title": "FR",
+            "base_url": "/fr"
+        }
+    ],
+
+    "text": {
+        "menu": "Menu",
+        "selected_works": "Trabalhos selecionados"
+    },
+
+    "home": {
+        "menu_item_id": "home",
+        "url": "",
+        "title": "Página inicial"
+    },
+    "about": {
+        "menu_item_id": "about",
+        "url": "about.html",
+        "title": "Sobre"
+    },
+    "contact": {
+        "menu_item_id": "contact",
+        "url": "contact.html",
+        "title": "Contato"
+    },
+    "terms_conditions": {
+        "menu_item_id": "terms-conditions",
+        "url": "terms-conditions.html",
+        "title": "Termos e Condições",
+        "text": {
+            "line_1": "Todas as imagens e vídeos apresentados neste site são propriedade de Bruno Costa, estão protegidos por direitos de autor e não podem ser utilizados para quaisquer fins pessoais ou comerciais sem prévio acordo ou licenciamento. Entre em contato para obter permissão.",
+            "line_2": "Pode compartilhar imagens/vídeos nas redes sociais pessoais, desde que dê crédito (© Bruno Costa) e etiquete (verifique os meus identificadores de redes sociais no final da página). Se for uma empresa, deve entrar em contato primeiro."
+        }
+    },
+    
+    "footer": {
+        "policy": "© Bruno Costa 2021",
+        "social": {
+            "linkedin": {
+                "title": "linkedin",
+                "url": "https://www.linkedin.com/in/brunorafaelcosta"
+            }
+        }
+    },
+
+    "selected_works": [
+        {
+            "id": "beginnings",
+            "thumbnail_url": "work/beginnings/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "getaways-from-work",
+            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "well-kept-secret",
+            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "old-fisherman",
+            "thumbnail_url": "work/old-fisherman/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "alfacinhas-on-foot",
+            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "all-beginnings-are-involuntary",
+            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "faith",
+            "thumbnail_url": "work/faith/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/faith/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "tagus",
+            "thumbnail_url": "work/tagus/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/tagus/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "where-sea-is-bluest",
+            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "coimbra-old-town",
+            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
+        }
+    ],
+
+    "works": {
+        "beginnings": {
+            "menu_item_id": "beginnings",
+            "slug": "beginnings.html",
+            "title": "Inícios"
+        },
+        "getaways-from-work": {
+            "menu_item_id": "getaways-from-work",
+            "slug": "getaways-from-work.html",
+            "title": "Escapadelas do trabalho"
+        },
+        "well-kept-secret": {
+            "menu_item_id": "well-kept-secret",
+            "slug": "well-kept-secret.html",
+            "title": "Segredo bem guardado"
+        },
+        "old-fisherman": {
+            "menu_item_id": "old-fisherman",
+            "slug": "old-fisherman.html",
+            "title": "Velho Pescador"
+        },
+        "alfacinhas-on-foot": {
+            "menu_item_id": "alfacinhas-on-foot",
+            "slug": "alfacinhas-on-foot.html",
+            "title": "Alfacinhas a pé",
+            "text": {
+                "line_1": "Alfacinhas é um termo que designa familiarmente os habitantes de Lisboa.",
+                "line_2": "Este termo foi vulgarizado por Almeida Garrett na sua obra Viagens na Minha Terra, na qual refere, a dada altura,",
+                "quote_1": "Pois ficareis alfacinhas para sempre, cuidando que todas as praças deste mundo são como a do Terreiro do Paço.",
+                "line_3": "O autor acabou por não explicar o motivo, pelo que a verdade é que este alimento deu o seu nome aos residentes de Lisboa e ninguém sabe o porquê.",
+                "line_4": "Num fim-de-semana bem passado na magnífica capital lusitana, tive a oportunidade de captar os seus residentes através da minha lente, sempre numa perspetiva interessante e, sobretudo, com uma composição equilibranda."
+            },
+            "details": {
+                "location": {
+                    "title": "Localização",
+                    "url": "https://www.google.pt/maps/place/Lisboa",
+                    "value": "Lisboa, Portugal"
+                },
+                "date": {
+                    "title": "Ano",
+                    "value": "2021"
+                },
+                "gear": {
+                    "title": "Equipamento",
+                    "value": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+                }
+            }
+        },
+        "all-beginnings-are-involuntary": {
+            "menu_item_id": "all-beginnings-are-involuntary",
+            "slug": "all-beginnings-are-involuntary.html",
+            "title": "Todo começo é involuntário"
+        },
+        "faith": {
+            "menu_item_id": "faith",
+            "slug": "faith.html",
+            "title": "Fé"
+        },
+        "tagus": {
+            "menu_item_id": "tagus",
+            "slug": "tagus.html",
+            "title": "Tejo"
+        },
+        "where-sea-is-bluest": {
+            "menu_item_id": "where-sea-is-bluest",
+            "slug": "where-sea-is-bluest.html",
+            "title": "Onde o Mar é mais azul"
+        },
+        "coimbra-old-town": {
+            "menu_item_id": "coimbra-old-town",
+            "slug": "coimbra-old-town.html",
+            "title": "Cidade velha de Coimbra"
+        }
+    }
+}
