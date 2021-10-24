@@ -56,9 +56,14 @@ gulp.task('build-fr', function() {
 });
 
 /**
+ * Build
+ */
+gulp.task('build', gulp.series('copy-cname', 'copy-static', 'build-base', 'build-pt', 'build-en', 'build-fr'));
+
+/**
  * Push build to gh-pages
  */
-gulp.task('deploy', gulp.series('copy-cname', 'copy-static', 'build-base', 'build-pt', 'build-en', 'build-fr'), function () {
-    return gulp.src("./dist/**/*")
+gulp.task('deploy', function () {
+    return gulp.src("dist/**/*")
         .pipe(deploy())
 });
