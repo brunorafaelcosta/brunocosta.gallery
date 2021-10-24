@@ -43,7 +43,15 @@
     "contact": {
         "menu_item_id": "contact",
         "url": "contact.html",
-        "title": "Contact"
+        "title": "Contact",
+        "text": {
+            "placeholder": "Prendre contact",
+            "line_1": "Voulez-vous collaborer sur un projet? Juste dire bonjour? Allez-y et envoyez-moi quelque chose!",
+            "name": "Nom",
+            "email": "E-mail",
+            "message": "Message",
+            "send": "Envoyer"
+        }
     },
     "terms_conditions": {
         "menu_item_id": "terms-conditions",
