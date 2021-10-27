@@ -2,6 +2,7 @@ extends ../../templates/view.pug
 
 block variables
     - var title = works['alfacinhas-on-foot'].title
+    - var current_slug = 'work/' + works['alfacinhas-on-foot'].slug
     - var static_folder_path = '../../static'
     - var selected_menu_option = works['alfacinhas-on-foot'].menu_item_id
     - var selected_works_is_active = true
