@@ -310,6 +310,9 @@ header {
 	font-style:italic;
 	opacity: 0.5;
 }
+.nav-button:hover .nav-text, .nav-button.cmenu .nav-text {
+	opacity: 1;
+}
 .nav-button span{
 	width:100%;
 	float:left;
@@ -480,9 +483,10 @@ footer {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight:700;
+	opacity: 0.5;
 }
 .footer-social li a span:hover {
-	text-decoration:line-through;
+	opacity: 1;
 }
 .footer-social li a i {
 	display:none;
@@ -1036,15 +1040,15 @@ section , article.single-article {
 	/* top:30px !important; */
 }
 .media-wrap .slider-zoom {
-	/* top:0; */
-	/* right:20px; */
+	top:0;
+	right:0;
 }
-#portfolio_horizontal_container .portfolio_item .slider-zoom  , .horizontal_item .slider-zoom  , .grid-item-holder .slider-zoom{
+#portfolio_horizontal_container .portfolio_item .slider-zoom  , .horizontal_item .slider-zoom  , .grid-item-holder .slider-zoom {
 	/* opacity:0; */
 	/* visibility: hidden; */
 	/* top:20px; */
 }
-#portfolio_horizontal_container .portfolio_item:hover .slider-zoom , .horizontal_item:hover .slider-zoom   , .grid-item-holder:hover .slider-zoom {
+#portfolio_horizontal_container .portfolio_item:hover .slider-zoom , .horizontal_item:hover .slider-zoom   , .grid-item-holder:hover .slider-zoom, .media-wrap:hover .slider-zoom {
 	/* opacity:1; */
 	/* visibility: visible; */
 	padding-top:10px;
@@ -2427,12 +2431,11 @@ a.fill-div {
 	font-style:italic;
 }
 .header-lang ul li a:hover {
-	text-decoration:line-through;
 	opacity: 1;
 }
 .header-lang-active {
 	/* text-decoration:underline; */
-	text-decoration:line-through;
+	text-decoration: line-through;
 }
 @media only screen and (max-width: 756px) {
 .header-lang {
