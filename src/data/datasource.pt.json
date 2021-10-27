@@ -4,7 +4,7 @@
     "basetitle": "Bruno Costa - Galeria",
 
     "meta": {
-        "keywords": "Galeria Bruno Costa, Bruno Costa, Galeria, Fotografia, Portfolio",
+        "keywords": "Galeria Bruno Costa, Bruno Costa, Galeria, Fotografia Bruno Costa, Fotografia, Portfolio Bruno Costa, Portfolio",
         "description": "Galeria Bruno Costa",
         "author": "Bruno Costa"
     },
@@ -27,7 +27,11 @@
 
     "text": {
         "menu": "Menu",
-        "selected_works": "Trabalhos selecionados"
+        "selected_works": "Trabalhos selecionados",
+        "location": "Localização",
+        "date": "Data",
+        "year": "Ano",
+        "gear": "Equipamento"
     },
 
     "home": {
@@ -130,7 +134,19 @@
         "beginnings": {
             "menu_item_id": "beginnings",
             "slug": "beginnings.html",
-            "title": "Inícios"
+            "title": "Inícios",
+            "text": {
+                "quote_1": "No coração de todo começo reside um encanto que nos protege e ajuda a viver.",
+                "quote_1_author": "Hermann Hesse, Etapas"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.pt/maps/place/Coimbra",
+                    "value": "Coimbra, Portugal"
+                },
+                "date": "27 de maio de 2019",
+                "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
+            }
         },
         "getaways-from-work": {
             "menu_item_id": "getaways-from-work",
@@ -160,18 +176,11 @@
             },
             "details": {
                 "location": {
-                    "title": "Localização",
                     "url": "https://www.google.pt/maps/place/Lisboa",
                     "value": "Lisboa, Portugal"
                 },
-                "date": {
-                    "title": "Ano",
-                    "value": "2021"
-                },
-                "gear": {
-                    "title": "Equipamento",
-                    "value": "Fujifilm X-T3 + XF 35mm f/2 R WR"
-                }
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         },
         "all-beginnings-are-involuntary": {

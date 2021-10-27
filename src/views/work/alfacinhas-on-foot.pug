@@ -91,18 +91,18 @@ block view_content
                         .gallery-item
                             .grid-item-holder
                                 img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1715_thumb.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/work/alfacinhas-on-foot/DSCF1715.jpg')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + 'images/work/alfacinhas-on-foot/DSCF1715.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                     ul.fl-wrap.contact-list
                         li
-                            span #{works['alfacinhas-on-foot'].details.location.title} : 
+                            span #{text.location} : 
                             a(href=works['alfacinhas-on-foot'].details.location.url target='_blank') #{works['alfacinhas-on-foot'].details.location.value}
                         li
-                            span #{works['alfacinhas-on-foot'].details.date.title}  : 
-                            a(href='#') #{works['alfacinhas-on-foot'].details.date.value}
+                            span #{text.year} : 
+                            a(href='#') #{works['alfacinhas-on-foot'].details.date}
                         li
-                            span #{works['alfacinhas-on-foot'].details.gear.title}   : 
-                            a(href='#') #{works['alfacinhas-on-foot'].details.gear.value} 
+                            span #{text.gear} : 
+                            a(href='#') #{works['alfacinhas-on-foot'].details.gear} 
         // content end
     // column wrap

@@ -1,0 +1,45 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['beginnings'].title
+    - var static_folder_path = '../../static'
+    - var selected_menu_option = works['beginnings'].menu_item_id
+    - var selected_works_is_active = true
+
+block view_content
+    // fixed-column
+    .fixed-column
+        .bg(data-bg=static_folder_path + '/images/work/beginnings/thumbnail.jpg')
+        // <div class="column-title">
+        // <h2>Beginnings</h2>
+        // </div>
+    // fixed-column end
+    // column-wrap
+    .column-wrap.serv-column
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{works['beginnings'].title}
+                // section-title end
+                .fl-wrap
+                    blockquote
+                        p #{works['beginnings'].text.quote_1}
+                        p - #{works['beginnings'].text.quote_1_author}
+                    .media-wrap.fl-wrap
+                        img.respimg(src=static_folder_path + '/images/work/beginnings/DSC01932_thumbnail.jpg' alt='')
+                        a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/beginnings/DSC01932.jpg')
+                            i.fa.fa-search
+                    ul.fl-wrap.contact-list
+                        li
+                            span #{text.location} : 
+                            a(href=works['beginnings'].details.location.url target='_blank') #{works['beginnings'].details.location.value}
+                        li
+                            span #{text.date} : 
+                            a(href='#') #{works['beginnings'].details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{works['beginnings'].details.gear} 
+        // content end
+    // column wrap
