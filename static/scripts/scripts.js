@@ -339,7 +339,6 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
 	});
 
 //   contact-form------------------
-
 	var cfh = $(".contact-form-holder"), cghw = $("#contact-form");
 	function showcontact() {
 		cfh.addClass("visconbg");
@@ -356,16 +355,17 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
 		a.preventDefault();
 		showcontact();
 	});
-    $("#contactform").submit(function() {
+    $("#contactform").submit(function(event) {
+        event.preventDefault();
         var a = $(this).attr("action");
         $("#message").slideUp(750, function() {
             $("#message").hide();
             $("#submit").attr("disabled", "disabled");
             $.post(a, {
-                name: $("#name").val(),
-                email: $("#email").val(),
-                comments: $("#comments").val()
+                _replyto: $("#email").val(),
+                message: $("#comments").val()
             }, function(a) {
+                debugger;
                 document.getElementById("message").innerHTML = a;
                 $("#message").slideDown("slow");
                 $("#submit").removeAttr("disabled");
