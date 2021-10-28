@@ -32,11 +32,6 @@ function initGallery() {
 				"margin-top": -1 * $(this).outerHeight()/2
 			});
 		});
- 	$(".contact-form-wrap").css({
-		 'position' : 'absolute',
-        'top' : '50%',
-        'margin-top' : -$(".contact-form-wrap").height()/2
-	});
 		$(".blog-nav  .art-nav-img  img").css({
 			"margin-left": -$(".blog-nav  .art-nav-img  img").width() / 2 + "px"
 		});
@@ -338,45 +333,6 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
 		showinfo();
 	});
 
-//   contact-form------------------
-	var cfh = $(".contact-form-holder"), cghw = $("#contact-form");
-	function showcontact() {
-		cfh.addClass("visconbg");
-		cghw.addClass("visconform");
-	}
-	function hidecontact() {
-		cfh.removeClass("visconbg");
-		cghw.removeClass("visconform");
-	}
-	$(".close-contact").on("click", function() {
-		hidecontact();
-	});
-	$(".show-form").on("click", function(a) {
-		a.preventDefault();
-		showcontact();
-	});
-    $("#contactform").submit(function(event) {
-        event.preventDefault();
-        var a = $(this).attr("action");
-        $("#message").slideUp(750, function() {
-            $("#message").hide();
-            $("#submit").attr("disabled", "disabled");
-            $.post(a, {
-                _replyto: $("#email").val(),
-                message: $("#comments").val()
-            }, function(a) {
-                debugger;
-                document.getElementById("message").innerHTML = a;
-                $("#message").slideDown("slow");
-                $("#submit").removeAttr("disabled");
-                if (null != a.match("success")) $("#contactform").slideDown("slow");
-            });
-        });
-        return false;
-    });
-    $("#contactform input, #contactform textarea").keyup(function() {
-        $("#message").slideUp(1500);
-    });
 
 // Services hover ------------------
 

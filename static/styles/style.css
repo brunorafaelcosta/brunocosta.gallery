@@ -483,9 +483,11 @@ footer {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight:700;
+}
+.footer-social li a span, .footer-social li a i {
 	opacity: 0.5;
 }
-.footer-social li a span:hover {
+.footer-social li a span:hover, .footer-social li a i:hover {
 	opacity: 1;
 }
 .footer-social li a i {
