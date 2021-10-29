@@ -644,7 +644,7 @@ section , article.single-article {
 }
 .fixed-column {
 	position:fixed;
-	top:50px;
+	top:60px;
 	right:0;
 	bottom:50px;
 	overflow:hidden;
@@ -2510,9 +2510,9 @@ a.fill-div {
 		width: 100%;
 	}
 	.fixed-column .media-wrap {
-		margin: 60px;
+		margin: 50px;
 	}
 	.fixed-column .media-wrap img {
-		filter: drop-shadow(0px 0px 60px #fff);
+		filter: drop-shadow(0px 0px 50px #fff);
 	}
 }
