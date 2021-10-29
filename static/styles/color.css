@@ -17,7 +17,7 @@ blockquote p {
 .header-info ul li  span  , .section-title h2 span , .share-holder  span , .inf-mob-btn span, .header-lang ul li a {
 	color:#aaa;
 }
-.header-info ul li  a , .footer-social li a span , .policy-box , .column-filter .gallery-filters a , .contact-list li span {
+.header-info ul li  a , .footer-social li a span , .policy-box , .column-filter .gallery-filters a , .contact-list li span, .work-details li span {
 	color: #404040;
 }
 .nav-button .nav-text  , .serv-item  span , .custom-skillbar-title span , .fixed-filter .gallery-filters a , .show-thumbs , .show-info , .art-date  , .blog-cat li  , .post-author-wrap span {
@@ -29,7 +29,7 @@ blockquote p {
 .sliding-menu a , .num-holder2  {
 	color: #404040;
 }
-.sliding-menu a.act-link , .sliding-menu a:hover , .team-info p  , .contact-list li a   , .thecomment .comment-text span.date{
+.sliding-menu a.act-link , .sliding-menu a:hover , .team-info p  , .contact-list li a , .work-details li a , .thecomment .comment-text span.date{
 	color:#999;
 }
 .sliding-menu a.act-link:before{
