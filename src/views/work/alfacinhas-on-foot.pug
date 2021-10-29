@@ -9,11 +9,12 @@ block variables
 
 block view_content
     // fixed-column
-    .fixed-column
-        .bg.bg-bottom(data-bg=static_folder_path + '/images/work/alfacinhas-on-foot/thumbnail.jpg')
-        // <div class="column-title">
-        // <h2><i>Alfacinhas</i> on foot</h2>
-        // </div>
+    .fixed-column.vertical-align
+        .bg.blurimg(data-bg=static_folder_path + '/images/work/alfacinhas-on-foot/thumbnail.jpg')
+        .media-wrap.fl-wrap.with-max-width
+            img.respimg(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741_thumb.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741.jpg')
+                i.fa.fa-search
     // fixed-column end
     // column-wrap
     .column-wrap.serv-column
@@ -32,25 +33,18 @@ block view_content
                     p #{works['alfacinhas-on-foot'].text.line_3}
                     p #{works['alfacinhas-on-foot'].text.line_4}
                     .gallery-items.boxed-folio.hid-port-info.three-columns
+                        //- // gallery-item
+                        //- .gallery-item
+                        //-     .grid-item-holder
+                        //-         img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741_thumb.jpg' alt='')
+                        //-         a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741.jpg')
+                        //-             i.fa.fa-search
+                        //- // gallery-item end
                         // gallery-item
                         .gallery-item
-                            .grid-item-holder
-                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813_thumb.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813.jpg')
-                                    i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
-                        .gallery-item.gallery-item-second
                             .grid-item-holder
                                 img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1797_thumb.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1797.jpg')
-                                    i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
-                        .gallery-item
-                            .grid-item-holder
-                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741_thumb.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1741.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                         // gallery-item
@@ -84,8 +78,8 @@ block view_content
                         // gallery-item
                         .gallery-item
                             .grid-item-holder
-                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658_thumb.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658.jpg')
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1813.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                         // gallery-item
@@ -93,6 +87,13 @@ block view_content
                             .grid-item-holder
                                 img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1715_thumb.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1715.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item
+                            .grid-item-holder
+                                img(src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658_thumb.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/alfacinhas-on-foot/DSCF1658.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                     ul.fl-wrap.contact-list
