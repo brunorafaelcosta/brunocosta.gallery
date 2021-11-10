@@ -2293,6 +2293,9 @@ footer {
 	top:-32.5px;
 }
 .footer-social li a {
+	padding-left:14px;
+}
+.footer-social li:not(:last-child) a {
 	padding-left:20px;
 }
 .gallery-item {
