@@ -1,3 +1,6 @@
+- var cssCacheVersion = '20211203'
+- var jsCacheVersion = '20211203'
+
 block variables
 
 doctype html
@@ -16,10 +19,10 @@ html(lang="en")
         meta(name='description' content=meta.description)
         meta(name='author' content=meta.author)
         // =============== css  ===============
-        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/reset.css')
-        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/plugins.css')
-        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/style.css')
-        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/color.css')
+        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/reset.css?cache=' + cssCacheVersion)
+        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/plugins.css?cache=' + cssCacheVersion)
+        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/style.css?cache=' + cssCacheVersion)
+        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/color.css?cache=' + cssCacheVersion)
         // =============== favicons ===============
         link(rel='shortcut icon' href=static_folder_path + '/images/favicon.ico')
     body
@@ -33,7 +36,7 @@ html(lang="en")
 
         // =============== scripts  ===============
         block scripts
-            script(type='text/javascript' src=static_folder_path + '/scripts/jquery.min.js')
-            script(type='text/javascript' src=static_folder_path + '/scripts/core.js')
-            script(type='text/javascript' src=static_folder_path + '/scripts/plugins.js')
-            script(type='text/javascript' src=static_folder_path + '/scripts/scripts.js')
+            script(type='text/javascript' src=static_folder_path + '/scripts/jquery.min.js?cache=' + jsCacheVersion)
+            script(type='text/javascript' src=static_folder_path + '/scripts/core.js?cache=' + jsCacheVersion)
+            script(type='text/javascript' src=static_folder_path + '/scripts/plugins.js?cache=' + jsCacheVersion)
+            script(type='text/javascript' src=static_folder_path + '/scripts/scripts.js?cache=' + jsCacheVersion)
