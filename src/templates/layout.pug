@@ -25,6 +25,13 @@ html(lang="en")
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/color.css?cache=' + cssCacheVersion)
         // =============== favicons ===============
         link(rel='shortcut icon' href=static_folder_path + '/images/favicon.ico')
+        // ===============  Google Analytics  ===============
+        script(type='text/javascript' async src='https://www.googletagmanager.com/gtag/js?id=G-MC0SQWB982')
+        script(type='text/javascript').
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MC0SQWB982');
     body
         // loader
         .loader
