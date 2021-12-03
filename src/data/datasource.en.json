@@ -73,6 +73,10 @@
             "linkedin": {
                 "title": "linkedin",
                 "url": "https://www.linkedin.com/in/brunorafaelcosta"
+            },
+            "instagram": {
+                "title": "instagram",
+                "url": "https://www.instagram.com/brunorafael.costa/"
             }
         }
     },
@@ -84,14 +88,9 @@
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
         },
         {
-            "id": "getaways-from-work",
-            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "well-kept-secret",
-            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+            "id": "alfacinhas-on-foot",
+            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
         },
         {
             "id": "old-fisherman",
@@ -99,9 +98,14 @@
             "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
         },
         {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
+            "id": "well-kept-secret",
+            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "getaways-from-work",
+            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
         },
         {
             "id": "all-beginnings-are-involuntary",
@@ -119,14 +123,14 @@
             "mobile_thumbnail_url": "work/tagus/mobile_thumbnail.jpg"
         },
         {
-            "id": "where-sea-is-bluest",
-            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
-        },
-        {
             "id": "coimbra-old-town",
             "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
             "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "where-sea-is-bluest",
+            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
         }
     ],
 
@@ -201,12 +205,33 @@
         "where-sea-is-bluest": {
             "menu_item_id": "where-sea-is-bluest",
             "slug": "where-sea-is-bluest.html",
-            "title": "Where the Sea is bluest"
+            "title": "Where the Sea is Bluest",
+            "text": {
+                "line_1": "Gabriel Cardoso said in his song,",
+                "quote_1": "Ericeira, Where the Sea is Bluest / On the beautiful southern beaches / Of golden and fresh sand",
+                "line_2": "and he was absolutely right. The fresh smell of the Sea and the singing of seagulls soothed this Friday afternoon."
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Ericeira",
+                    "value": "Ericeira, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         },
         "coimbra-old-town": {
             "menu_item_id": "coimbra-old-town",
             "slug": "coimbra-old-town.html",
-            "title": "Coimbra's old town"
+            "title": "Coimbra's old town",
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Coimbra",
+                    "value": "Coimbra, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         }
     }
 }

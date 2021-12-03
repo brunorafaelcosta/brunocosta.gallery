@@ -1,0 +1,44 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['coimbra-old-town'].title
+    - var current_slug = 'work/' + works['coimbra-old-town'].slug
+    - var static_folder_path = '../../static'
+    - var selected_menu_option = works['coimbra-old-town'].menu_item_id
+    - var selected_works_is_active = true
+
+block view_content
+    // fixed-column
+    .fixed-column
+        .bg.bg-blur(data-bg=static_folder_path + '/images/work/coimbra-old-town/thumbnail.jpg')
+        // work-main-image
+        .work-main-image.with-max-width
+            img.respimg(src=static_folder_path + '/images/work/coimbra-old-town/DSCF1072_thumbnail.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=static_folder_path + '/images/work/coimbra-old-town/DSCF1072.jpg')
+                i.fa.fa-search
+        // work-main-image end
+    // fixed-column end
+    // column-wrap
+    .column-wrap.vertical-align
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{works['coimbra-old-town'].title}
+                // section-title end
+                // section-content
+                .section-content
+                    ul.work-details
+                        li
+                            span #{text.location} : 
+                            a(href=works['coimbra-old-town'].details.location.url target='_blank') #{works['coimbra-old-town'].details.location.value}
+                        li
+                            span #{text.year} : 
+                            a(href='#') #{works['coimbra-old-town'].details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{works['coimbra-old-town'].details.gear}
+                // section-content end
+        // content end
+    // column wrap

@@ -73,6 +73,10 @@
             "linkedin": {
                 "title": "linkedin",
                 "url": "https://www.linkedin.com/in/brunorafaelcosta"
+            },
+            "instagram": {
+                "title": "instagram",
+                "url": "https://www.instagram.com/brunorafael.costa/"
             }
         }
     },
@@ -84,14 +88,9 @@
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
         },
         {
-            "id": "getaways-from-work",
-            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "well-kept-secret",
-            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+            "id": "alfacinhas-on-foot",
+            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
         },
         {
             "id": "old-fisherman",
@@ -99,9 +98,14 @@
             "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
         },
         {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
+            "id": "well-kept-secret",
+            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "getaways-from-work",
+            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
         },
         {
             "id": "all-beginnings-are-involuntary",
@@ -119,14 +123,14 @@
             "mobile_thumbnail_url": "work/tagus/mobile_thumbnail.jpg"
         },
         {
-            "id": "where-sea-is-bluest",
-            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
-        },
-        {
             "id": "coimbra-old-town",
             "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
             "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "where-sea-is-bluest",
+            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
         }
     ],
 
@@ -172,7 +176,7 @@
                 "line_2": "Este termo foi vulgarizado por Almeida Garrett na sua obra Viagens na Minha Terra, na qual refere, a dada altura,",
                 "quote_1": "Pois ficareis alfacinhas para sempre, cuidando que todas as praças deste mundo são como a do Terreiro do Paço.",
                 "line_3": "O autor acabou por não explicar o motivo, pelo que a verdade é que este alimento deu o seu nome aos residentes de Lisboa e ninguém sabe o porquê.",
-                "line_4": "Num fim-de-semana bem passado na magnífica capital lusitana, tive a oportunidade de captar os seus residentes através da minha lente, sempre numa perspetiva interessante e, sobretudo, com uma composição equilibranda."
+                "line_4": "Num fim-de-semana bem passado na magnífica capital lusitana, tive a oportunidade de captar os seus residentes através da minha lente, sempre numa perspetiva interessante e, sobretudo, com uma composição equilibrada."
             },
             "details": {
                 "location": {
@@ -201,12 +205,33 @@
         "where-sea-is-bluest": {
             "menu_item_id": "where-sea-is-bluest",
             "slug": "where-sea-is-bluest.html",
-            "title": "Onde o Mar é mais azul"
+            "title": "Onde o Mar é Mais Azul",
+            "text": {
+                "line_1": "Já Gabriel Cardoso dizia na sua canção,",
+                "quote_1": "Ericeira, Onde o Mar é Mais Azul / Nas belas praias do sul / De doirada e fresca areia",
+                "line_2": "e tinha toda a razão. O fresco cheiro a Mar e o cantar das gaivotas apaziguaram este final de tarde de Sexta-feira."
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.pt/maps/place/Ericeira",
+                    "value": "Ericeira, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         },
         "coimbra-old-town": {
             "menu_item_id": "coimbra-old-town",
             "slug": "coimbra-old-town.html",
-            "title": "Cidade velha de Coimbra"
+            "title": "Cidade velha de Coimbra",
+            "details": {
+                "location": {
+                    "url": "https://www.google.pt/maps/place/Coimbra",
+                    "value": "Coimbra, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         }
     }
 }

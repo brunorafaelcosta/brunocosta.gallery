@@ -1,0 +1,79 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['where-sea-is-bluest'].title
+    - var current_slug = 'work/' + works['where-sea-is-bluest'].slug
+    - var static_folder_path = '../../static'
+    - var selected_menu_option = works['where-sea-is-bluest'].menu_item_id
+    - var selected_works_is_active = true
+    - var work = works['where-sea-is-bluest']
+    - var work_imagens_path = static_folder_path + '/images/work/where-sea-is-bluest'
+
+block view_content
+    // fixed-column
+    .fixed-column
+        .bg.bg-blur(data-bg=work_imagens_path + '/thumbnail.jpg')
+        // work-main-image
+        .work-main-image.with-max-width
+            img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
+                i.fa.fa-search
+        // work-main-image end
+    // fixed-column end
+    // column-wrap
+    .column-wrap
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{work.title}
+                // section-title end
+                // section-content
+                .section-content
+                    p #{work.text.line_1}
+                    blockquote
+                        p #{work.text.quote_1}
+                    p #{work.text.line_2}
+                    .gallery-items.boxed-folio.hid-port-info
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF1432_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1432.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF1494_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1494.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF1460_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1460.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                        // gallery-item
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF1474_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1474.jpg')
+                                    i.fa.fa-search
+                        // gallery-item end
+                    ul.work-details
+                        li
+                            span #{text.location} : 
+                            a(href=work.details.location.url target='_blank') #{work.details.location.value}
+                        li
+                            span #{text.year} : 
+                            a(href='#') #{work.details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{work.details.gear}
+                // section-content end
+        // content end
+    // column wrap

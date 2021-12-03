@@ -8,12 +8,12 @@ block variables
 
 block view_content
     // fixed-column
-    .fixed-column
-        .bg.bg-bottom(data-bg=static_folder_path + '/images/work/tagus/thumbnail.jpg')
-        .column-title
-            h2 #{contact.text.placeholder}
+    .fixed-column.larger-column
+        .bg.bg-bottom.bg-blur(data-bg=static_folder_path + '/images/work/tagus/thumbnail.jpg')
+        //- .column-title
+        //-     h2 #{contact.text.placeholder}
     // column-wrap
-    .column-wrap.serv-column
+    .column-wrap.smaller-column.vertical-align
         // content
         .content
             section
@@ -23,7 +23,6 @@ block view_content
                     .fl-wrap
                         p #{contact.text.line_1}
                         #contact-form
-                            #message
                             form#contactform(method='post' action='https://formspree.io/f/moqyzpya' name='contactform')
                                 input#email(name='_replyto' type='text' onclick='this.select()' placeholder=contact.text.email)
                                 textarea#comments(name='message' onclick='this.select()' placeholder=contact.text.message)

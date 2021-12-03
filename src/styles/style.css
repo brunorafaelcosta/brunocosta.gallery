@@ -52,7 +52,6 @@ p {
 	padding-bottom:10px;
 }
 blockquote {
-	float:left;
 	padding: 75px 20px;
 	padding-bottom: 10px;
 	margin: 0 0 20px;
@@ -202,7 +201,7 @@ blockquote p:first-child {
 	z-index:4;
 	float:left;
 }
-.fl-wrap {
+.section-content, .fl-wrap, .work-main-image {
 	float:left;
 	width:100%;
 	position:relative;
@@ -250,7 +249,7 @@ blockquote p:first-child {
 .no-padding {
 	padding:0 !important;
 }
-.media-wrap {
+.media-wrap, .work-main-image {
 	margin:30px 0 50px;
 }
 /*------   Header  ------------------------------------------------------*/
@@ -642,13 +641,18 @@ section , article.single-article {
 	text-align:left;
 	font-weight:600;
 }
+
 .fixed-column {
 	position:fixed;
-	top:50px;
+	top:60px;
 	right:0;
 	bottom:50px;
 	overflow:hidden;
 	width:50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 }
 .column-title {
 	position:absolute;
@@ -677,7 +681,7 @@ section , article.single-article {
 	float:left;
 	width:50%;
 	position:relative;
-	padding :100px 50px 50px;
+	padding:20px 50px;
 }
 .column-wrap.port-wrap {
 	padding: 50px;
@@ -1041,7 +1045,7 @@ section , article.single-article {
 .single-slider .slider-zoom  , .single-image .slider-zoom{
 	/* top:30px !important; */
 }
-.media-wrap .slider-zoom {
+.media-wrap .slider-zoom, .work-main-image .slider-zoom {
 	top:0;
 	right:0;
 }
@@ -1050,7 +1054,7 @@ section , article.single-article {
 	/* visibility: hidden; */
 	/* top:20px; */
 }
-#portfolio_horizontal_container .portfolio_item:hover .slider-zoom , .horizontal_item:hover .slider-zoom   , .grid-item-holder:hover .slider-zoom, .media-wrap:hover .slider-zoom {
+#portfolio_horizontal_container .portfolio_item:hover .slider-zoom , .horizontal_item:hover .slider-zoom   , .grid-item-holder:hover .slider-zoom, .media-wrap:hover .slider-zoom, .work-main-image:hover .slider-zoom {
 	/* opacity:1; */
 	/* visibility: visible; */
 	padding-top:10px;
@@ -2290,6 +2294,9 @@ footer {
 .footer-social li a {
 	padding-left:14px;
 }
+.footer-social li:not(:last-child) a {
+	padding-left:20px;
+}
 .gallery-item {
 	width:50% !important;
 }
@@ -2470,49 +2477,85 @@ a.fill-div {
 
 
 
-.blurimg {
-	-webkit-filter: blur(10px);
-	filter: blur(10px);
-	box-shadow: 75px 75px 40px 0 white inset,
-	-75px -75px 40px 0 white inset;
+.bg-blur {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	box-shadow: 75px 50px 40px 0 white inset,
+	-75px -50px 40px 0 white inset;
+	opacity: 0.7;
+}
+
+.column-wrap {
+	min-height: 100%;
 }
 
 .fixed-column.larger-column {
 	width: 65%;
 }
-.column-wrap.serv-column.smaller-column {
+.column-wrap.smaller-column {
 	width: 35%;
 }
-.fixed-column .media-wrap {
+.fixed-column .work-main-image {
 	margin: 150px;
 }
-.fixed-column .media-wrap img {
+.fixed-column .work-main-image img {
 	filter: drop-shadow(0px 0px 30px #fff);
 }
-.fixed-column .media-wrap.with-max-width {
+.fixed-column .work-main-image.with-max-width {
 	max-width: 500px;
 }
 @media only screen and  (max-width: 1036px) {
+	.column-wrap {
+		min-height: auto;
+	}
+
 	.fixed-column {
 		padding: 0;
 	}
-	.blurimg {
-		-webkit-filter: blur(10px);
-		filter: blur(10px);
+	.bg-blur {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
 		box-shadow: 30px 30px 15px 0 white inset,
 		-30px -30px 15px 0 white inset;
+		opacity: 0.7;
 	}
 	
 	.fixed-column.larger-column {
 		width: 100%;
 	}
-	.column-wrap.serv-column.smaller-column {
+	.column-wrap.smaller-column {
 		width: 100%;
 	}
-	.fixed-column .media-wrap {
-		margin: 60px;
+	.fixed-column .work-main-image {
+		margin: 50px;
 	}
-	.fixed-column .media-wrap img {
-		filter: drop-shadow(0px 0px 60px #fff);
+	.fixed-column .work-main-image img {
+		filter: drop-shadow(0px 0px 50px #fff);
 	}
+}
+
+
+/*------ work-details ------*/
+.work-details {
+	float:left;
+	width:100%;
+	position:relative;
+	margin:30px 0;
+}
+.work-details li {
+	float:left;
+	padding:10px 0;
+	width:100%;
+	text-align:left;
+}
+.work-details li span {
+	float:left;
+	padding-right:10px;
+	font-family: 'Libre Baskerville', serif;
+	font-style:italic;
+}
+.work-details li a {
+	font-family: 'Libre Baskerville', serif;
+	font-style:italic;
+	float:left;
 }
