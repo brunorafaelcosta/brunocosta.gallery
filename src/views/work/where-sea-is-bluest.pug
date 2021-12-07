@@ -15,7 +15,10 @@ block view_content
         .bg.bg-blur(data-bg=work_imagens_path + '/thumbnail.jpg')
         // work-main-image
         .work-main-image.with-max-width
-            img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
+            picture
+                source(srcset=work_imagens_path + '/main_thumbnail.webp' type="image/webp")
+                source(srcset=work_imagens_path + '/main_thumbnail.jpg' type="image/jpeg")
+                img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
             a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
                 i.fa.fa-search
         // work-main-image end
@@ -31,36 +34,47 @@ block view_content
                 // section-title end
                 // section-content
                 .section-content
-                    p #{work.text.line_1}
                     blockquote
                         p #{work.text.quote_1}
-                    p #{work.text.line_2}
+                        p #{work.text.author_quote_1}
                     .gallery-items.boxed-folio.hid-port-info
                         // gallery-item
                         .gallery-item.gallery-item-second
                             .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF1432_thumbnail.jpg' alt='')
+                                picture
+                                    source(srcset=work_imagens_path + '/DSCF1432_thumbnail.webp' type="image/webp")
+                                    source(srcset=work_imagens_path + '/DSCF1432_thumbnail.jpg' type="image/jpeg")
+                                    img(src=work_imagens_path + '/DSCF1432_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1432.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                         // gallery-item
                         .gallery-item.gallery-item-second
                             .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF1494_thumbnail.jpg' alt='')
+                                picture
+                                    source(srcset=work_imagens_path + '/DSCF1494_thumbnail.webp' type="image/webp")
+                                    source(srcset=work_imagens_path + '/DSCF1494_thumbnail.jpg' type="image/jpeg")
+                                    img(src=work_imagens_path + '/DSCF1494_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1494.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                         // gallery-item
                         .gallery-item.gallery-item-second
                             .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF1460_thumbnail.jpg' alt='')
+                                picture
+                                    source(srcset=work_imagens_path + '/DSCF1460_thumbnail.webp' type="image/webp")
+                                    source(srcset=work_imagens_path + '/DSCF1460_thumbnail.jpg' type="image/jpeg")
+                                    img(src=work_imagens_path + '/DSCF1460_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1460.jpg')
                                     i.fa.fa-search
                         // gallery-item end
                         // gallery-item
                         .gallery-item.gallery-item-second
                             .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF1474_thumbnail.jpg' alt='')
+                                picture
+                                    source(srcset=work_imagens_path + '/DSCF1474_thumbnail.webp' type="image/webp")
+                                    source(srcset=work_imagens_path + '/DSCF1474_thumbnail.jpg' type="image/jpeg")
+                                    img(src=work_imagens_path + '/DSCF1474_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1474.jpg')
                                     i.fa.fa-search
                         // gallery-item end
