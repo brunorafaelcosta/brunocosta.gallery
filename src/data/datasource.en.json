@@ -98,31 +98,6 @@
             "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
         },
         {
-            "id": "well-kept-secret",
-            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "getaways-from-work",
-            "thumbnail_url": "work/getaways-from-work/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/getaways-from-work/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "all-beginnings-are-involuntary",
-            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "faith",
-            "thumbnail_url": "work/faith/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/faith/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "tagus",
-            "thumbnail_url": "work/tagus/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/tagus/mobile_thumbnail.jpg"
-        },
-        {
             "id": "coimbra-old-town",
             "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
             "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
@@ -165,7 +140,19 @@
         "old-fisherman": {
             "menu_item_id": "old-fisherman",
             "slug": "old-fisherman.html",
-            "title": "Old Fisherman"
+            "title": "Old Fisherman",
+            "text": {
+                "quote_1": "You did not kill the fish only to keep alive and to sell for food, he thought. You killed him for pride and because you are a fisherman. You loved him when he was alive and you loved him after. If you love him, it is not a sin to kill him. Or is it more?",
+                "author_quote_1": "Ernest Hemingway, The Old Man and the Sea"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Azenhas+do+Mar,+Colares",
+                    "value": "Azenhas do Mar, Colares, Portugal"
+                },
+                "date": "2019",
+                "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
+            }
         },
         "alfacinhas-on-foot": {
             "menu_item_id": "alfacinhas-on-foot",

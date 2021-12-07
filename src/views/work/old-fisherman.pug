@@ -1,0 +1,52 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['old-fisherman'].title
+    - var current_slug = 'work/' + works['old-fisherman'].slug
+    - var static_folder_path = '../../static'
+    - var selected_menu_option = works['old-fisherman'].menu_item_id
+    - var selected_works_is_active = true
+    - var work = works['old-fisherman']
+    - var work_imagens_path = static_folder_path + '/images/work/old-fisherman'
+
+block view_content
+    // fixed-column
+    .fixed-column
+        .bg.bg-blur(data-bg=work_imagens_path + '/thumbnail.jpg')
+        // work-main-image
+        .work-main-image.with-max-width
+            picture
+                source(srcset=work_imagens_path + '/main_thumbnail.webp' type="image/webp")
+                source(srcset=work_imagens_path + '/main_thumbnail.jpg' type="image/jpeg")
+                img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
+                i.fa.fa-search
+        // work-main-image end
+    // fixed-column end
+    // column-wrap
+    .column-wrap.vertical-align
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{work.title}
+                // section-title end
+                // section-content
+                .section-content
+                    blockquote
+                        p #{work.text.quote_1}
+                        p #{work.text.author_quote_1}
+                    ul.work-details
+                        li
+                            span #{text.location} : 
+                            a(href=work.details.location.url target='_blank') #{work.details.location.value}
+                        li
+                            span #{text.year} : 
+                            a(href='#') #{work.details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{work.details.gear}
+                // section-content end
+        // content end
+    // column wrap
