@@ -98,6 +98,11 @@
             "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
         },
         {
+            "id": "well-kept-secret",
+            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+        },
+        {
             "id": "coimbra-old-town",
             "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
             "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
@@ -135,7 +140,15 @@
         "well-kept-secret": {
             "menu_item_id": "well-kept-secret",
             "slug": "well-kept-secret.html",
-            "title": "Segredo bem guardado"
+            "title": "Segredo bem guardado",
+            "details": {
+                "location": {
+                    "url": "https://www.google.pt/maps/place/Tibo,+Arcos+de+Valdevez",
+                    "value": "Tibo, Arcos de Valdevez, Portugal"
+                },
+                "date": "30 de julho de 2019",
+                "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
+            }
         },
         "old-fisherman": {
             "menu_item_id": "old-fisherman",
@@ -143,7 +156,7 @@
             "title": "Velho Pescador",
             "text": {
                 "quote_1": "Não mataste o peixe só para viver e vendê-lo para ser comido. Mataste-o por amor-próprio e porque és um pescador. Amáva-lo quando estava vivo, e ama-lo depois de morto. Se o amas, não é pecado matá-lo. Ou será mais?",
-                "author_quote_1": "Ernest Hemingway, O Velho e o Mar"
+                "quote_1_author": "Ernest Hemingway, O Velho e o Mar"
             },
             "details": {
                 "location": {
@@ -195,7 +208,7 @@
             "title": "Onde o Mar é Mais Azul",
             "text": {
                 "quote_1": "Ericeira, Onde o Mar é Mais Azul / Nas belas praias do sul / De doirada e fresca areia",
-                "author_quote_1": "Gabriel Cardoso"
+                "quote_1_author": "Gabriel Cardoso, Ericeira"
             },
             "details": {
                 "location": {

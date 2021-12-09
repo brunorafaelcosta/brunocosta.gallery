@@ -98,6 +98,11 @@
             "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
         },
         {
+            "id": "well-kept-secret",
+            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
+        },
+        {
             "id": "coimbra-old-town",
             "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
             "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
@@ -135,7 +140,15 @@
         "well-kept-secret": {
             "menu_item_id": "well-kept-secret",
             "slug": "well-kept-secret.html",
-            "title": "Secret bien gardé"
+            "title": "Secret bien gardé",
+            "details": {
+                "location": {
+                    "url": "https://www.google.fr/maps/place/Tibo,+Arcos+de+Valdevez",
+                    "value": "Tibo, Arcos de Valdevez, Portugal"
+                },
+                "date": "30 juillet 2019",
+                "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
+            }
         },
         "old-fisherman": {
             "menu_item_id": "old-fisherman",
@@ -143,7 +156,7 @@
             "title": "Vieux Pêcheur",
             "text": {
                 "quote_1": "C'est pas parce que tu crevais de faim que t'as tué ce poisson-là, se dit-il. Ni pour le vendre. Tu l'as tué par orgueil. Tu l'as tué parce que t'es né pêcheur. Ce poisson-là tu l'aimais quand il était en vie, et tu l'as aimé aussi après. Si tu l'aimes, c'est pas un péché de l'avoir tué. Ou c'est-y encore plus mal?",
-                "author_quote_1": "Ernest Hemingway, Le Vieil Homme et la Mer"
+                "quote_1_author": "Ernest Hemingway, Le Vieil Homme et la Mer"
             },
             "details": {
                 "location": {
@@ -195,7 +208,7 @@
             "title": "Où la Mer est la Plus Bleue",
             "text": {
                 "quote_1": "Ericeira, Là où la Mer est la Plus Bleue / Sur les belles plages du sud / De doré et frais sable",
-                "author_quote_1": "Gabriel Cardoso"
+                "quote_1_author": "Gabriel Cardoso, Ericeira"
             },
             "details": {
                 "location": {
