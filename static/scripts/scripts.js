@@ -607,7 +607,6 @@ function readyFunctions() {
 }
 
 function redirectToLanguage(languageBaseUrl, slug) {
-    debugger;
     var expiresDays = 365;
     var expires = "";
     var date = new Date();
