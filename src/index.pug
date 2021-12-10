@@ -4,7 +4,15 @@ block variables
     - var static_folder_path = 'static'
 
 block append scripts
+    - var langJsLoop = '';
+    - for (var i=0; i<languages.length; i++) {
+    -   langJsLoop += '\n;if ("' + languages[i].title + '" === languageCookieValue) { window.location = "' + languages[i].base_url + '"; return; }'
+    - }
+    
     script(type='text/javascript').
-        $(document).ready(function(){
-        window.location = '#{base_url}';
+        $(document).ready(function() {
+            let languageCookieValue = getCookie("brunocostagallery.language");
+            if (languageCookieValue) { !{langJsLoop}
+            }
+            window.location = '#{base_url}';
         });

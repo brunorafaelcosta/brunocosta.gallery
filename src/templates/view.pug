@@ -22,7 +22,7 @@ block view
                 ul
                     each language_item in languages
                         li
-                            a(href=language_item.base_url + '/' + current_slug class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
+                            a(href="javascript:redirectToLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
             // header-lang end
         // Header   end
         // =============== wrapper ===============
