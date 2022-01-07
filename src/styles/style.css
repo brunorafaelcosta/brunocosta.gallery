@@ -2482,7 +2482,7 @@ a.fill-div {
 	filter: blur(5px);
 	box-shadow: 75px 50px 40px 0 white inset,
 	-75px -50px 40px 0 white inset;
-	opacity: 0.5;
+	opacity: 0.25;
 }
 
 .column-wrap {
@@ -2517,7 +2517,7 @@ a.fill-div {
 		filter: blur(5px);
 		box-shadow: 25px 25px 25px 0 white inset,
 		-25px -25px 25px 0 white inset;
-		opacity: 0.5;
+		opacity: 0.25;
 	}
 	
 	.fixed-column.larger-column {
