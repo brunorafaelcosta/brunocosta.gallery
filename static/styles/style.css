@@ -2559,3 +2559,7 @@ a.fill-div {
 	font-style:italic;
 	float:left;
 }
+
+.text-center {
+    text-align: center;
+}
