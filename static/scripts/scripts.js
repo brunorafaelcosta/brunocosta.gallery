@@ -562,7 +562,7 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
 
 //   Share ------------------
     $(".share-container").share({
-        networks: ['facebook','pinterest','googleplus','twitter','linkedin']
+        networks: ['facebook','twitter','linkedin','pinterest']
     });
 }
 function contanimhide() {
