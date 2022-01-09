@@ -31,7 +31,12 @@
         "location": "Lieu",
         "date": "Date",
         "year": "Année",
-        "gear": "Équipement"
+        "gear": "Équipement",
+        "share": "Partager",
+        "share_on_prefix": "Partager cette page sur ",
+        "not_found_title": "404",
+        "not_found_line_1": "Il semble que tu as trouvé une page sur laquelle je travaille encore. Je vais essayer de la finir au plus vite.",
+        "not_found_line_2": "Pendant ce temps, inspires et, à l'expiration, cliques <a href='/fr/work/well-kept-secret.html'><b>ici</b></a> et contemple un paysage super cool."
     },
 
     "home": {
@@ -50,7 +55,7 @@
         "title": "Contact",
         "text": {
             "placeholder": "Prendre contact",
-            "line_1": "Voulez-vous collaborer sur un projet? Juste dire bonjour? Allez-y et envoyez-moi quelque chose!",
+            "line_1": "Veux-tu collaborer sur un projet? Juste dire bonjour? Vas-y et envoie-moi quelque chose!",
             "name": "Nom",
             "email": "E-mail",
             "message": "Message",
@@ -62,8 +67,8 @@
         "url": "terms-conditions.html",
         "title": "Termes et Conditions",
         "text": {
-            "line_1": "Toutes les images et vidéos présentées sur ce site sont la propriété de Bruno Costa, sont protégées par le droit d'auteur et ne peuvent en aucun cas être utilisées à des fins personnelles ou commerciales sans accord préalable ou licence. Contactez-moi pour l'autorisation.",
-            "line_2": "Vous pouvez partager des images/vidéos sur les réseaux sociaux personnels, à condition de donner crédit (© Bruno Costa) et identifier (vérifier mes identifiants de réseaux sociaux en bas de page). S'il s'agit d'une entreprise, vous devez d'abord prendre contact."
+            "line_1": "Toutes les images et vidéos présentées sur ce site sont la propriété de Bruno Costa, sont protégées par le droit d'auteur et ne peuvent en aucun cas être utilisées à des fins personnelles ou commerciales sans accord préalable ou licence. Contacte-moi pour l'autorisation.",
+            "line_2": "Tu peux partager des images/vidéos sur les réseaux sociaux personnels, à condition de donner crédit (© Bruno Costa) et identifier (vérifier mes identifiants de réseaux sociaux en bas de page)."
         }
     },
     
@@ -86,6 +91,16 @@
             "id": "beginnings",
             "thumbnail_url": "work/beginnings/thumbnail.jpg",
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "all-beginnings-are-involuntary",
+            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "coimbra-old-town",
+            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
         },
         {
             "id": "alfacinhas-on-foot",
@@ -136,6 +151,15 @@
             "menu_item_id": "well-kept-secret",
             "slug": "well-kept-secret.html",
             "title": "Secret bien gardé",
+            "text": {
+                "quote_1_1": "Rien au monde n'a jamais été vu",
+                "quote_1_1_translation_source": "Nothing in the world was ever seen",
+                "quote_1_2": "Écris-le sur le vent",
+                "quote_1_2_translation_source": "Write it on the wind",
+                "quote_1_3": "Ce rêve vivant",
+                "quote_1_3_translation_source": "This living dream",
+                "quote_1_author": "David Gray, Laughing Gas"
+            },
             "details": {
                 "location": {
                     "url": "https://www.google.fr/maps/place/Tibo,+Arcos+de+Valdevez",
@@ -185,12 +209,26 @@
         "all-beginnings-are-involuntary": {
             "menu_item_id": "all-beginnings-are-involuntary",
             "slug": "all-beginnings-are-involuntary.html",
-            "title": "Tout début est involontaire"
-        },
-        "faith": {
-            "menu_item_id": "faith",
-            "slug": "faith.html",
-            "title": "Foi"
+            "title": "Tout début est involontaire",
+            "text": {
+                "quote_1_1": "Tout début est involontaire.",
+                "quote_1_1_translation_source": "Todo começo é involuntário.",
+                "quote_1_2": "Dieu est l'agent.",
+                "quote_1_2_translation_source": "Deus é o agente.",
+                "quote_1_3": "Le héros se regarde, confus",
+                "quote_1_3_translation_source": "O herói a si assiste, vário",
+                "quote_1_4": "Et inconscient.",
+                "quote_1_4_translation_source": "E inconsciente.",
+                "quote_1_author": "Fernando Pessoa, Mensagem"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.fr/maps/place/Lisbonne",
+                    "value": "Lisbonne, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         },
         "tagus": {
             "menu_item_id": "tagus",
@@ -202,7 +240,12 @@
             "slug": "where-sea-is-bluest.html",
             "title": "Où la Mer est la Plus Bleue",
             "text": {
-                "quote_1": "Ericeira, Là où la Mer est la Plus Bleue / Sur les belles plages du sud / De doré et frais sable",
+                "quote_1_1": "Ericeira, Là où la Mer est la Plus Bleue",
+                "quote_1_1_translation_source": "Ericeira, Onde o Mar é Mais Azul",
+                "quote_1_2": "Sur les belles plages du sud",
+                "quote_1_2_translation_source": "Nas belas praias do sul",
+                "quote_1_3": "De doré et frais sable",
+                "quote_1_3_translation_source": "De doirada e fresca areia",
                 "quote_1_author": "Gabriel Cardoso, Ericeira"
             },
             "details": {

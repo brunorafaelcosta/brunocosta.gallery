@@ -1,13 +1,13 @@
 extends ../../templates/view.pug
 
 block variables
-    - var title = works['old-fisherman'].title
-    - var current_slug = 'work/' + works['old-fisherman'].slug
+    - var title = works['all-beginnings-are-involuntary'].title
+    - var current_slug = 'work/' + works['all-beginnings-are-involuntary'].slug
     - var static_folder_path = '../../static'
-    - var selected_menu_option = works['old-fisherman'].menu_item_id
+    - var selected_menu_option = works['all-beginnings-are-involuntary'].menu_item_id
     - var selected_works_is_active = true
-    - var work = works['old-fisherman']
-    - var work_imagens_path = static_folder_path + '/images/work/old-fisherman'
+    - var work = works['all-beginnings-are-involuntary']
+    - var work_imagens_path = static_folder_path + '/images/work/all-beginnings-are-involuntary'
 
 block view_content
     // fixed-column
@@ -32,7 +32,26 @@ block view_content
                 // section-content
                 .section-content
                     blockquote
-                        p #{work.text.quote_1}
+                        p(style='white-space:pre;')
+                            | #{work.text.quote_1_1}
+                            if (work.text.quote_1_1_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_1_translation_source}
+                            br
+                            | #{work.text.quote_1_2}
+                            if (work.text.quote_1_2_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_2_translation_source}
+                            br
+                            | #{work.text.quote_1_3}
+                            if (work.text.quote_1_3_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_3_translation_source}
+                            br
+                            | #{work.text.quote_1_4}
+                            if (work.text.quote_1_4_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_4_translation_source}
                         p #{work.text.quote_1_author}
                     ul.work-details
                         li

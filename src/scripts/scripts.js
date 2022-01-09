@@ -218,16 +218,16 @@ function initGallery() {
     fhcr.owlCarousel({
         loop: true,
 		autoplay:true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3600,
         autoplayHoverPause: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3600,
         margin: 0,
         nav: false,
         items: 3,
         dots: false,
         center: true,
         autoHeight: false,
-        smartSpeed: 1500,
+        smartSpeed: 3600,
         responsiveClass: true,
         responsive: {
             0: {
@@ -562,7 +562,7 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
 
 //   Share ------------------
     $(".share-container").share({
-        networks: ['facebook','pinterest','googleplus','twitter','linkedin']
+        networks: ['facebook','twitter','linkedin','pinterest']
     });
 }
 function contanimhide() {

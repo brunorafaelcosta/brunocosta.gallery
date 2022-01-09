@@ -2559,3 +2559,23 @@ a.fill-div {
 	font-style:italic;
 	float:left;
 }
+
+.text-center {
+    text-align: center;
+}
+
+blockquote.music-blockquote:before {
+	content: "\f001" !important;
+}
+
+blockquote span.blockquote-line-translation_source {
+	font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+blockquote span.blockquote-line-translation_source:last-child {
+	padding-bottom: 0;
+}

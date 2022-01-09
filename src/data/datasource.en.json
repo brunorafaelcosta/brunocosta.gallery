@@ -31,7 +31,12 @@
         "location": "Location",
         "date": "Date",
         "year": "Year",
-        "gear": "Gear"
+        "gear": "Gear",
+        "share": "Share",
+        "share_on_prefix": "Share this page on ",
+        "not_found_title": "404",
+        "not_found_line_1": "Looks like you've found a page that I'm still working on. I will try to finish it as soon as possible.",
+        "not_found_line_2": "Meanwhile, breathe in, and on the out breath, click <a href='/en/work/well-kept-secret.html'><b>here</b></a> and contemplate a super cool landscape."
     },
 
     "home": {
@@ -63,7 +68,7 @@
         "title": "Terms and Conditions",
         "text": {
             "line_1": "All images and videos presented on this website are owned by Bruno Costa, are protected by copyright and cannot be used for any personal or commercial purposes without prior agreement or licensing. Contact me for permission.",
-            "line_2": "You can share images/videos on personal social networks, as long as you give credit (© Bruno Costa) and tag (check my social media handles at the bottom of the page). If you are a company, you must contact first."
+            "line_2": "You can share images/videos on personal social networks, as long as you give credit (© Bruno Costa) and tag (check my social media handles at the bottom of the page)."
         }
     },
     
@@ -86,6 +91,16 @@
             "id": "beginnings",
             "thumbnail_url": "work/beginnings/thumbnail.jpg",
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "all-beginnings-are-involuntary",
+            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "coimbra-old-town",
+            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
         },
         {
             "id": "alfacinhas-on-foot",
@@ -136,6 +151,15 @@
             "menu_item_id": "well-kept-secret",
             "slug": "well-kept-secret.html",
             "title": "Well kept secret",
+            "text": {
+                "quote_1_1": "Nothing in the world was ever seen",
+                "quote_1_1_translation_source": "",
+                "quote_1_2": "Write it on the wind",
+                "quote_1_2_translation_source": "",
+                "quote_1_3": "This living dream",
+                "quote_1_3_translation_source": "",
+                "quote_1_author": "David Gray, Laughing Gas"
+            },
             "details": {
                 "location": {
                     "url": "https://www.google.com/maps/place/Tibo,+Arcos+de+Valdevez",
@@ -185,12 +209,26 @@
         "all-beginnings-are-involuntary": {
             "menu_item_id": "all-beginnings-are-involuntary",
             "slug": "all-beginnings-are-involuntary.html",
-            "title": "All beginnings are involuntary"
-        },
-        "faith": {
-            "menu_item_id": "faith",
-            "slug": "faith.html",
-            "title": "Faith"
+            "title": "All beginnings are involuntary",
+            "text": {
+                "quote_1_1": "All beginnings are involuntary.",
+                "quote_1_1_translation_source": "Todo começo é involuntário.",
+                "quote_1_2": "God is the agent.",
+                "quote_1_2_translation_source": "Deus é o agente.",
+                "quote_1_3": "The hero watches himself, confused",
+                "quote_1_3_translation_source": "O herói a si assiste, vário",
+                "quote_1_4": "And unconscious.",
+                "quote_1_4_translation_source": "E inconsciente.",
+                "quote_1_author": "Fernando Pessoa, Mensagem"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Lisbon",
+                    "value": "Lisbon, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         },
         "tagus": {
             "menu_item_id": "tagus",
@@ -202,7 +240,12 @@
             "slug": "where-sea-is-bluest.html",
             "title": "Where the Sea is Bluest",
             "text": {
-                "quote_1": "Ericeira, Where the Sea is Bluest / On the beautiful southern beaches / Of golden and fresh sand",
+                "quote_1_1": "Ericeira, Where the Sea is Bluest",
+                "quote_1_1_translation_source": "Ericeira, Onde o Mar é Mais Azul",
+                "quote_1_2": "On the beautiful southern beaches",
+                "quote_1_2_translation_source": "Nas belas praias do sul",
+                "quote_1_3": "Of golden and fresh sand",
+                "quote_1_3_translation_source": "De doirada e fresca areia",
                 "quote_1_author": "Gabriel Cardoso, Ericeira"
             },
             "details": {
