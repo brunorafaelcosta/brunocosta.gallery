@@ -2564,7 +2564,7 @@ a.fill-div {
     text-align: center;
 }
 
-blockquote.music-blockquote:before   {
+blockquote.music-blockquote:before {
 	content: "\f001" !important;
 }
 
