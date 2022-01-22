@@ -40,12 +40,12 @@ block view
                                 a(href=base_url + '/' + about.url class=selected_menu_option === about.menu_item_id ? "act-link" : "") #{about.title}
                             li
                                 a(href='#'  class=selected_works_is_active === true ? "act-link" : "") #{text.selected_works}
-                                // selected works
+                                // works
                                 ul
-                                    each selected_work_item in selected_works
+                                    each work_item in works
                                         li
-                                            a(href=base_url  + '/work/' + works[selected_work_item.id].slug class=selected_menu_option === selected_work_item.id ? "act-link" : "") #{works[selected_work_item.id].title}
-                            // selected works end
+                                            a(href=base_url  + '/work/' + work_item.slug class=selected_menu_option === work_item.menu_item_id ? "act-link" : "") #{work_item.title}
+                                // works end
                             li
                                 a(href=base_url + '/' + contact.url class=selected_menu_option === contact.menu_item_id ? "act-link" : "") #{contact.title}
                 // Navigation end

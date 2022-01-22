@@ -86,44 +86,6 @@
         }
     },
 
-    "selected_works": [
-        {
-            "id": "beginnings",
-            "thumbnail_url": "work/beginnings/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "all-beginnings-are-involuntary",
-            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "coimbra-old-town",
-            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "old-fisherman",
-            "thumbnail_url": "work/old-fisherman/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/old-fisherman/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "well-kept-secret",
-            "thumbnail_url": "work/well-kept-secret/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/well-kept-secret/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "where-sea-is-bluest",
-            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
-        }
-    ],
-
     "works": {
         "beginnings": {
             "menu_item_id": "beginnings",
@@ -141,11 +103,6 @@
                 "date": "May 27, 2019",
                 "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
             }
-        },
-        "getaways-from-work": {
-            "menu_item_id": "getaways-from-work",
-            "slug": "getaways-from-work.html",
-            "title": "Getaways from work"
         },
         "well-kept-secret": {
             "menu_item_id": "well-kept-secret",
@@ -186,6 +143,23 @@
                 "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
             }
         },
+        "o-bliss": {
+            "menu_item_id": "o-bliss",
+            "slug": "o-bliss.html",
+            "title": "O bliss!",
+            "text": {
+                "quote_1": "Glorious, stirring sight! The poetry of motion! The REAL way to travel! The ONLY way to travel! Here today - in next week to-morrow! Villages skipped, towns and cities jumped - always somebody else's horizon! O bliss! O poop-poop! O my! O my!'",
+                "quote_1_author": "Kenneth Grahame, The Wind in the Willows"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Dune+of+Pilat",
+                    "value": "Dune of Pilat, France"
+                },
+                "date": "2019",
+                "gear": "Sony A7 + FE 28-70 mm F3.5-5.6 OSS"
+            }
+        },
         "alfacinhas-on-foot": {
             "menu_item_id": "alfacinhas-on-foot",
             "slug": "alfacinhas-on-foot.html",
@@ -201,6 +175,28 @@
                 "location": {
                     "url": "https://www.google.com/maps/place/Lisbon",
                     "value": "Lisbon, Portugal"
+                },
+                "date": "2021",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
+        },
+        "where-sea-is-bluest": {
+            "menu_item_id": "where-sea-is-bluest",
+            "slug": "where-sea-is-bluest.html",
+            "title": "Where the Sea is Bluest",
+            "text": {
+                "quote_1_1": "Ericeira, Where the Sea is Bluest",
+                "quote_1_1_translation_source": "Ericeira, Onde o Mar é Mais Azul",
+                "quote_1_2": "On the beautiful southern beaches",
+                "quote_1_2_translation_source": "Nas belas praias do sul",
+                "quote_1_3": "Of golden and fresh sand",
+                "quote_1_3_translation_source": "De doirada e fresca areia",
+                "quote_1_author": "Gabriel Cardoso, Ericeira"
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.com/maps/place/Ericeira",
+                    "value": "Ericeira, Portugal"
                 },
                 "date": "2021",
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
@@ -230,33 +226,6 @@
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         },
-        "tagus": {
-            "menu_item_id": "tagus",
-            "slug": "tagus.html",
-            "title": "Tagus"
-        },
-        "where-sea-is-bluest": {
-            "menu_item_id": "where-sea-is-bluest",
-            "slug": "where-sea-is-bluest.html",
-            "title": "Where the Sea is Bluest",
-            "text": {
-                "quote_1_1": "Ericeira, Where the Sea is Bluest",
-                "quote_1_1_translation_source": "Ericeira, Onde o Mar é Mais Azul",
-                "quote_1_2": "On the beautiful southern beaches",
-                "quote_1_2_translation_source": "Nas belas praias do sul",
-                "quote_1_3": "Of golden and fresh sand",
-                "quote_1_3_translation_source": "De doirada e fresca areia",
-                "quote_1_author": "Gabriel Cardoso, Ericeira"
-            },
-            "details": {
-                "location": {
-                    "url": "https://www.google.com/maps/place/Ericeira",
-                    "value": "Ericeira, Portugal"
-                },
-                "date": "2021",
-                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
-            }
-        },
         "coimbra-old-town": {
             "menu_item_id": "coimbra-old-town",
             "slug": "coimbra-old-town.html",
@@ -270,5 +239,33 @@
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         }
-    }
+    },
+
+    "highlighted_works": [
+        {
+            "id": "beginnings",
+            "thumbnail_url": "work/beginnings/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "all-beginnings-are-involuntary",
+            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "alfacinhas-on-foot",
+            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "o-bliss",
+            "thumbnail_url": "work/o-bliss/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/o-bliss/mobile_thumbnail.jpg"
+        },
+        {
+            "id": "where-sea-is-bluest",
+            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
+        }
+    ]
 }

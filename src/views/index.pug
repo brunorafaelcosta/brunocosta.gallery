@@ -15,18 +15,18 @@ block view_content
                 i.fa.fa-angle-right
         // fullheight-carousel
         .fullheight-carousel.mousecontr
-            each selected_work_item in selected_works
+            each highlighted_work_item in highlighted_works
                 // item
                 .item
                     .carousel-item
                         style(type='text/css').
-                            @media (min-width: 0px) { #carousel-item-#{selected_work_item.id} { background-image: url('#{static_folder_path}/images/#{selected_work_item.mobile_thumbnail_url}'); } }
-                            @media (min-width: 1366px) { #carousel-item-#{selected_work_item.id} { background-image: url('#{static_folder_path}/images/#{selected_work_item.thumbnail_url}'); } }
-                        div(id="carousel-item-" + selected_work_item.id, class="bg")
-                            a.fill-div(href=base_url + '/work/' + works[selected_work_item.id].slug)
+                            @media (min-width: 0px) { #carousel-item-#{highlighted_work_item.id} { background-image: url('#{static_folder_path}/images/#{highlighted_work_item.mobile_thumbnail_url}'); } }
+                            @media (min-width: 1366px) { #carousel-item-#{highlighted_work_item.id} { background-image: url('#{static_folder_path}/images/#{highlighted_work_item.thumbnail_url}'); } }
+                        div(id="carousel-item-" + highlighted_work_item.id, class="bg")
+                            a.fill-div(href=base_url + '/work/' + works[highlighted_work_item.id].slug)
                         .thumb-info
                             h3
-                                a(href=base_url + '/work/' + works[selected_work_item.id].slug) #{works[selected_work_item.id].title}
+                                a(href=base_url + '/work/' + works[highlighted_work_item.id].slug) #{works[highlighted_work_item.id].title}
             // item end
         // fullheight-carousel end
     // fullheight-carousel-holder end

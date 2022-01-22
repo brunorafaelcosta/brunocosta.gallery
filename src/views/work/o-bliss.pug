@@ -1,0 +1,54 @@
+extends ../../templates/view.pug
+
+block variables
+    - var title = works['o-bliss'].title
+    - var current_slug = 'work/' + works['o-bliss'].slug
+    - var static_folder_path = '../../static'
+    - var selected_menu_option = works['o-bliss'].menu_item_id
+    - var selected_works_is_active = true
+    - var work = works['o-bliss']
+    - var work_imagens_path = static_folder_path + '/images/work/o-bliss'
+
+block view_content
+    // fixed-column
+    .fixed-column.larger-column
+        .bg.bg-blur(data-bg=work_imagens_path + '/main_thumbnail.jpg')
+        // work-main-image
+        .work-main-image
+            img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
+                i.fa.fa-search
+        // work-main-image end
+    // fixed-column end
+    // column-wrap
+    .column-wrap.smaller-column.vertical-align
+        // content
+        .content
+            section
+                // section-title
+                .section-title
+                    h2 #{work.title}
+                // section-title end
+                // section-content
+                .section-content
+                    blockquote
+                        p #{work.text.quote_1}
+                        p #{work.text.quote_1_author}
+                    ul.work-details
+                        li
+                            span #{text.location} : 
+                            a(href=work.details.location.url target='_blank') #{work.details.location.value}
+                        li
+                            span #{text.year} : 
+                            a(href='#') #{work.details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{work.details.gear}
+                    // share
+                    div.share-holder.no-fix-share
+                        span #{text.share} :
+                        div.share-container
+                    // share end
+                // section-content end
+        // content end
+    // column wrap
