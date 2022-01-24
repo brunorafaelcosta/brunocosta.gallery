@@ -148,7 +148,7 @@
             "slug": "o-bliss.html",
             "title": "Oh bem-aventurança!",
             "text": {
-                "quote_1": "Visão gloriosa e comovente! A poesia do movimento! A VERDADEIRA maneira de viajar! A ÚNICA maneira de viajar! Aqui hoje - na próxima semana amanhã! Aldeias saltaram, vilas e cidades saltaram - sempre o horizonte de outra pessoa! Oh bem-aventurança! Oh cocô-cocô! Ó meu! Ó meu!",
+                "quote_1": "Visão gloriosa e comovente! A poesia do movimento! A verdadeira maneira de viajar! A única maneira de viajar! Aqui hoje - na próxima semana amanhã! Aldeias saltaram, vilas e cidades saltaram - sempre o horizonte de outra pessoa! Oh bem-aventurança! Oh cocô-cocô! Ó meu! Ó meu!",
                 "quote_1_author": "Kenneth Grahame, O Vento nos Salgueiros"
             },
             "details": {
@@ -246,16 +246,6 @@
             "id": "beginnings",
             "thumbnail_url": "work/beginnings/thumbnail.jpg",
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "all-beginnings-are-involuntary",
-            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
         },
         {
             "id": "o-bliss",

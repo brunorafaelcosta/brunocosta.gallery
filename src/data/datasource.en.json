@@ -148,7 +148,7 @@
             "slug": "o-bliss.html",
             "title": "O bliss!",
             "text": {
-                "quote_1": "Glorious, stirring sight! The poetry of motion! The REAL way to travel! The ONLY way to travel! Here today - in next week to-morrow! Villages skipped, towns and cities jumped - always somebody else's horizon! O bliss! O poop-poop! O my! O my!'",
+                "quote_1": "Glorious, stirring sight! The poetry of motion! The real way to travel! The only way to travel! Here today-in next week tomorrow! Villages skipped, towns and cities jumped - always somebody else's horizon! O bliss! O poop-poop! O my! O my!",
                 "quote_1_author": "Kenneth Grahame, The Wind in the Willows"
             },
             "details": {
@@ -246,16 +246,6 @@
             "id": "beginnings",
             "thumbnail_url": "work/beginnings/thumbnail.jpg",
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "all-beginnings-are-involuntary",
-            "thumbnail_url": "work/all-beginnings-are-involuntary/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/all-beginnings-are-involuntary/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
         },
         {
             "id": "o-bliss",
