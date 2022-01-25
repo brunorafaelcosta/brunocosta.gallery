@@ -86,9 +86,17 @@
         }
     },
 
+    "cookies_policy": {
+        "text": {
+            "line_1": "This website uses cookies to enhance your experience. By continuing to use this website you consent to our use of cookies.",
+            "accept": "Ok"
+        }
+    },
+
     "works": {
         "beginnings": {
             "menu_item_id": "beginnings",
+            "menu_item_visible": true,
             "slug": "beginnings.html",
             "title": "Beginnings",
             "text": {
@@ -106,6 +114,7 @@
         },
         "well-kept-secret": {
             "menu_item_id": "well-kept-secret",
+            "menu_item_visible": true,
             "slug": "well-kept-secret.html",
             "title": "Well kept secret",
             "text": {
@@ -128,6 +137,7 @@
         },
         "old-fisherman": {
             "menu_item_id": "old-fisherman",
+            "menu_item_visible": true,
             "slug": "old-fisherman.html",
             "title": "Old Fisherman",
             "text": {
@@ -145,6 +155,7 @@
         },
         "o-bliss": {
             "menu_item_id": "o-bliss",
+            "menu_item_visible": true,
             "slug": "o-bliss.html",
             "title": "O bliss!",
             "text": {
@@ -162,6 +173,7 @@
         },
         "alfacinhas-on-foot": {
             "menu_item_id": "alfacinhas-on-foot",
+            "menu_item_visible": true,
             "slug": "alfacinhas-on-foot.html",
             "title": "Alfacinhas on foot",
             "text": {
@@ -182,6 +194,7 @@
         },
         "where-sea-is-bluest": {
             "menu_item_id": "where-sea-is-bluest",
+            "menu_item_visible": true,
             "slug": "where-sea-is-bluest.html",
             "title": "Where the Sea is Bluest",
             "text": {
@@ -204,6 +217,7 @@
         },
         "all-beginnings-are-involuntary": {
             "menu_item_id": "all-beginnings-are-involuntary",
+            "menu_item_visible": true,
             "slug": "all-beginnings-are-involuntary.html",
             "title": "All beginnings are involuntary",
             "text": {
@@ -228,6 +242,7 @@
         },
         "coimbra-old-town": {
             "menu_item_id": "coimbra-old-town",
+            "menu_item_visible": true,
             "slug": "coimbra-old-town.html",
             "title": "Coimbra's old town",
             "details": {
@@ -248,14 +263,14 @@
             "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
         },
         {
-            "id": "o-bliss",
-            "thumbnail_url": "work/o-bliss/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/o-bliss/mobile_thumbnail.jpg"
+            "id": "alfacinhas-on-foot",
+            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
         },
         {
-            "id": "where-sea-is-bluest",
-            "thumbnail_url": "work/where-sea-is-bluest/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/where-sea-is-bluest/mobile_thumbnail.jpg"
+            "id": "coimbra-old-town",
+            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
+            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
         }
     ]
 }

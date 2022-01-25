@@ -43,8 +43,9 @@ block view
                                 // works
                                 ul
                                     each work_item in works
-                                        li
-                                            a(href=base_url  + '/work/' + work_item.slug class=selected_menu_option === work_item.menu_item_id ? "act-link" : "") #{work_item.title}
+                                        if work_item.menu_item_visible
+                                            li
+                                                a(href=base_url  + '/work/' + work_item.slug class=selected_menu_option === work_item.menu_item_id ? "act-link" : "") #{work_item.title}
                                 // works end
                             li
                                 a(href=base_url + '/' + contact.url class=selected_menu_option === contact.menu_item_id ? "act-link" : "") #{contact.title}
@@ -71,4 +72,11 @@ block view
                             i.fa.fa-linkedin
                             span #{footer.social.linkedin.title}
         // footer end
+        //- // =============== cookies ===============
+        //- #cookie_notification_overlay
+        //-     #cookie_notification.flex-box
+        //-         p #{cookies_policy.text.line_1}
+        //-         button.accept.btn
+        //-             span #{cookies_policy.text.accept}
+        // cookies end
         // Main end
