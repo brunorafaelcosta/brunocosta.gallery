@@ -45,9 +45,10 @@ block view_content
                             span #{text.gear} : 
                             a(href='#') #{work.details.gear}
                     // share
-                    div.share-holder.no-fix-share
-                        span #{text.share} :
-                        div.share-container
+                    if share_enabled
+                        div.share-holder.no-fix-share
+                            span #{text.share} :
+                            div.share-container
                     // share end
                 // section-content end
         // content end

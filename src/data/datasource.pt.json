@@ -33,6 +33,7 @@
         "year": "Ano",
         "gear": "Equipamento",
         "share": "Compartilhar",
+        "all": "Tudo",
         "share_on_prefix": "Compartilhar esta página no ",
         "not_found_title": "404",
         "not_found_line_1": "Parece que encontraste uma página na qual ainda estou a trabalhar. Vou tentar terminá-la o mais rápido possível.",
@@ -40,21 +41,15 @@
     },
 
     "home": {
-        "menu_item_id": "home",
-        "url": "",
         "title": "Página inicial"
     },
     "about": {
-        "menu_item_id": "about",
-        "url": "about.html",
         "title": "Sobre"
     },
     "contact": {
-        "menu_item_id": "contact",
-        "url": "contact.html",
-        "title": "Contato",
+        "title": "Contacto",
         "text": {
-            "placeholder": "Entrar em contato",
+            "placeholder": "Entrar em contacto",
             "line_1": "Queres colaborar num projeto? Só queres dizer olá? Vai em frente e diz algo!",
             "name": "Nome",
             "email": "E-mail",
@@ -63,11 +58,9 @@
         }
     },
     "terms_conditions": {
-        "menu_item_id": "terms-conditions",
-        "url": "terms-conditions.html",
         "title": "Termos e Condições",
         "text": {
-            "line_1": "Todas as imagens e vídeos apresentados neste site são propriedade de Bruno Costa, estão protegidos por direitos de autor e não podem ser utilizados para quaisquer fins pessoais ou comerciais sem prévio acordo ou licenciamento. Entra em contato para obter permissão.",
+            "line_1": "Todas as imagens e vídeos apresentados neste site são propriedade de Bruno Costa, estão protegidos por direitos de autor e não podem ser utilizados para quaisquer fins pessoais ou comerciais sem prévio acordo ou licenciamento. Entra em contacto para obter permissão.",
             "line_2": "Podes compartilhar imagens/vídeos nas redes sociais pessoais, desde que dês crédito (© Bruno Costa) e etiquetes (verifica os meus identificadores de redes sociais no final da página)."
         }
     },
@@ -88,16 +81,13 @@
 
     "cookies_policy": {
         "text": {
-            "line_1": "Este site utiliza cookies para aprimorar a sua experiência. Ao continuar a usar este site, concorda com o uso de cookies.",
+            "line_1": "Ao continuar a usar este site, concorda com o uso de cookies de acordo com a nossa Política de Cookies.",
             "accept": "Ok"
         }
     },
     
     "works": {
         "beginnings": {
-            "menu_item_id": "beginnings",
-            "menu_item_visible": true,
-            "slug": "beginnings.html",
             "title": "Inícios",
             "text": {
                 "quote_1": "No coração de todo começo reside um encanto que nos protege e ajuda a viver.",
@@ -113,9 +103,6 @@
             }
         },
         "well-kept-secret": {
-            "menu_item_id": "well-kept-secret",
-            "menu_item_visible": true,
-            "slug": "well-kept-secret.html",
             "title": "Segredo bem guardado",
             "text": {
                 "quote_1_1": "Nada no mundo jamais foi visto",
@@ -136,9 +123,6 @@
             }
         },
         "old-fisherman": {
-            "menu_item_id": "old-fisherman",
-            "menu_item_visible": true,
-            "slug": "old-fisherman.html",
             "title": "Velho Pescador",
             "text": {
                 "quote_1": "Não mataste o peixe só para viver e vendê-lo para ser comido. Mataste-o por amor-próprio e porque és um pescador. Amáva-lo quando estava vivo, e ama-lo depois de morto. Se o amas, não é pecado matá-lo. Ou será mais?",
@@ -154,9 +138,6 @@
             }
         },
         "o-bliss": {
-            "menu_item_id": "o-bliss",
-            "menu_item_visible": true,
-            "slug": "o-bliss.html",
             "title": "Oh bem-aventurança!",
             "text": {
                 "quote_1": "Visão gloriosa e comovente! A poesia do movimento! A verdadeira maneira de viajar! A única maneira de viajar! Aqui hoje - na próxima semana amanhã! Aldeias saltaram, vilas e cidades saltaram - sempre o horizonte de outra pessoa! Oh bem-aventurança! Oh cocô-cocô! Ó meu! Ó meu!",
@@ -172,9 +153,6 @@
             }
         },
         "alfacinhas-on-foot": {
-            "menu_item_id": "alfacinhas-on-foot",
-            "menu_item_visible": true,
-            "slug": "alfacinhas-on-foot.html",
             "title": "Alfacinhas a pé",
             "text": {
                 "line_1": "Alfacinhas é um termo que designa familiarmente os habitantes de Lisboa.",
@@ -193,9 +171,6 @@
             }
         },
         "where-sea-is-bluest": {
-            "menu_item_id": "where-sea-is-bluest",
-            "menu_item_visible": true,
-            "slug": "where-sea-is-bluest.html",
             "title": "Onde o Mar é Mais Azul",
             "text": {
                 "quote_1_1": "Ericeira, Onde o Mar é Mais Azul",
@@ -216,9 +191,6 @@
             }
         },
         "all-beginnings-are-involuntary": {
-            "menu_item_id": "all-beginnings-are-involuntary",
-            "menu_item_visible": true,
-            "slug": "all-beginnings-are-involuntary.html",
             "title": "Todo começo é involuntário",
             "text": {
                 "quote_1_1": "Todo começo é involuntário.",
@@ -241,9 +213,6 @@
             }
         },
         "coimbra-old-town": {
-            "menu_item_id": "coimbra-old-town",
-            "menu_item_visible": true,
-            "slug": "coimbra-old-town.html",
             "title": "Cidade velha de Coimbra",
             "details": {
                 "location": {
@@ -256,21 +225,12 @@
         }
     },
 
-    "highlighted_works": [
-        {
-            "id": "beginnings",
-            "thumbnail_url": "work/beginnings/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "coimbra-old-town",
-            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
+    "explore": {
+        "categories": {
+            "nature": "Natureza",
+            "street": "Rua",
+            "sea": "Mar",
+            "people": "Pessoas"
         }
-    ]
+    }
 }

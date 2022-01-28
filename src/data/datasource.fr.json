@@ -33,6 +33,7 @@
         "year": "Année",
         "gear": "Équipement",
         "share": "Partager",
+        "all": "Tout",
         "share_on_prefix": "Partager cette page sur ",
         "not_found_title": "404",
         "not_found_line_1": "Il semble que tu as trouvé une page sur laquelle je travaille encore. Je vais essayer de la finir au plus vite.",
@@ -40,18 +41,12 @@
     },
 
     "home": {
-        "menu_item_id": "home",
-        "url": "",
         "title": "Page d'accueil"
     },
     "about": {
-        "menu_item_id": "about",
-        "url": "about.html",
         "title": "À propos"
     },
     "contact": {
-        "menu_item_id": "contact",
-        "url": "contact.html",
         "title": "Contact",
         "text": {
             "placeholder": "Prendre contact",
@@ -63,8 +58,6 @@
         }
     },
     "terms_conditions": {
-        "menu_item_id": "terms-conditions",
-        "url": "terms-conditions.html",
         "title": "Termes et Conditions",
         "text": {
             "line_1": "Toutes les images et vidéos présentées sur ce site sont la propriété de Bruno Costa, sont protégées par le droit d'auteur et ne peuvent en aucun cas être utilisées à des fins personnelles ou commerciales sans accord préalable ou licence. Contacte-moi pour l'autorisation.",
@@ -88,16 +81,13 @@
 
     "cookies_policy": {
         "text": {
-            "line_1": "This website uses cookies to enhance your experience. By continuing to use this website you consent to our use of cookies.",
+            "line_1": "En poursuivant votre navigation sur ce site, vous consentez à l'utilisation de cookies conformément à notre Politique de Cookies.",
             "accept": "Ok"
         }
     },
     
     "works": {
         "beginnings": {
-            "menu_item_id": "beginnings",
-            "menu_item_visible": true,
-            "slug": "beginnings.html",
             "title": "Débuts",
             "text": {
                 "quote_1": "Dans chaque début habite un enchantement qui nous protège et qui nous aide à vivre.",
@@ -113,9 +103,6 @@
             }
         },
         "well-kept-secret": {
-            "menu_item_id": "well-kept-secret",
-            "menu_item_visible": true,
-            "slug": "well-kept-secret.html",
             "title": "Secret bien gardé",
             "text": {
                 "quote_1_1": "Rien au monde n'a jamais été vu",
@@ -136,9 +123,6 @@
             }
         },
         "old-fisherman": {
-            "menu_item_id": "old-fisherman",
-            "menu_item_visible": true,
-            "slug": "old-fisherman.html",
             "title": "Vieux Pêcheur",
             "text": {
                 "quote_1": "C'est pas parce que tu crevais de faim que t'as tué ce poisson-là, se dit-il. Ni pour le vendre. Tu l'as tué par orgueil. Tu l'as tué parce que t'es né pêcheur. Ce poisson-là tu l'aimais quand il était en vie, et tu l'as aimé aussi après. Si tu l'aimes, c'est pas un péché de l'avoir tué. Ou c'est-y encore plus mal?",
@@ -154,9 +138,6 @@
             }
         },
         "o-bliss": {
-            "menu_item_id": "o-bliss",
-            "menu_item_visible": true,
-            "slug": "o-bliss.html",
             "title": "O bliss!",
             "text": {
                 "quote_1": "Glorious, stirring sight! The poetry of motion! The real way to travel! The only way to travel! Here today-in next week tomorrow! Villages skipped, towns and cities jumped - always somebody else's horizon! O bliss! O poop-poop! O my! O my!",
@@ -172,9 +153,6 @@
             }
         },
         "alfacinhas-on-foot": {
-            "menu_item_id": "alfacinhas-on-foot",
-            "menu_item_visible": true,
-            "slug": "alfacinhas-on-foot.html",
             "title": "Alfacinhas à pied",
             "text": {
                 "line_1": "Alfacinhas ou petites laitues est un terme qui désigne familièrement les habitants de Lisbonne.",
@@ -193,9 +171,6 @@
             }
         },
         "where-sea-is-bluest": {
-            "menu_item_id": "where-sea-is-bluest",
-            "menu_item_visible": true,
-            "slug": "where-sea-is-bluest.html",
             "title": "Où la Mer est la Plus Bleue",
             "text": {
                 "quote_1_1": "Ericeira, Là où la Mer est la Plus Bleue",
@@ -216,9 +191,6 @@
             }
         },
         "all-beginnings-are-involuntary": {
-            "menu_item_id": "all-beginnings-are-involuntary",
-            "menu_item_visible": true,
-            "slug": "all-beginnings-are-involuntary.html",
             "title": "Tout début est involontaire",
             "text": {
                 "quote_1_1": "Tout début est involontaire.",
@@ -241,9 +213,6 @@
             }
         },
         "coimbra-old-town": {
-            "menu_item_id": "coimbra-old-town",
-            "menu_item_visible": true,
-            "slug": "coimbra-old-town.html",
             "title": "Vieille ville de Coimbra",
             "details": {
                 "location": {
@@ -256,21 +225,12 @@
         }
     },
 
-    "highlighted_works": [
-        {
-            "id": "beginnings",
-            "thumbnail_url": "work/beginnings/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/beginnings/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "alfacinhas-on-foot",
-            "thumbnail_url": "work/alfacinhas-on-foot/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/alfacinhas-on-foot/mobile_thumbnail.jpg"
-        },
-        {
-            "id": "coimbra-old-town",
-            "thumbnail_url": "work/coimbra-old-town/thumbnail.jpg",
-            "mobile_thumbnail_url": "work/coimbra-old-town/mobile_thumbnail.jpg"
+    "explore": {
+        "categories": {
+            "nature": "Nature",
+            "street": "Rue",
+            "sea": "Mer",
+            "people": "Gens"
         }
-    ]
+    }
 }

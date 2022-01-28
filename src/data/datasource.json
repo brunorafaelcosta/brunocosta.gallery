@@ -1,0 +1,327 @@
+{
+    "share_enabled": false,
+    
+    "home": {
+        "menu_item_id": "home",
+        "url": ""
+    },
+
+    "about": {
+        "menu_item_id": "about",
+        "url": "about.html"
+    },
+
+    "contact": {
+        "menu_item_id": "contact",
+        "url": "contact.html"
+    },
+
+    "terms_conditions": {
+        "menu_item_id": "terms-conditions",
+        "url": "terms-conditions.html"
+    },
+
+    "footer": {
+        "policy": "© Bruno Costa 2022",
+        "social": {
+            "linkedin": {
+                "title": "linkedin",
+                "url": "https://www.linkedin.com/in/brunorafaelcosta"
+            },
+            "instagram": {
+                "title": "instagram",
+                "url": "https://www.instagram.com/brunorafael.costa/"
+            }
+        }
+    },
+
+    "works": {
+        "beginnings": {
+            "menu_item_id": "beginnings",
+            "menu_item_visible": true,
+            "slug": "beginnings.html",
+            "images": {
+                "main": {
+                    "path": "work/beginnings/main.jpg",
+                    "thumbnail_path": "work/beginnings/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/beginnings/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 0,
+                    "explore_tags": "street"
+                }
+            }
+        },
+        "well-kept-secret": {
+            "menu_item_id": "well-kept-secret",
+            "menu_item_visible": true,
+            "slug": "well-kept-secret.html",
+            "images": {
+                "main": {
+                    "path": "work/well-kept-secret/main.jpg",
+                    "thumbnail_path": "work/well-kept-secret/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/well-kept-secret/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 100008,
+                    "explore_tags": "nature"
+                }
+            }
+        },
+        "old-fisherman": {
+            "menu_item_id": "old-fisherman",
+            "menu_item_visible": true,
+            "slug": "old-fisherman.html",
+            "images": {
+                "main": {
+                    "path": "work/old-fisherman/main.jpg",
+                    "thumbnail_path": "work/old-fisherman/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/old-fisherman/main_explore_thumbnail.jpg",
+                    "explore_2x": false,
+                    "explore_position": 100007,
+                    "explore_tags": "sea people"
+                }
+            }
+        },
+        "o-bliss": {
+            "menu_item_id": "o-bliss",
+            "menu_item_visible": true,
+            "slug": "o-bliss.html",
+            "images": {
+                "main": {
+                    "path": "work/o-bliss/main.jpg",
+                    "thumbnail_path": "work/o-bliss/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/o-bliss/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 100009,
+                    "explore_tags": "sea nature people"
+                }
+            }
+        },
+        "alfacinhas-on-foot": {
+            "menu_item_id": "alfacinhas-on-foot",
+            "menu_item_visible": true,
+            "slug": "alfacinhas-on-foot.html",
+            "images": {
+                "main": {
+                    "path": "work/alfacinhas-on-foot/main.jpg",
+                    "thumbnail_path": "work/alfacinhas-on-foot/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/alfacinhas-on-foot/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 99999,
+                    "explore_tags": "street people"
+                },
+                "secondary": {
+                    "DSCF1655": {
+                        "path": "work/alfacinhas-on-foot/DSCF1655.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1655_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1655_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79995,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1658": {
+                        "path": "work/alfacinhas-on-foot/DSCF1658.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1658_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1658_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1715": {
+                        "path": "work/alfacinhas-on-foot/DSCF1715.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1715_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1715_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1753": {
+                        "path": "work/alfacinhas-on-foot/DSCF1753.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1753_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1753_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79997,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1763": {
+                        "path": "work/alfacinhas-on-foot/DSCF1763.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1763_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1763_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79993,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1797": {
+                        "path": "work/alfacinhas-on-foot/DSCF1797.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1797_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1797_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79996,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1813": {
+                        "path": "work/alfacinhas-on-foot/DSCF1813.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1813_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1813_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79994,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF1848": {
+                        "path": "work/alfacinhas-on-foot/DSCF1848.jpg",
+                        "thumbnail_path": "work/alfacinhas-on-foot/DSCF1848_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1848_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79993,
+                        "explore_tags": "street people"
+                    }
+                }
+            }
+        },
+        "where-sea-is-bluest": {
+            "menu_item_id": "where-sea-is-bluest",
+            "menu_item_visible": true,
+            "slug": "where-sea-is-bluest.html",
+            "images": {
+                "main": {
+                    "path": "work/where-sea-is-bluest/main.jpg",
+                    "thumbnail_path": "work/where-sea-is-bluest/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/where-sea-is-bluest/main_explore_thumbnail.jpg",
+                    "explore_2x": false,
+                    "explore_position": 79992,
+                    "explore_tags": "sea street people"
+                },
+                "secondary": {
+                    "DSCF0462": {
+                        "path": "work/where-sea-is-bluest/DSCF0462.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF0462_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF0462_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79988,
+                        "explore_tags": "sea street"
+                    },
+                    "DSCF0479": {
+                        "path": "work/where-sea-is-bluest/DSCF0479.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF0479_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF0479_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79987,
+                        "explore_tags": "sea street people"
+                    },
+                    "DSCF1432": {
+                        "path": "work/where-sea-is-bluest/DSCF1432.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF1432_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1432_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79989,
+                        "explore_tags": "sea street"
+                    },
+                    "DSCF1460": {
+                        "path": "work/where-sea-is-bluest/DSCF1460.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF1460_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1460_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79990,
+                        "explore_tags": "sea street"
+                    },
+                    "DSCF1474": {
+                        "path": "work/where-sea-is-bluest/DSCF1474.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF1474_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1474_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79991,
+                        "explore_tags": "sea street people"
+                    },
+                    "DSCF1494": {
+                        "path": "work/where-sea-is-bluest/DSCF1494.jpg",
+                        "thumbnail_path": "work/where-sea-is-bluest/DSCF1494_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1494_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 100010,
+                        "explore_tags": "sea street people"
+                    }
+                }
+            }
+        },
+        "all-beginnings-are-involuntary": {
+            "menu_item_id": "all-beginnings-are-involuntary",
+            "menu_item_visible": true,
+            "slug": "all-beginnings-are-involuntary.html",
+            "images": {
+                "main": {
+                    "path": "work/all-beginnings-are-involuntary/main.jpg",
+                    "thumbnail_path": "work/all-beginnings-are-involuntary/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/all-beginnings-are-involuntary/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 100000,
+                    "explore_tags": "street"
+                }
+            }
+        },
+        "coimbra-old-town": {
+            "menu_item_id": "coimbra-old-town",
+            "menu_item_visible": true,
+            "slug": "coimbra-old-town.html",
+            "images": {
+                "main": {
+                    "path": "work/coimbra-old-town/main.jpg",
+                    "thumbnail_path": "work/coimbra-old-town/main_thumbnail.jpg",
+                    "show_on_explore": true,
+                    "explore_thumbnail_path": "work/coimbra-old-town/main_explore_thumbnail.jpg",
+                    "explore_2x": true,
+                    "explore_position": 99998,
+                    "explore_tags": "street"
+                },
+                "secondary": {
+                    "DSCF1030": {
+                        "path": "work/coimbra-old-town/DSCF1030.jpg",
+                        "thumbnail_path": "work/coimbra-old-town/DSCF1030_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/coimbra-old-town/DSCF1030_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79999,
+                        "explore_tags": "street"
+                    },
+                    "DSCF1072": {
+                        "path": "work/coimbra-old-town/DSCF1072.jpg",
+                        "thumbnail_path": "work/coimbra-old-town/DSCF1072_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/coimbra-old-town/DSCF1072_explore_thumbnail.jpg",
+                        "explore_2x": false,
+                        "explore_position": 79998,
+                        "explore_tags": "street"
+                    }
+                }
+            }
+        }
+    },
+
+    "explore": {
+        "categories": {
+            "nature": "",
+            "street": "",
+            "sea": "",
+            "people": ""
+        }
+    }
+}
