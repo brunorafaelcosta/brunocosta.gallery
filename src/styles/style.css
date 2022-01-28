@@ -1117,6 +1117,13 @@ section , article.single-article {
 	letter-spacing: 1px;
 	font-weight:700;
 	text-align: left;
+	opacity: 0.5;
+}
+.column-filter .gallery-filters a:hover {
+	opacity: 1;
+}
+.column-filter .gallery-filters a.gallery-filter-active {
+	text-decoration: line-through;
 }
 .inline-filter {
 	margin-top:20px;
