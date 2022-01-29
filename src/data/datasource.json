@@ -1,5 +1,6 @@
 {
     "share_enabled": false,
+    "cookie_policy_enabled": false,
     
     "home": {
         "menu_item_id": "home",

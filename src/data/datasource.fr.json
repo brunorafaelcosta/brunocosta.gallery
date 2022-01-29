@@ -79,10 +79,18 @@
         }
     },
 
-    "cookies_policy": {
+    "cookie_policy": {
         "text": {
-            "line_1": "En poursuivant votre navigation sur ce site, vous consentez à l'utilisation de cookies conformément à notre Politique de Cookies.",
-            "accept": "Ok"
+            "notification_line_1": "En poursuivant la navigation sur ce site, tu consens à l'utilisation de cookies conformément à notre <a href='/fr/cookie-policy.html' target='_blank'>Politique de Cookies</a>.",
+            "notification_accept": "Ok",
+            "page_last_update": "Dernière mise à jour : janvier 2022",
+            "page_what_are_cookies": "Que sont les cookies ?",
+            "page_what_are_cookies_line_1": "Les cookies sont de petits fichiers texte uniques qu'un site envoie à ton ordinateur lorsque tu le visites - il peut s'agir de cookies de session qui se terminent lorsque tu fermes ton navigateur ou de cookies persistants qui restent jusqu'à ce que tu les supprimes. Par exemple, nous utilisons un cookie persistant avec ta sélection de langue, tu n'as donc pas à le sélectionner à chaque fois que tu nous rends visite.",
+            "page_what_are_cookies_line_2": "Pour plus de détails sur les cookies, tu peux visiter <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",
+            "page_how_do_we_use_cookies": "Comment utilisons-nous les cookies ?",
+            "page_how_do_we_use_cookies_line_1": "En plus du cookie qui conserve la sélection de la langue, nous utilisons également les services suivants qui, à leur tour, peuvent également utiliser des cookies:",
+            "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Utilisé pour collecter des informations sur la façon dont les utilisateurs naviguent sur notre site. Nous utilisons les informations pour compiler des rapports afin de nous aider à améliorer l'expérience de l'utilisateur.",
+            "page_how_do_we_use_cookies_line_2": "Pour plus d'informations, <a href='/fr/contact.html' target='_blank'>prends contact avec nous</a>."
         }
     },
     

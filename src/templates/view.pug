@@ -73,35 +73,32 @@ block view
                             span #{footer.social.linkedin.title}
         // footer end
         // =============== cookies ===============
-        #cookie_notification_overlay
-            #cookie_notification.flex-box
-                p #{cookies_policy.text.line_1}
-                button.accept.btn(onclick='acceptCookies(); return false;')
-                    span #{cookies_policy.text.accept}
+        //- #cookie_notification_overlay
+        #cookie_notification.flex-box
+            p !{cookie_policy.text.notification_line_1}
+            button.accept.btn(onclick='acceptCookies(); return false;')
+                span #{cookie_policy.text.notification_accept}
         // cookies end
         // Main end
 
 block append scripts
     script(type='text/javascript').
-        function checkCookies(display) {
+        function checkCookies() {
+            let consented = ((document.cookie.match(/^(?:.*;)?\s*cookie_consent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]) === 'allow';
             let htmlElement = document.querySelector('html');
-            let cookieNotificationElement = document.querySelector('#cookie_notification_overlay');
 
-            if(display) {
-                cookieNotificationElement.classList.add('show');
-                htmlElement.classList.add('noscroll');
-            } else {
-                cookieNotificationElement.classList.remove('show');
-                htmlElement.classList.remove('noscroll');
+            if(!consented) {
+                htmlElement.classList.add('show_cookie_notification');
             }
         }
         function acceptCookies() {
-            let htmlElement = document.querySelector('html');
-            let cookieNotificationElement = document.querySelector('#cookie_notification_overlay');
-
-            //- Cookie name: cookie_consent_status | Cookie options: allow, deny
-            //- ...
+            document.cookie = `cookie_consent_status=allow; path=/; expires=Tue, 23 Fev 2100 17:01:00 GMT;`;
             
-            cookieNotificationElement.classList.remove('show');
-            htmlElement.classList.remove('noscroll');
+            let htmlElement = document.querySelector('html');
+            htmlElement.classList.remove('show_cookie_notification');
         }
+
+block append scripts
+    if (cookie_policy_enabled)
+        script(type='text/javascript').
+            checkCookies();
