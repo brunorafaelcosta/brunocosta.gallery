@@ -394,7 +394,13 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
                 itemSelector: ".gallery-item, .gallery-item-second, .gallery-item-three",
                 transformsEnabled: true,
                 transitionDuration: "700ms",
-                resizable: true
+                resizable: true,
+                getSortData: {
+                    number: '[data-position] parseInt'
+                },
+                sortBy: "number",
+                sortAscending: false,
+                layoutMode: 'packery'
             });
             a.imagesLoaded(function() {
                 a.isotope("layout");
