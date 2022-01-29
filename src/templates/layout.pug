@@ -19,13 +19,24 @@ html(lang="en")
         meta(name='keywords' content=meta.keywords)
         meta(name='description' content=meta.description)
         meta(name='author' content=meta.author)
+        
         // =============== css  ===============
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/reset.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/plugins.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/style.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/color.css?cache=' + cssCacheVersion)
+        
         // =============== favicons ===============
         link(rel='shortcut icon' href=static_folder_path + '/images/favicon.ico')
+        
+        // ========= Google Tag Manager  ==========
+        script(type='text/javascript').
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KJ8DFHQ');</script>
+        
         // ===============  Google Analytics  ===============
         script(type='text/javascript' async src='https://www.googletagmanager.com/gtag/js?id=G-MC0SQWB982')
         script(type='text/javascript').
@@ -34,6 +45,8 @@ html(lang="en")
             gtag('js', new Date());
             gtag('config', 'G-MC0SQWB982');
     body
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ8DFHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
         // loader
         .loader
             .tm-loader

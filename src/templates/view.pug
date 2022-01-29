@@ -73,10 +73,35 @@ block view
                             span #{footer.social.linkedin.title}
         // footer end
         // =============== cookies ===============
-        //- #cookie_notification_overlay
-        //- #cookie_notification.flex-box
-        //-     p #{cookies_policy.text.line_1}
-        //-     button.accept.btn
-        //-         span #{cookies_policy.text.accept}
+        #cookie_notification_overlay
+            #cookie_notification.flex-box
+                p #{cookies_policy.text.line_1}
+                button.accept.btn(onclick='acceptCookies(); return false;')
+                    span #{cookies_policy.text.accept}
         // cookies end
         // Main end
+
+block append scripts
+    script(type='text/javascript').
+        function checkCookies(display) {
+            let htmlElement = document.querySelector('html');
+            let cookieNotificationElement = document.querySelector('#cookie_notification_overlay');
+
+            if(display) {
+                cookieNotificationElement.classList.add('show');
+                htmlElement.classList.add('noscroll');
+            } else {
+                cookieNotificationElement.classList.remove('show');
+                htmlElement.classList.remove('noscroll');
+            }
+        }
+        function acceptCookies() {
+            let htmlElement = document.querySelector('html');
+            let cookieNotificationElement = document.querySelector('#cookie_notification_overlay');
+
+            //- Cookie name: cookie_consent_status | Cookie options: allow, deny
+            //- ...
+            
+            cookieNotificationElement.classList.remove('show');
+            htmlElement.classList.remove('noscroll');
+        }
