@@ -2709,6 +2709,8 @@ html.show_cookie_notification #cookie_notification {
 .cookie-policy-page li {
 	display: list-item;
 	text-align: justify;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 .terms-conditions-page p {
