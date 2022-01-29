@@ -84,7 +84,7 @@ block view
 block append scripts
     script(type='text/javascript').
         function checkCookies() {
-            let consented = ((document.cookie.match(/^(?:.*;)?\s*cookie_consent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]) === 'allow';
+            let consented = ((document.cookie.match(/^(?:.*;)?\s*brunocostagallery.cookie_consent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]) === 'allow';
             let htmlElement = document.querySelector('html');
 
             if(!consented) {
@@ -92,7 +92,12 @@ block append scripts
             }
         }
         function acceptCookies() {
-            document.cookie = `cookie_consent_status=allow; path=/; expires=Tue, 23 Fev 2100 17:01:00 GMT;`;
+            var expiresDays = 730;
+            var expires = '';
+            var date = new Date();
+            date.setTime(date.getTime() + (expiresDays*24*60*60*1000));
+            expires = '; expires=' + date.toUTCString();
+            document.cookie = 'brunocostagallery.cookie_consent_status' + '=allow' + expires + '; path=/';
             
             let htmlElement = document.querySelector('html');
             htmlElement.classList.remove('show_cookie_notification');
