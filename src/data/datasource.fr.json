@@ -81,8 +81,8 @@
 
     "cookie_policy": {
         "text": {
-            "notification_line_1": "En poursuivant la navigation sur ce site, tu consens à l'utilisation de cookies conformément à notre <a href='/fr/cookie-policy.html' target='_blank'>Politique de Cookies</a>.",
-            "notification_accept": "Ok",
+            "consent_notification_line_1": "En poursuivant la navigation sur ce site, tu consens à l'utilisation de cookies conformément à notre <a href='/fr/cookie-policy.html' target='_blank'>Politique de Cookies</a>.",
+            "consent_notification_accept": "Ok",
             "page_last_update": "Dernière mise à jour : janvier 2022",
             "page_what_are_cookies": "Que sont les cookies ?",
             "page_what_are_cookies_line_1": "Les cookies sont de petits fichiers texte uniques qu'un site envoie à ton ordinateur lorsque tu le visites - il peut s'agir de cookies de session qui se terminent lorsque tu fermes ton navigateur ou de cookies persistants qui restent jusqu'à ce que tu les supprimes. Par exemple, nous utilisons un cookie persistant avec ta sélection de langue, tu n'as donc pas à le sélectionner à chaque fois que tu nous rends visite.",
@@ -149,7 +149,7 @@
             "title": "O bonheur!",
             "text": {
                 "quote_1": "Glorieux, spectacle émouvant! La poésie du mouvement! La vraie façon de voyager! La seule façon de voyager! Ici aujourd'hui - dans la semaine prochaine demain! Les villages ont sauté, les villes ont sauté - toujours l'horizon de quelqu'un d'autre! O bonheur! O merde! merde! O mon! O mon!",
-                "quote_1_author": "Kenneth Grahame, The Wind in the Willows"
+                "quote_1_author": "Kenneth Grahame, Le Vent dans les Saules"
             },
             "details": {
                 "location": {

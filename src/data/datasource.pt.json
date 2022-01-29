@@ -81,8 +81,8 @@
 
     "cookie_policy": {
         "text": {
-            "notification_line_1": "Ao continuares a usar este site, concordas com o uso de cookies de acordo com a nossa <a href='/pt/cookie-policy.html' target='_blank'>Política de Cookies</a>.",
-            "notification_accept": "Ok",
+            "consent_notification_line_1": "Ao continuares a usar este site, concordas com o uso de cookies de acordo com a nossa <a href='/pt/cookie-policy.html' target='_blank'>Política de Cookies</a>.",
+            "consent_notification_accept": "Ok",
             "page_last_update": "Última atualização: janeiro de 2022",
             "page_what_are_cookies": "O que são cookies?",
             "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, usamos um cookie persistente com a tua seleção de idioma, para que não precises selecioná-lo sempre que nos visitas.",

@@ -81,8 +81,8 @@
 
     "cookie_policy": {
         "text": {
-            "notification_line_1": "By continuing to use this website, you consent to the use of cookies in accordance with our <a href='/en/cookie-policy.html' target='_blank'>Cookie Policy</a>.",
-            "notification_accept": "Ok",
+            "consent_notification_line_1": "By continuing to use this website, you consent to the use of cookies in accordance with our <a href='/en/cookie-policy.html' target='_blank'>Cookie Policy</a>.",
+            "consent_notification_accept": "Ok",
             "page_last_update": "Last updated: January 2022",
             "page_what_are_cookies": "What are cookies?",
             "page_what_are_cookies_line_1": "Cookies are small, unique text files that a website sends to your computer when you visit it - these can be session cookies which terminate when you close a browser, or persistent cookies which will remain until you delete them. For example, we use a persistent cookie for your language selection, so that you don't need to select it every time you visit us.",

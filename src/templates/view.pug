@@ -73,37 +73,36 @@ block view
                             span #{footer.social.linkedin.title}
         // footer end
         // =============== cookies ===============
-        //- #cookie_notification_overlay
-        #cookie_notification.flex-box
-            p !{cookie_policy.text.notification_line_1}
-            button.accept.btn(onclick='acceptCookies(); return false;')
-                span #{cookie_policy.text.notification_accept}
+        //- #cookie_consent_notification_overlay
+        #cookie_consent_notification.flex-box
+            p !{cookie_policy.text.consent_notification_line_1}
+            button.accept.btn(onclick='acceptCookieConsent(); return false;')
+                span #{cookie_policy.text.consent_notification_accept}
         // cookies end
         // Main end
 
 block append scripts
     script(type='text/javascript').
-        function checkCookies() {
+        function checkCookieConsentStatus() {
             let consented = ((document.cookie.match(/^(?:.*;)?\s*brunocostagallery.cookie_consent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]) === 'allow';
-            let htmlElement = document.querySelector('html');
-
             if(!consented) {
-                htmlElement.classList.add('show_cookie_notification');
+                let htmlElement = document.querySelector('html');
+                htmlElement.classList.add('show_cookie_consent_notification');
             }
         }
-        function acceptCookies() {
-            var expiresDays = 730;
-            var expires = '';
-            var date = new Date();
+        function acceptCookieConsent() {
+            let expiresDays = 730;
+            let expires = '';
+            let date = new Date();
             date.setTime(date.getTime() + (expiresDays*24*60*60*1000));
             expires = '; expires=' + date.toUTCString();
             document.cookie = 'brunocostagallery.cookie_consent_status' + '=allow' + expires + '; path=/';
             
             let htmlElement = document.querySelector('html');
-            htmlElement.classList.remove('show_cookie_notification');
+            htmlElement.classList.remove('show_cookie_consent_notification');
         }
 
 block append scripts
     if (cookie_policy_enabled)
         script(type='text/javascript').
-            checkCookies();
+            checkCookieConsentStatus();
