@@ -90,7 +90,7 @@
             "page_how_do_we_use_cookies": "Comment utilisons-nous les cookies ?",
             "page_how_do_we_use_cookies_line_1": "En plus du cookie qui conserve la sélection de la langue, nous utilisons également les services suivants qui, à leur tour, peuvent également utiliser des cookies:",
             "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Utilisé pour collecter des informations sur la façon dont les utilisateurs naviguent sur notre site. Nous utilisons les informations pour compiler des rapports afin de nous aider à améliorer l'expérience de l'utilisateur.",
-            "page_how_do_we_use_cookies_line_2": "Pour plus d'informations, <a href='/fr/contact.html' target='_blank'>prends contact avec nous</a>."
+            "page_how_do_we_use_cookies_line_2": "Pour plus d'informations, <a href='/fr/contact.html'>prends contact avec nous</a>."
         }
     },
     
@@ -146,9 +146,9 @@
             }
         },
         "o-bliss": {
-            "title": "O bliss!",
+            "title": "O bonheur!",
             "text": {
-                "quote_1": "Glorious, stirring sight! The poetry of motion! The real way to travel! The only way to travel! Here today-in next week tomorrow! Villages skipped, towns and cities jumped - always somebody else's horizon! O bliss! O poop-poop! O my! O my!",
+                "quote_1": "Glorieux, spectacle émouvant! La poésie du mouvement! La vraie façon de voyager! La seule façon de voyager! Ici aujourd'hui - dans la semaine prochaine demain! Les villages ont sauté, les villes ont sauté - toujours l'horizon de quelqu'un d'autre! O bonheur! O merde! merde! O mon! O mon!",
                 "quote_1_author": "Kenneth Grahame, The Wind in the Willows"
             },
             "details": {

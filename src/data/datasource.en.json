@@ -90,7 +90,7 @@
             "page_how_do_we_use_cookies": "How do we use cookies?",
             "page_how_do_we_use_cookies_line_1": "In addition to the cookie that persists the language selection, we are also using the following services which in turn may also use cookies:",
             "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Used to collect information about how visitors navigate our website. We use the information to compile reports to help us improve the user experience.",
-            "page_how_do_we_use_cookies_line_2": "For more information, <a href='/en/contact.html' target='_blank'>contact us</a>."
+            "page_how_do_we_use_cookies_line_2": "For more information, <a href='/en/contact.html'>contact us</a>."
         }
     },
 
