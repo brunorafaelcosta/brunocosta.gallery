@@ -1,5 +1,5 @@
-- var cssCacheVersion = '20220129'
-- var jsCacheVersion = '20220129'
+- var cssCacheVersion = '20220201'
+- var jsCacheVersion = '20220201'
 
 block variables
 
@@ -25,27 +25,60 @@ html(lang="en")
         // =============== css  ===============
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/reset.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/plugins.css?cache=' + cssCacheVersion)
+        link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/cookieconsent.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/style.css?cache=' + cssCacheVersion)
         link(type='text/css' rel='stylesheet' href=static_folder_path + '/styles/color.css?cache=' + cssCacheVersion)
         
         // =============== favicons ===============
         link(rel='shortcut icon' href=static_folder_path + '/images/favicon.ico')
         
-        // ========= Google Tag Manager  ==========
-        script(type='text/javascript').
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KJ8DFHQ');</script>
-        
         // ===============  Google Analytics  ===============
         script(type='text/javascript' async src='https://www.googletagmanager.com/gtag/js?id=G-MC0SQWB982')
         script(type='text/javascript').
+            !{"window.cookie_consent_enabled = " + (cookie_consent_enabled ? "true;": "false;")}
+            
+            if (window.location.href.indexOf("cookie_consent_enabled") > -1)
+                window.cookie_consent_enabled = true;
+            
+            if (window.cookie_consent_enabled)
+                console.log('Tracking cookie consents...');
+
+            // Initialize the data layer
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            if (cookie_consent_enabled) {
+                // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'analytics_storage': 'denied',
+                    'wait_for_update': 2000 // milliseconds
+                });
+                console.log('Google Analytics - Started with default consent mode ("denied" for both ads and analytics)');
+            }
+            
+            // Google Tag Manager
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-KJ8DFHQ');
+
+            // Google Analytics
             gtag('js', new Date());
             gtag('config', 'G-MC0SQWB982');
+            
     body
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ8DFHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -62,6 +95,128 @@ html(lang="en")
             script(type='text/javascript' src=static_folder_path + '/scripts/jquery.min.js?cache=' + jsCacheVersion)
             script(type='text/javascript' src=static_folder_path + '/scripts/core.js?cache=' + jsCacheVersion)
             script(type='text/javascript' src=static_folder_path + '/scripts/plugins.js?cache=' + jsCacheVersion)
+            script(type='text/javascript' src=static_folder_path + '/scripts/cookieconsent.js?cache=' + jsCacheVersion)
             script(type='text/javascript' src=static_folder_path + '/scripts/scripts.js?cache=' + jsCacheVersion)
             script(type='text/javascript').
                 window.shareplugin_share_on_prefix = '#{text.share_on_prefix}';
+            script(type='text/javascript').
+                function GA_ConsentAllowed() {
+                    gtag('consent', 'update', {
+                        'ad_storage': 'allowed',
+                        'analytics_storage': 'allowed'
+                    });
+                    console.log('Google Analytics - Consent Allowed');
+                }
+                function GA_ConsentDenied() {
+                    gtag('consent', 'update', {
+                        'ad_storage': 'denied',
+                        'analytics_storage': 'denied'
+                    });
+                    console.log('Google Analytics - Consent Denied');
+                }
+
+                window.addEventListener('load', function() {
+                    var cc = initCookieConsent();
+                    window.cc = cc;
+
+                    cc.run({
+                        autorun: cookie_consent_enabled,
+                        gui_options: {
+                            consent_modal: {
+                                layout: 'cloud',
+                                position: 'bottom center',
+                                transition: 'slide',
+                                swap_buttons: false
+                            },
+                            settings_modal: {
+                                layout: 'box',
+                                transition: 'slide'
+                            }
+                        },
+                        current_lang: '#{language_code}',
+                        autoclear_cookies: true,
+                        page_scripts: true,
+                        force_consent: false,
+                        revision: 0,
+                        cookie_name: 'brunocostagallery.cookie_consent_status',
+                        cookie_expiration: 182,
+                        
+                        onFirstAction: function(user_preferences, cookie){
+                            // callback triggered only once on the first accept/reject action
+                        },
+
+                        onAccept: function (cookie) {
+                            // callback triggered on the first accept/reject action, and after each page load
+                            cookie['level'] = cookie['level'] || [];
+                            
+                            let analyticsAccepted = cookie['level'].includes('analytics');
+                            if (analyticsAccepted)
+                                GA_ConsentAllowed();
+                            else
+                                GA_ConsentDenied();
+                        },
+
+                        onChange: function (cookie, changed_categories) {
+                            // callback triggered when user changes preferences after consent has already been given
+                            cookie['level'] = cookie['level'] || [];
+                            changed_categories = changed_categories || [];
+                            
+                            let analyticsAccepted = cookie['level'].includes('analytics');
+                            let analyticsChanged = changed_categories.includes('analytics');
+                            if (analyticsChanged) {
+                                if (analyticsAccepted)
+                                    GA_ConsentAllowed();
+                                else
+                                    GA_ConsentDenied();
+                            }
+                        },
+
+                        languages: {
+                            '#{language_code}': {
+                                consent_modal: {
+                                    description: "!{cookie_policy.consent_modal.description}",
+                                    primary_btn: {
+                                        text: "!{cookie_policy.consent_modal.accept_all}",
+                                        role: 'accept_all'
+                                    },
+                                    secondary_btn: {
+                                        text: "!{cookie_policy.settings_modal.title}",
+                                        role: 'settings'
+                                    }
+                                },
+                                settings_modal: {
+                                    title: "!{cookie_policy.settings_modal.title}",
+                                    save_settings_btn: "!{cookie_policy.settings_modal.save}",
+                                    accept_all_btn: "!{cookie_policy.settings_modal.accept_all}",
+                                    reject_all_btn: "!{cookie_policy.settings_modal.accept_necessary}",
+                                    close_btn_label: "!{cookie_policy.settings_modal.close}",
+                                    blocks: [
+                                        {
+                                            title: "!{cookie_policy.settings_modal.subtitle}",
+                                            description: "!{cookie_policy.settings_modal.description}",
+                                        }, {
+                                            title: "!{cookie_policy.settings_modal.strictly_necessary_cookies_title}",
+                                            description: "!{cookie_policy.settings_modal.strictly_necessary_cookies_description}",
+                                            toggle: {
+                                                value: 'necessary',
+                                                enabled: true,
+                                                readonly: true
+                                            }
+                                        }, {
+                                            title: "!{cookie_policy.settings_modal.performance_and_analytics_cookies_title}",
+                                            description: "!{cookie_policy.settings_modal.performance_and_analytics_cookies_description}",
+                                            toggle: {
+                                                value: 'analytics',
+                                                enabled: false,
+                                                readonly: false
+                                            }
+                                        }, {
+                                            title: "!{cookie_policy.settings_modal.more_information_title}",
+                                            description: "!{cookie_policy.settings_modal.more_information_description}",
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    });
+                });

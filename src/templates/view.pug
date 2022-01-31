@@ -16,15 +16,14 @@ block view
             .logo-holder
                 a(href=base_url)
                     img(width='120' src=static_folder_path + '/images/logo.png' alt='')
-            // Logo  end
-            // header-lang
+            // Logo end
+            // Language button
             .header-lang
                 ul
                     each language_item in languages
                         li
                             a(href="javascript:redirectToLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
-            // header-lang end
-        // Header   end
+            // Language button end
         // =============== wrapper ===============
         #wrapper
             // =============== content-holder ===============
@@ -49,12 +48,15 @@ block view
                                 // works end
                             li
                                 a(href=base_url + '/' + contact.url class=selected_menu_option === contact.menu_item_id ? "act-link" : "") #{contact.title}
+                            li
+                                a(href=base_url + '/' + terms_conditions.url class=selected_menu_option === terms_conditions.menu_item_id ? "act-link" : "") #{terms_conditions.title}
+                            if (cookie_consent_enabled)
+                                li
+                                    a(href=base_url + '/' + cookie_policy.url class=selected_menu_option === cookie_policy.menu_item_id ? "act-link" : "") #{cookie_policy.title}
                 // Navigation end
             
                 block view_content
 
-            // content-holder end
-        // wrapper end
         // =============== footer ===============
         footer
             .policy-box
@@ -71,38 +73,4 @@ block view
                         a(href=footer.social.linkedin.url, target='_blank')
                             i.fa.fa-linkedin
                             span #{footer.social.linkedin.title}
-        // footer end
-        // =============== cookies ===============
-        //- #cookie_consent_notification_overlay
-        #cookie_consent_notification.flex-box
-            p !{cookie_policy.text.consent_notification_line_1}
-            button.accept.btn(onclick='acceptCookieConsent(); return false;')
-                span #{cookie_policy.text.consent_notification_accept}
-        // cookies end
-        // Main end
-
-block append scripts
-    script(type='text/javascript').
-        function checkCookieConsentStatus() {
-            let consented = ((document.cookie.match(/^(?:.*;)?\s*brunocostagallery.cookie_consent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]) === 'allow';
-            if(!consented) {
-                let htmlElement = document.querySelector('html');
-                htmlElement.classList.add('show_cookie_consent_notification');
-            }
-        }
-        function acceptCookieConsent() {
-            let expiresDays = 730;
-            let expires = '';
-            let date = new Date();
-            date.setTime(date.getTime() + (expiresDays*24*60*60*1000));
-            expires = '; expires=' + date.toUTCString();
-            document.cookie = 'brunocostagallery.cookie_consent_status' + '=allow' + expires + '; path=/';
-            
-            let htmlElement = document.querySelector('html');
-            htmlElement.classList.remove('show_cookie_consent_notification');
-        }
-
-block append scripts
-    if (cookie_policy_enabled)
-        script(type='text/javascript').
-            checkCookieConsentStatus();
+    // main end

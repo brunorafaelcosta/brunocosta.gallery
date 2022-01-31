@@ -95,6 +95,6 @@ gulp.task('build', gulp.series('buildDataSource', 'copy-cname', 'copy-static', '
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-    return gulp.src("dist/**/*")
+    return gulp.src('dist/**/*')
         .pipe(deploy())
 });
