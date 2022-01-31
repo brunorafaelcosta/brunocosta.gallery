@@ -328,6 +328,50 @@
             "street": "",
             "sea": "",
             "people": ""
+        },
+        "previews": {
+            "DSC03344": {
+                "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
+                "2x": true,
+                "position": -1,
+                "tags": "street"
+            },
+            "DSCF1577": {
+                "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -2,
+                "tags": "street"
+            },
+            "DSCF0995": {
+                "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -3,
+                "tags": "street"
+            },
+            "DSCF1017": {
+                "thumbnail_path": "preview/DSCF1017_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -4,
+                "tags": "street people"
+            },
+            "DSCF1112": {
+                "thumbnail_path": "preview/DSCF1112_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -5,
+                "tags": "street people"
+            },
+            "DSCF1092": {
+                "thumbnail_path": "preview/DSCF1092_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -6,
+                "tags": "street"
+            },
+            "DSCF1004": {
+                "thumbnail_path": "preview/DSCF1004_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -7,
+                "tags": "street"
+            }
         }
     }
 }

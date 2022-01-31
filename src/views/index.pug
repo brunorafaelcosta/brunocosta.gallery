@@ -32,3 +32,9 @@ block view_content
                                         img(src=imagens_path + '/' + work_item_secondary_image.explore_thumbnail_path alt='')
                                         .thumb-info
                                             h3 #{work_item.title}
+            
+            //- Previews
+            each preview_item in explore.previews
+                .gallery-item(class=preview_item.tags + ' ' + (preview_item['2x'] ? ' gallery-item-second ' : '') data-position=preview_item.position)
+                    .grid-item-holder
+                        img(src=imagens_path + '/' + preview_item.thumbnail_path alt='')
