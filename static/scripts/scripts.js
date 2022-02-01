@@ -403,7 +403,7 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
                 layoutMode: 'fitRows'
             });
             a.imagesLoaded(function() {
-                a.isotope("fitRows");
+                a.isotope("layout");
             });
             $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                 b.preventDefault();
