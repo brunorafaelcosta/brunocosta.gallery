@@ -330,13 +330,12 @@
             "people": ""
         },
         "previews": {
-            "DSC03344": {
-                "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
+            "DSCF0574": {
+                "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
                 "2x": true,
                 "position": -1,
-                "tags": "street"
+                "tags": "street people"
             },
-            
             "DSCF0995": {
                 "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
                 "2x": false,
@@ -373,22 +372,28 @@
                 "position": -7,
                 "tags": "street people"
             },
-            "DSCF0574": {
-                "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
+            "DSC03344": {
+                "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
                 "2x": true,
                 "position": -8,
-                "tags": "street people"
+                "tags": "street"
+            },
+            "DSC02295": {
+                "thumbnail_path": "preview/DSC02295_explore_thumbnail.jpg",
+                "2x": true,
+                "position": -9,
+                "tags": "street"
             },
             "DSCF1577": {
                 "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
                 "2x": false,
-                "position": -9,
+                "position": -10,
                 "tags": "street"
             },
             "DSCF0577": {
                 "thumbnail_path": "preview/DSCF0577_explore_thumbnail.jpg",
                 "2x": false,
-                "position": -10,
+                "position": -11,
                 "tags": "street people"
             }
         }
