@@ -400,10 +400,10 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
                 },
                 sortBy: "number",
                 sortAscending: false,
-                layoutMode: 'packery'
+                layoutMode: 'fitRows'
             });
             a.imagesLoaded(function() {
-                a.isotope("layout");
+                a.isotope("fitRows");
             });
             $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                 b.preventDefault();
