@@ -2611,11 +2611,11 @@ blockquote span.blockquote-line-translation_source:last-child {
 }
 
 
-.explore-page.content {
+/* .explore-page.content {
 	max-width: 1440px;
     float: none;
     margin: 0 auto;
-}
+} */
 
 .terms-conditions-page p {
 	text-align: justify;
