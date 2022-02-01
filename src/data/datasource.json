@@ -336,20 +336,21 @@
                 "position": -1,
                 "tags": "street"
             },
-            "DSCF1577": {
-                "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
+            
+            "DSCF0995": {
+                "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
                 "2x": false,
                 "position": -2,
                 "tags": "street"
             },
-            "DSCF0995": {
-                "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
-                "2x": false,
-                "position": -3,
-                "tags": "street"
-            },
             "DSCF1017": {
                 "thumbnail_path": "preview/DSCF1017_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -3,
+                "tags": "street people"
+            },
+            "DSCF1057": {
+                "thumbnail_path": "preview/DSCF1057_explore_thumbnail.jpg",
                 "2x": false,
                 "position": -4,
                 "tags": "street people"
@@ -366,11 +367,29 @@
                 "position": -6,
                 "tags": "street"
             },
-            "DSCF1004": {
-                "thumbnail_path": "preview/DSCF1004_explore_thumbnail.jpg",
+            "DSCF0552": {
+                "thumbnail_path": "preview/DSCF0552_explore_thumbnail.jpg",
                 "2x": false,
                 "position": -7,
+                "tags": "street people"
+            },
+            "DSCF0574": {
+                "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
+                "2x": true,
+                "position": -8,
+                "tags": "street people"
+            },
+            "DSCF1577": {
+                "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -9,
                 "tags": "street"
+            },
+            "DSCF0577": {
+                "thumbnail_path": "preview/DSCF0577_explore_thumbnail.jpg",
+                "2x": false,
+                "position": -10,
+                "tags": "street people"
             }
         }
     }
