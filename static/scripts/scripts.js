@@ -612,17 +612,6 @@ function readyFunctions() {
     initGallery();
 }
 
-function redirectToLanguage(language, slug) {
-    var expiresDays = 365;
-    var expires = "";
-    var date = new Date();
-    date.setTime(date.getTime() + (expiresDays*24*60*60*1000));
-    expires = "; expires=" + date.toUTCString();
-    document.cookie = "brunocostagallery.language" + "=" + language + expires + "; path=/";
-
-    window.location = slug;
-}
-
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');

@@ -2610,39 +2610,48 @@ blockquote span.blockquote-line-translation_source:last-child {
 	padding-bottom: 0;
 }
 
-.terms-conditions-page p {
+#terms-conditions-page .content p {
 	text-align: justify;
 }
 
 /*------ cookies ------*/
-.cookie-policy-page h3 {
+#cookie-policy-popup-page .content h3,
+#cookie-policy-page .content h3 {
     font-size: 18px;
     padding-bottom: 4px;
     font-weight: 700;
     text-align: left;
 }
-.cookie-policy-page .last-update {
+#cookie-policy-popup-page .content .last-update,
+#cookie-policy-page .content .last-update {
 	font-size: 10px;
 	color: #404040;
     letter-spacing: 1px;
     font-weight: 700;
 }
-.cookie-policy-page p {
+#cookie-policy-popup-page .content p,
+#cookie-policy-page .content p {
 	text-align: justify;
 }
-.cookie-policy-page a {
+#cookie-policy-popup-page .content a,
+#cookie-policy-page .content a {
 	text-decoration: underline;
 }
-.cookie-policy-page ul {
+#cookie-policy-popup-page .content ul,
+#cookie-policy-page .content ul {
 	display: block;
     list-style-type: disc;
 	margin-left: 25px;
 }
-.cookie-policy-page li {
+#cookie-policy-popup-page .content li,
+#cookie-policy-page .content li {
 	display: list-item;
 	text-align: justify;
 	font-size: 13px;
 	line-height: 24px;
+}
+#cookie-policy-popup-page .content {
+	padding: 25px;
 }
 
 /* cookieconsent.css */
@@ -2683,7 +2692,6 @@ blockquote span.blockquote-line-translation_source:last-child {
 }
 
 .c-bn {
-    
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
     border-radius: 30px !important;
@@ -2695,5 +2703,5 @@ blockquote span.blockquote-line-translation_source:last-child {
 }
 
 #cm-ov, #cs-ov {
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(5px);
 }
