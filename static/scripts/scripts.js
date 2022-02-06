@@ -408,8 +408,12 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
             $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                 b.preventDefault();
                 var c = $(this).attr("data-filter");
+                var layout = 'fitRows';
+                if (c !== '*')
+                    layout = 'packery';
                 a.isotope({
-                    filter: c
+                    filter: c,
+                    layoutMode: layout
                 });
                 $(".gallery-filters a.gallery-filter").removeClass("gallery-filter-active");
                 $(this).addClass("gallery-filter-active");

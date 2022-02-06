@@ -2310,9 +2310,9 @@ footer {
 .footer-social li:not(:last-child) a {
 	padding-left:20px;
 }
-.gallery-item {
+/* .gallery-item {
 	width:50% !important;
-}
+} */
 .to-top {
     right: 2px;
 	font-size:14px;
@@ -2410,9 +2410,9 @@ footer {
 	float:left;
 	text-align:left;
 }
-.gallery-item {
+/* .gallery-item {
 	width:100% !important;
-}
+} */
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 .bg {

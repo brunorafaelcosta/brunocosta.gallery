@@ -20,8 +20,14 @@ function gtag() {
     f.parentNode.insertBefore(j, f);
 })(window, document, 'script', 'dataLayer', 'GTM-KJ8DFHQ');
 
-gtag("js", new Date());
-gtag("config", "G-MC0SQWB982");
+window.addEventListener("load", loaded);
+function loaded() {
+    if (window.location.href.indexOf("noga") <= 0)
+        window["_gaUserPrefs"] = {};
+
+    gtag('js', new Date());
+    gtag('config', 'G-MC0SQWB982');
+}
 </script></head><body id=""><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ8DFHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- loader--><div class="loader"><div class="tm-loader"><div id="circle"></div></div></div><!-- =============== scripts  ===============--><script type="text/javascript" src="static/scripts/jquery.min.js?cache=20220206"></script><script type="text/javascript" src="static/scripts/plugins.js?cache=20220206"></script><script type="text/javascript" src="static/scripts/cookieconsent.js?cache=20220206"></script><script type="text/javascript" src="static/scripts/main.js?cache=20220206"></script><script type="text/javascript" src="static/scripts/core.js?cache=20220206"></script><script type="text/javascript" src="static/scripts/scripts.js?cache=20220206"></script><script type="text/javascript">window.shareplugin_share_on_prefix = 'Compartilhar esta página no ';</script><script type="text/javascript">let gallery = new Gallery();
 
 gallery.currentPageId = "";
