@@ -400,7 +400,7 @@ if (navigator.appVersion.indexOf("Win")!=-1) {
                 },
                 sortBy: "number",
                 sortAscending: false,
-                layoutMode: 'packery'
+                layoutMode: 'fitRows'
             });
             a.imagesLoaded(function() {
                 a.isotope("layout");
@@ -610,17 +610,6 @@ document.addEventListener('gesturestart', function (e) {
 //=============== init all functions  ==============
 function readyFunctions() {
     initGallery();
-}
-
-function redirectToLanguage(language, slug) {
-    var expiresDays = 365;
-    var expires = "";
-    var date = new Date();
-    date.setTime(date.getTime() + (expiresDays*24*60*60*1000));
-    expires = "; expires=" + date.toUTCString();
-    document.cookie = "brunocostagallery.language" + "=" + language + expires + "; path=/";
-
-    window.location = slug;
 }
 
 function getCookie(cname) {

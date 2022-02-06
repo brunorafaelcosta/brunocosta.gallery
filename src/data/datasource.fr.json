@@ -84,15 +84,15 @@
     "cookie_policy": {
         "title": "Politique de Cookies",
         "consent_modal": {
-            "description": "On utilise des cookies, propres et tiers, pour améliorer la navigation sur ce site et analyser et personnaliser son utilisation. Pour plus d'informations, lire notre <a href='/fr/cookie-policy.html' target='_blank'>Politique de Cookies</a>.",
-            "accept_all": "Tout autoriser"
+            "description": "On utilise des cookies, propres et tiers, pour améliorer la navigation sur ce site et analyser et personnaliser son utilisation. Pour plus d'informations, lire notre <a href='#' onclick='window.gallery.ShowCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
+            "accept_all": "Autoriser"
         },
         "settings_modal": {
             "title": "Préférences",
             "subtitle": "Utilisation des cookies 📢",
             "description": "En savoir plus sur les types de cookies que nous utilisons et sélectionner ceux auxquels tu consens.",
             "save": "Enregistrer",
-            "accept_all": "Tout autoriser",
+            "accept_all": "Autoriser",
             "accept_necessary": "Autoriser le nécessaire",
             "close": "Fermer",
             "strictly_necessary_cookies_title": "Cookies essentiels (requis)",

@@ -1,35 +1,29 @@
 extends ../../templates/view.pug
 
-block variables
-    - var title = works['alfacinhas-on-foot'].title
-    - var current_slug = 'work/' + works['alfacinhas-on-foot'].slug
-    - var static_folder_path = '../../static'
-    - var selected_menu_option = works['alfacinhas-on-foot'].menu_item_id
-    - var selected_works_is_active = true
+block append variables
     - var work = works['alfacinhas-on-foot']
+    - var page_id = 'alfacinhas-on-foot-work-page'
+    - var current_slug = 'work/' + work.slug
+    - var selected_menu_option = work.menu_item_id
+    - var selected_works_is_active = true
+    - var title = work.title
+    - var static_folder_path = '../../static'
     - var work_imagens_path = static_folder_path + '/images/work/alfacinhas-on-foot'
 
 block view_content
-    // fixed-column
     .fixed-column
-        .bg.bg-blur(data-bg=work_imagens_path + '/thumbnail.jpg')
-        // work-main-image
+        .bg.bg-blur(data-bg=work_imagens_path + '/main_thumbnail.jpg')
         .work-main-image.with-max-width
             img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
             a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
                 i.fa.fa-search
-        // work-main-image end
-    // fixed-column end
-    // column-wrap
+
     .column-wrap
-        // content
         .content
             section
-                // section-title
                 .section-title
-                    h2 #{work.title}
-                // section-title end
-                // section-content
+                    h2 #{title}
+                
                 .section-content
                     p #{work.text.line_1}
                     p #{work.text.line_2}
@@ -38,62 +32,54 @@ block view_content
                     p #{work.text.line_3}
                     p #{work.text.line_4}
                     .gallery-items.boxed-folio.hid-port-info.three-columns
-                        // gallery-item
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1797_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1797.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item.gallery-item-second
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1753_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1753.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1655_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1655.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1848_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1848.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1763_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1763.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1813_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1813.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1715_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1715.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
-                        // gallery-item
+                        
                         .gallery-item
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1658_thumbnail.jpg' alt='')
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF1658.jpg')
                                     i.fa.fa-search
-                        // gallery-item end
+                    
                     ul.work-details
                         li
                             span #{text.location} : 
@@ -104,12 +90,8 @@ block view_content
                         li
                             span #{text.gear} : 
                             a(href='#') #{work.details.gear}
-                    // share
+                    
                     if share_enabled
                         div.share-holder.no-fix-share
                             span #{text.share} :
                             div.share-container
-                    // share end
-                // section-content end
-        // content end
-    // column wrap

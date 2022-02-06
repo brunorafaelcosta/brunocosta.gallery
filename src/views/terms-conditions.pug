@@ -1,14 +1,15 @@
 extends ../templates/view.pug
 
-block variables
-    - var title = terms_conditions.title
+block append variables
+    - var page_id = 'terms-conditions-page'
     - var current_slug = terms_conditions.url
-    - var static_folder_path = '../static'
     - var selected_menu_option = terms_conditions.menu_item_id
+    - var title = terms_conditions.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
 
 block view_content
-    // content
-    .content.terms-conditions-page
+    .content
         section
             .container
                 .section-title
@@ -16,4 +17,3 @@ block view_content
                 div
                     p #{terms_conditions.text.line_1}
                     p #{terms_conditions.text.line_2}
-    // content end

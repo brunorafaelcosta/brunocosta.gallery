@@ -4,6 +4,7 @@ var gulp        = require('gulp'),
     fs          = require('fs'),
     deploy      = require('gulp-gh-pages'),
     merge       = require('gulp-merge-json');
+    minify      = require('gulp-minify');
 
 var ptDataSource;
 var enDataSource;

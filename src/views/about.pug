@@ -1,13 +1,14 @@
 extends ../templates/view.pug
 
-block variables
-    - var title = about.title
+block append variables
+    - var page_id = 'about-page'
     - var current_slug = about.url
-    - var static_folder_path = '../static'
     - var selected_menu_option = about.menu_item_id
+    - var title = about.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
 
 block view_content
-    // content
     .content
         section
             .container
@@ -17,4 +18,3 @@ block view_content
                 div
                     p.text-center !{text.not_found_line_1}
                     p.text-center !{text.not_found_line_2}
-    // content end

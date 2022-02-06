@@ -1,14 +1,15 @@
 extends ../templates/view.pug
 
-block variables
-    - var title = cookie_policy.title
+block append variables
+    - var page_id = 'cookie-policy-page'
     - var current_slug = cookie_policy.url
-    - var static_folder_path = '../static'
     - var selected_menu_option = cookie_policy.menu_item_id
+    - var title = cookie_policy.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
 
 block view_content
-    // content
-    .content.cookie-policy-page
+    .content
         section
             .container
                 p.last-update !{cookie_policy.text.page_last_update}
@@ -23,14 +24,9 @@ block view_content
                     li !{cookie_policy.text.page_how_do_we_use_cookies_google_analytics}
                 br
                 p !{cookie_policy.text.page_how_do_we_use_cookies_line_2}
-                div#cookie-consent-preferences(style="display:none;")
-                    br
-                    h3 !{cookie_policy.text.page_cookie_preferences}
-                    p !{cookie_policy.text.page_cookie_preferences_line_1}
-                    button(type="button" data-cc="c-settings" class="btn " aria-haspopup="dialog") !{cookie_policy.settings_modal.title}
-    // content end
-
-block append scripts
-    script(type='text/javascript').
-        if (window.cookie_consent_enabled)
-            document.getElementById('cookie-consent-preferences').style.display = 'block';
+                if (cookie_consent_enabled)
+                    div#cookie-consent-preferences
+                        br
+                        h3 !{cookie_policy.text.page_cookie_preferences}
+                        p !{cookie_policy.text.page_cookie_preferences_line_1}
+                        button(type="button" data-cc="c-settings" class="btn " aria-haspopup="dialog") !{cookie_policy.settings_modal.title}

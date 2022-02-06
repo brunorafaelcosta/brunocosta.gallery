@@ -1,0 +1,25 @@
+extends ../templates/layout.pug
+
+block append variables
+    - var page_id = 'cookie-policy-popup-page'
+    - var current_slug = cookie_policy.url
+    - var selected_menu_option = cookie_policy.menu_item_id
+    - var title = cookie_policy.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
+    - var cookie_consent_hidden = true
+
+block view
+    .content
+        p.last-update !{cookie_policy.text.page_last_update}
+        br
+        h3 !{cookie_policy.text.page_what_are_cookies}
+        p !{cookie_policy.text.page_what_are_cookies_line_1}
+        p !{cookie_policy.text.page_what_are_cookies_line_2}
+        br
+        h3 !{cookie_policy.text.page_how_do_we_use_cookies}
+        p !{cookie_policy.text.page_how_do_we_use_cookies_line_1}
+        ul
+            li !{cookie_policy.text.page_how_do_we_use_cookies_google_analytics}
+        br
+        p !{cookie_policy.text.page_how_do_we_use_cookies_line_2}

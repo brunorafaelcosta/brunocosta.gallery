@@ -1,16 +1,16 @@
 extends ../../templates/view.pug
 
-block variables
-    - var title = works['coimbra-old-town'].title
-    - var current_slug = 'work/' + works['coimbra-old-town'].slug
-    - var static_folder_path = '../../static'
-    - var selected_menu_option = works['coimbra-old-town'].menu_item_id
-    - var selected_works_is_active = true
+block append variables
     - var work = works['coimbra-old-town']
+    - var page_id = 'coimbra-old-town-work-page'
+    - var current_slug = 'work/' + work.slug
+    - var selected_menu_option = work.menu_item_id
+    - var selected_works_is_active = true
+    - var title = work.title
+    - var static_folder_path = '../../static'
     - var work_imagens_path = static_folder_path + '/images/work/coimbra-old-town'
 
 block view_content
-    // content
     .content
         section
             .container
@@ -20,4 +20,3 @@ block view_content
                 div
                     p.text-center !{text.not_found_line_1}
                     p.text-center !{text.not_found_line_2}
-    // content end

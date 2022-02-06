@@ -84,15 +84,15 @@
     "cookie_policy": {
         "title": "Política de Cookies",
         "consent_modal": {
-            "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='/pt/cookie-policy.html' target='_blank'>Política de Cookies</a>.",
-            "accept_all": "Autorizar todos"
+            "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='#' onclick='window.gallery.ShowCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
+            "accept_all": "Autorizar"
         },
         "settings_modal": {
             "title": "Preferências",
             "subtitle": "Utilização de cookies 📢",
             "description": "Sabe mais sobre os tipos de cookies que utilizamos e seleciona aqueles que autorizas.",
             "save": "Guardar",
-            "accept_all": "Autorizar todos",
+            "accept_all": "Autorizar",
             "accept_necessary": "Autorizar o necessário",
             "close": "Fechar",
             "strictly_necessary_cookies_title": "Cookies essenciais (obrigatório)",
@@ -170,7 +170,7 @@
         "o-bliss": {
             "title": "Oh bem-aventurança!",
             "text": {
-                "quote_1": "Visão gloriosa e comovente! A poesia do movimento! A verdadeira maneira de viajar! A única maneira de viajar! Aqui hoje - na próxima semana amanhã! Aldeias saltaram, vilas e cidades saltaram - sempre o horizonte de outra pessoa! Oh bem-aventurança! Oh cocô-cocô! Ó meu! Ó meu!",
+                "quote_1": "Ah, que visão gloriosa e emocionante! A poesia do movimento! A autêntica forma de viajar! A única forma de viajar! Hoje aqui, amanhã muito longe! Aldeias que se esfumam, vilas e cidades que ficam para trás, e todos os dias um novo horizonte! Oh, bem-aventurança! Oh, pup-pup! Caramba! Caramba!",
                 "quote_1_author": "Kenneth Grahame, O Vento nos Salgueiros"
             },
             "details": {

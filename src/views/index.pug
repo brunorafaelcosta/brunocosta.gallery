@@ -1,19 +1,20 @@
 extends ../templates/view.pug
 
-block variables
-    - var static_folder_path = '../static'
+block append variables
+    - var page_id = 'index-page'
     - var current_slug = ''
     - var selected_menu_option = home.menu_item_id
+    - var static_folder_path = '../static'
     - var imagens_path = static_folder_path + '/images'
 
 block view_content
     .content.column-filter-wrap
         .column-filter
-            //- .filter-button Filter :
             .gallery-filters.fl-wrap.alt
                 a(href="#" class="gallery-filter gallery-filter-active" data-filter="*") #{text.all}
                 each explore_category_val, explore_category_key in explore.categories
                     a(href="#" class="gallery-filter" data-filter='.' + explore_category_key) #{explore_category_val}
+        
         .gallery-items.five-columns
             each work_item in works
                 if work_item.images.main.show_on_explore
@@ -23,6 +24,7 @@ block view_content
                                 img(src=imagens_path + '/' + work_item.images.main.explore_thumbnail_path alt='')
                                 .thumb-info
                                     h3 #{work_item.title}
+                
                 if work_item.images.secondary
                     each work_item_secondary_image in  work_item.images.secondary
                         if work_item_secondary_image.show_on_explore
@@ -33,7 +35,6 @@ block view_content
                                         .thumb-info
                                             h3 #{work_item.title}
             
-            //- Previews
             each preview_item in explore.previews
                 .gallery-item(class=preview_item.tags + ' ' + (preview_item['2x'] ? ' gallery-item-second ' : '') data-position=preview_item.position)
                     .grid-item-holder

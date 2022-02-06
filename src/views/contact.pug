@@ -1,20 +1,20 @@
 extends ../templates/view.pug
 
-block variables
-    - var title = contact.title
+block append variables
+    - var page_id = 'contact-page'
     - var current_slug = contact.url
-    - var static_folder_path = '../static'
     - var selected_menu_option = contact.menu_item_id
+    - var title = contact.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
 
 block view_content
-    // fixed-column
     .fixed-column.larger-column
         .bg.bg-bottom.bg-blur(data-bg=static_folder_path + '/images/work/tagus/thumbnail.jpg')
         //- .column-title
         //-     h2 #{contact.text.placeholder}
-    // column-wrap
+
     .column-wrap.smaller-column.vertical-align
-        // content
         .content
             section
                 .container.small-container
@@ -30,5 +30,3 @@ block view_content
                                 button#submit(type='submit' class='btn anim-button trans-btn transition')
                                     span #{contact.text.send}
                                     i.fa.fa-paper-plane
-        // content end
-    // column-wrap  end

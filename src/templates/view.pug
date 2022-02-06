@@ -1,7 +1,7 @@
 extends layout.pug
 
 block view
-    // ================= main start ================
+    // =============== main start ===============
     #main
         // =============== header ===============
         header
@@ -11,19 +11,19 @@ block view
                 span.ncs
                 span.nbs
                 .nav-text #{text.menu}
-            // Nav button end
+
             // Logo
             .logo-holder
                 a(href=base_url)
                     img(width='120' src=static_folder_path + '/images/logo.png' alt='')
-            // Logo end
+            
             // Language button
             .header-lang
                 ul
                     each language_item in languages
                         li
-                            a(href="javascript:redirectToLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
-            // Language button end
+                            a(href="#" onclick="javascript:window.gallery.ChangeLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
+        
         // =============== wrapper ===============
         #wrapper
             // =============== content-holder ===============
@@ -45,7 +45,6 @@ block view
                                         if work_item.menu_item_visible
                                             li
                                                 a(href=base_url  + '/work/' + work_item.slug class=selected_menu_option === work_item.menu_item_id ? "act-link" : "") #{work_item.title}
-                                // works end
                             li
                                 a(href=base_url + '/' + contact.url class=selected_menu_option === contact.menu_item_id ? "act-link" : "") #{contact.title}
                             li
@@ -53,7 +52,6 @@ block view
                             if (cookie_consent_enabled)
                                 li
                                     a(href=base_url + '/' + cookie_policy.url class=selected_menu_option === cookie_policy.menu_item_id ? "act-link" : "") #{cookie_policy.title}
-                // Navigation end
             
                 block view_content
 
@@ -73,4 +71,3 @@ block view
                         a(href=footer.social.linkedin.url, target='_blank')
                             i.fa.fa-linkedin
                             span #{footer.social.linkedin.title}
-    // main end
