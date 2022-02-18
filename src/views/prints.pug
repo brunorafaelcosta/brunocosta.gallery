@@ -1,0 +1,20 @@
+extends ../templates/view.pug
+
+block append variables
+    - var page_id = 'prints-page'
+    - var current_slug = prints.url
+    - var selected_menu_option = prints.menu_item_id
+    - var title = prints.title
+    - var static_folder_path = '../static'
+    - var imagens_path = static_folder_path + '/images'
+
+block view_content
+    .content
+        section
+            .container
+                h2.text-center !{text.not_found_title}
+                br
+                br
+                div
+                    p.text-center !{text.not_found_line_1}
+                    p.text-center !{text.not_found_line_2}

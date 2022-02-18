@@ -1,7 +1,6 @@
 {
     "base_url": "https://brunocosta.galllery/",
     "share_enabled": false,
-    "cookie_consent_enabled": false,
     
     "home": {
         "menu_item_id": "home",
@@ -11,6 +10,11 @@
     "about": {
         "menu_item_id": "about",
         "url": "about.html"
+    },
+
+    "prints": {
+        "menu_item_id": "prints",
+        "url": "prints.html"
     },
 
     "contact": {

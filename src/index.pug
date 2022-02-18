@@ -11,7 +11,7 @@ block append scripts
     
     script(type='text/javascript').
         $(document).ready(function() {
-            let languageCookieValue = getCookie("brunocostagallery.language");
+            let languageCookieValue = Gallery.Utils.getCookie(Gallery.Cookies.LanguageCookieName);
             if (languageCookieValue) { !{langJsLoop}
             }
             window.location = '#{base_url}';

@@ -19,7 +19,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-minify": "^3.1.0"
+    "gulp-minify": "^3.1.0",
+    "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
     "gift": "^0.10.2",

@@ -48,6 +48,9 @@
     "about": {
         "title": "À propos"
     },
+    "prints": {
+        "title": "Tirages"
+    },
     "contact": {
         "title": "Contact",
         "text": {
@@ -84,15 +87,15 @@
     "cookie_policy": {
         "title": "Politique de Cookies",
         "consent_modal": {
-            "description": "On utilise des cookies, propres et tiers, pour améliorer la navigation sur ce site et analyser et personnaliser son utilisation. Pour plus d'informations, lire notre <a href='#' onclick='window.gallery.ShowCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
-            "accept_all": "Autoriser"
+            "description": "On utilise des cookies, propres et tiers, pour améliorer la navigation sur ce site et analyser et personnaliser son utilisation. Pour plus d'informations, lire notre <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
+            "accept_all": "Tout autoriser"
         },
         "settings_modal": {
             "title": "Préférences",
             "subtitle": "Utilisation des cookies 📢",
             "description": "En savoir plus sur les types de cookies que nous utilisons et sélectionner ceux auxquels tu consens.",
             "save": "Enregistrer",
-            "accept_all": "Autoriser",
+            "accept_all": "Tout autoriser",
             "accept_necessary": "Autoriser le nécessaire",
             "close": "Fermer",
             "strictly_necessary_cookies_title": "Cookies essentiels (requis)",
@@ -100,10 +103,10 @@
             "performance_and_analytics_cookies_title": "Cookies de performance et de personnalisation",
             "performance_and_analytics_cookies_description": "Cookies qui collectent et analysent des informations sur l'utilisation du site, nous permettant d'améliorer et de personnaliser l'expérience de navigation.",
             "more_information_title": "Plus d'information",
-            "more_information_description": "Tu peux à tout moment en savoir plus sur les cookies et modifier tes préférences sur la <a href='/fr/cookie-policy.html' target='_blank'>page des cookies</a>."
+            "more_information_description": "Tu peux à tout moment en savoir plus sur les cookies et modifier tes préférences sur la page des cookies."
         },
         "text": {
-            "page_last_update": "Dernière mise à jour : janvier 2022",
+            "page_last_update": "Dernière mise à jour : février 2022",
             "page_what_are_cookies": "Que sont les cookies ?",
             "page_what_are_cookies_line_1": "Les cookies sont de petits fichiers texte uniques qu'un site envoie à ton ordinateur lorsque tu le visites - il peut s'agir de cookies de session qui se terminent lorsque tu fermes ton navigateur ou de cookies persistants qui restent jusqu'à ce que tu les supprimes. Par exemple, nous utilisons un cookie persistant avec ta sélection de langue, tu n'as donc pas à le sélectionner à chaque fois que tu nous rends visite.",
             "page_what_are_cookies_line_2": "Pour plus de détails sur les cookies, tu peux visiter <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

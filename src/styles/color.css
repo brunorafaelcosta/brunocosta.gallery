@@ -11,7 +11,7 @@ body{
 blockquote p {
 	color:#494949;
 }
-.contact-form-holder:before , .info-wrap , .fixed-filter , .content-holder  , .column-wrap , .content  , header , .nav-button .nbs:before , .nav-inner ,footer , section , article.single-article , #portfolio_horizontal_container , .owl-thumbs , .owl-thumb-item:before , .gallery_horizontal  , .vis-pan , .back-link{
+.contact-form-holder:before , .fixed-filter , .content-holder  , .column-wrap , .content  , header , .nav-button .nbs:before , .nav-inner ,footer , section , article.single-article , #portfolio_horizontal_container , .owl-thumbs , .owl-thumb-item:before , .gallery_horizontal  , .vis-pan , .back-link{
 	background:#fff;
 }
 .header-info ul li  span  , .section-title h2 span , .share-holder  span , .inf-mob-btn span, .header-lang ul li a {

@@ -24,9 +24,8 @@ block view_content
                     li !{cookie_policy.text.page_how_do_we_use_cookies_google_analytics}
                 br
                 p !{cookie_policy.text.page_how_do_we_use_cookies_line_2}
-                if (cookie_consent_enabled)
-                    div#cookie-consent-preferences
-                        br
-                        h3 !{cookie_policy.text.page_cookie_preferences}
-                        p !{cookie_policy.text.page_cookie_preferences_line_1}
-                        button(type="button" data-cc="c-settings" class="btn " aria-haspopup="dialog") !{cookie_policy.settings_modal.title}
+                div#cookie-consent-preferences
+                    br
+                    h3 !{cookie_policy.text.page_cookie_preferences}
+                    p !{cookie_policy.text.page_cookie_preferences_line_1}
+                    button(type="button" data-cc="c-settings" class="btn " aria-haspopup="dialog") !{cookie_policy.settings_modal.title}

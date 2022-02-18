@@ -22,7 +22,7 @@ block view
                 ul
                     each language_item in languages
                         li
-                            a(href="#" onclick="javascript:window.gallery.ChangeLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
+                            a(href="#" onclick="javascript:window.galleryApp.setLanguage('" + language_item.title + "', '" + language_item.base_url + "/" + current_slug + "')" class=language_item.is_selected === true ? "header-lang-active" : "") #{language_item.title}
         
         // =============== wrapper ===============
         #wrapper
@@ -46,21 +46,26 @@ block view
                                             li
                                                 a(href=base_url  + '/work/' + work_item.slug class=selected_menu_option === work_item.menu_item_id ? "act-link" : "") #{work_item.title}
                             li
+                                a(href=base_url + '/' + prints.url class=selected_menu_option === prints.menu_item_id ? "act-link" : "") #{prints.title}
+                            li
                                 a(href=base_url + '/' + contact.url class=selected_menu_option === contact.menu_item_id ? "act-link" : "") #{contact.title}
                             li
                                 a(href=base_url + '/' + terms_conditions.url class=selected_menu_option === terms_conditions.menu_item_id ? "act-link" : "") #{terms_conditions.title}
-                            if (cookie_consent_enabled)
-                                li
-                                    a(href=base_url + '/' + cookie_policy.url class=selected_menu_option === cookie_policy.menu_item_id ? "act-link" : "") #{cookie_policy.title}
+                            li
+                                a(href=base_url + '/' + cookie_policy.url class=selected_menu_option === cookie_policy.menu_item_id ? "act-link" : "") #{cookie_policy.title}
             
                 block view_content
 
         // =============== footer ===============
         footer
             .policy-box
-                span
-                    | #{footer.policy} / 
-                    a(href=base_url + '/' + terms_conditions.url class="terms-conditions") #{terms_conditions.title}
+                span #{footer.policy}
+                span.terms-conditions
+                    | / 
+                    a(href=base_url + '/' + terms_conditions.url) #{terms_conditions.title}
+                span.cookie-policy
+                    | / 
+                    a(href=base_url + '/' + cookie_policy.url) #{cookie_policy.title}
             .footer-social
                 ul
                     li
@@ -71,3 +76,32 @@ block view
                         a(href=footer.social.linkedin.url, target='_blank')
                             i.fa.fa-linkedin
                             span #{footer.social.linkedin.title}
+
+block append scripts
+    script(type='text/javascript').
+        let galleryApp = new Gallery.App({
+            currentPageId: "#{page_id}",
+
+            language: "#{language_code}",
+
+            cookieConsentSettings: {
+                show: !{!cookie_consent_hidden},
+                consentModalDescription: "!{cookie_policy.consent_modal.description}",
+                consentModalAcceptAll: "!{cookie_policy.consent_modal.accept_all}",
+                settingsModalTitle: "!{cookie_policy.settings_modal.title}",
+                settingsModalSubtitle: "!{cookie_policy.settings_modal.subtitle}",
+                settingsModalDescription: "!{cookie_policy.settings_modal.description}",
+                settingsModalMoreInformationTitle: "!{cookie_policy.settings_modal.more_information_title}",
+                settingsModalMoreInformationDescription: "!{cookie_policy.settings_modal.more_information_description}",
+                settingsModalClose: "!{cookie_policy.settings_modal.close}",
+                settingsModalSave: "!{cookie_policy.settings_modal.save}",
+                settingsModalAcceptAll: "!{cookie_policy.settings_modal.accept_all}",
+                settingsModalRejectAll: "!{cookie_policy.settings_modal.accept_necessary}",
+                settingsModalStrictlyNecessaryTitle: "!{cookie_policy.settings_modal.strictly_necessary_cookies_title}",
+                settingsModalStrictlyNecessaryDescription: "!{cookie_policy.settings_modal.strictly_necessary_cookies_description}",
+                settingsModalPerformanceAndAnalyticsTitle: "!{cookie_policy.settings_modal.performance_and_analytics_cookies_title}",
+                settingsModalPerformanceAndAnalyticsDescription: "!{cookie_policy.settings_modal.performance_and_analytics_cookies_description}"
+            }
+        });
+        window.galleryApp = galleryApp;
+        window.addEventListener("load", () => { galleryApp.init(); });

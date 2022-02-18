@@ -8,6 +8,7 @@ block append variables
     - var static_folder_path = '../static'
     - var imagens_path = static_folder_path + '/images'
     - var cookie_consent_hidden = true
+    - var show_loader = false
 
 block view
     .content
@@ -21,5 +22,3 @@ block view
         p !{cookie_policy.text.page_how_do_we_use_cookies_line_1}
         ul
             li !{cookie_policy.text.page_how_do_we_use_cookies_google_analytics}
-        br
-        p !{cookie_policy.text.page_how_do_we_use_cookies_line_2}

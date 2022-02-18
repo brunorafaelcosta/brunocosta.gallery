@@ -48,6 +48,9 @@
     "about": {
         "title": "Sobre"
     },
+    "prints": {
+        "title": "Impressões"
+    },
     "contact": {
         "title": "Contacto",
         "text": {
@@ -84,15 +87,15 @@
     "cookie_policy": {
         "title": "Política de Cookies",
         "consent_modal": {
-            "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='#' onclick='window.gallery.ShowCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
-            "accept_all": "Autorizar"
+            "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
+            "accept_all": "Autorizar todos"
         },
         "settings_modal": {
             "title": "Preferências",
             "subtitle": "Utilização de cookies 📢",
             "description": "Sabe mais sobre os tipos de cookies que utilizamos e seleciona aqueles que autorizas.",
             "save": "Guardar",
-            "accept_all": "Autorizar",
+            "accept_all": "Autorizar todos",
             "accept_necessary": "Autorizar o necessário",
             "close": "Fechar",
             "strictly_necessary_cookies_title": "Cookies essenciais (obrigatório)",
@@ -100,10 +103,10 @@
             "performance_and_analytics_cookies_title": "Cookies de desempenho e de personalização",
             "performance_and_analytics_cookies_description": "Cookies que recolhem e analisam a informação sobre a utilização do site, permitindo melhorar e personalizar a experiência de navegação.",
             "more_information_title": "Mais Informações",
-            "more_information_description": "Poderás, a qualquer momento, saber mais sobre os cookies e alterar as tuas preferências na <a href='/pt/cookie-policy.html' target='_blank'>página de cookies</a>."
+            "more_information_description": "Poderás, a qualquer momento, saber mais sobre os cookies e alterar as tuas preferências na página de cookies."
         },
         "text": {
-            "page_last_update": "Última atualização: janeiro de 2022",
+            "page_last_update": "Última atualização: fevereiro de 2022",
             "page_what_are_cookies": "O que são cookies?",
             "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, usamos um cookie persistente com a tua seleção de idioma, para que não precises selecioná-lo sempre que nos visitas.",
             "page_what_are_cookies_line_2": "Para mais detalhes sobre cookies, podes visitar <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

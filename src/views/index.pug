@@ -39,3 +39,9 @@ block view_content
                 .gallery-item(class=preview_item.tags + ' ' + (preview_item['2x'] ? ' gallery-item-second ' : '') data-position=preview_item.position)
                     .grid-item-holder
                         img(src=imagens_path + '/' + preview_item.thumbnail_path alt='')
+
+block append scripts
+    script(type='text/javascript').
+        $(document).on("brunocostagallery.initialized", function (event, payload) {
+            $("html").css("overflow", "scroll");
+        });

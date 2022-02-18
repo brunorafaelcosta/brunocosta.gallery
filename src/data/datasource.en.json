@@ -48,6 +48,9 @@
     "about": {
         "title": "About"
     },
+    "prints": {
+        "title": "Prints"
+    },
     "contact": {
         "title": "Contact",
         "text": {
@@ -84,15 +87,15 @@
     "cookie_policy": {
         "title": "Cookie Policy",
         "consent_modal": {
-            "description": "We use cookies, own and third-party, to improve this site's navigation and analyse and personalise its use. For more information, please see our <a href='#' onclick='window.gallery.ShowCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
-            "accept_all": "Authorise"
+            "description": "We use cookies, own and third-party, to improve this site's navigation and analyse and personalise its use. For more information, please see our <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
+            "accept_all": "Authorise all"
         },
         "settings_modal": {
             "title": "Preferences",
             "subtitle": "Cookie usage 📢",
             "description": "Learn more about the types of cookies we use and select the ones you consent to.",
             "save": "Save",
-            "accept_all": "Authorise",
+            "accept_all": "Authorise all",
             "accept_necessary": "Authorize the necessary",
             "close": "Close",
             "strictly_necessary_cookies_title": "Essential cookies (required)",
@@ -100,10 +103,10 @@
             "performance_and_analytics_cookies_title": "Performance and personalisation cookies",
             "performance_and_analytics_cookies_description": "Cookies that collect and analyse information about the use of the website, allowing us to improve and personalise the navigation experience.",
             "more_information_title": "More information",
-            "more_information_description": "You may at any time learn more about the cookies and change your preferences on the <a href='/en/cookie-policy.html' target='_blank'>cookies page</a>."
+            "more_information_description": "You may at any time learn more about the cookies and change your preferences on the cookies page."
         },
         "text": {
-            "page_last_update": "Last updated: January 2022",
+            "page_last_update": "Last updated: February 2022",
             "page_what_are_cookies": "What are cookies?",
             "page_what_are_cookies_line_1": "Cookies are small, unique text files that a website sends to your computer when you visit it - these can be session cookies which terminate when you close a browser, or persistent cookies which will remain until you delete them. For example, we use a persistent cookie for your language selection, so that you don't need to select it every time you visit us.",
             "page_what_are_cookies_line_2": "For more details about cookies you can visit <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

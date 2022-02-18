@@ -4,7 +4,8 @@ var gulp        = require('gulp'),
     fs          = require('fs'),
     deploy      = require('gulp-gh-pages'),
     merge       = require('gulp-merge-json');
-    minify      = require('gulp-minify');
+    minify      = require('gulp-minify'),
+    server      = require('gulp-webserver');
 
 var ptDataSource;
 var enDataSource;
@@ -91,6 +92,18 @@ gulp.task('build-fr', function() {
  * Build
  */
 gulp.task('build', gulp.series('buildDataSource', 'copy-cname', 'copy-static', 'build-base', 'build-pt', 'build-en', 'build-fr'));
+
+/**
+ * Serve
+ */
+gulp.task('serve', function() {
+    gulp.src('dist')
+        .pipe(server({
+            livereload: true,
+            open: true,
+            port: 8080
+        }));
+});
 
 /**
  * Push build to gh-pages
