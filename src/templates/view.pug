@@ -84,6 +84,9 @@ block append scripts
 
             language: "#{language_code}",
 
+            contactEmailSentSucessfully: "!{contact.text.sentSucessfully}",
+            contactEmailSentFailed: "!{contact.text.sentFailed}",
+
             cookieConsentSettings: {
                 show: !{!cookie_consent_hidden},
                 consentModalDescription: "!{cookie_policy.consent_modal.description}",

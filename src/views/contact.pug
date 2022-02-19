@@ -23,9 +23,11 @@ block view_content
                     .fl-wrap
                         p #{contact.text.line_1}
                         #contact-form
-                            form#contactform(method='post' action='https://formspree.io/f/moqyzpya' name='contactform')
-                                input#email(name='_replyto' type='text' onclick='this.select()' placeholder=contact.text.email)
-                                textarea#comments(name='message' onclick='this.select()' placeholder=contact.text.message)
+                            #response
+                            form#contactform(method='post' action='#' name='contactform')
+                                input#name(name='name' type='text' onclick='this.select()' placeholder=contact.text.name required)
+                                input#email(name='email' type='email' onclick='this.select()' placeholder=contact.text.email required)
+                                textarea#message(name='message' onclick='this.select()' placeholder=contact.text.message required)
                                 .clearfix
                                 button#submit(type='submit' class='btn anim-button trans-btn transition')
                                     span #{contact.text.send}

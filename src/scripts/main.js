@@ -5,11 +5,11 @@ var Gallery = Gallery || {};
 (function ($) {
 
     Gallery.Cookies = {
-        LanguageCookieName: 'brunocostagallery.language',
+        LanguageCookieName: "brunocostagallery.language",
         LanguageCookieExpirationDays: 36525,
-        CookieConsentSettingsCookieName: 'brunocostagallery.cookie_consent_status',
+        CookieConsentSettingsCookieName: "brunocostagallery.cookie_consent_status",
         CookieConsentSettingsCookieExpirationDays: 365,
-        GoogleAnalyticsResetUserPrefsCookieName: 'brunocostagallery.ga_userprefs_kept'
+        GoogleAnalyticsResetUserPrefsCookieName: "brunocostagallery.ga_userprefs_kept"
     };
 
     Gallery.Utils = Gallery.Utils || {};
@@ -52,46 +52,74 @@ var Gallery = Gallery || {};
         const left = (width - w) / 2 / systemZoom + dualScreenLeft
         const top = (height - h) / 2 / systemZoom + dualScreenTop
         const newWindow = window.open(url, title, 
-            'directories=no, titlebar=no, toolbar=no, location=no, status=no, menubar=no'
-            + ', scrollbars=yes,resizable=yes'
-            + ', width=' + (w / systemZoom)
-            + ', height=' + (h / systemZoom)
-            + ', top=' + (top)
-            + ', left=' + (left)
+            "directories=no, titlebar=no, toolbar=no, location=no, status=no, menubar=no"
+            + ", scrollbars=yes,resizable=yes"
+            + ", width=" + (w / systemZoom)
+            + ", height=" + (h / systemZoom)
+            + ", top=" + (top)
+            + ", left=" + (left)
         );
     
         if (window.focus) newWindow.focus();
     };
 
+    Gallery.API = Gallery.API || {};
+    Gallery.API.Endpoints = {
+        sendEmailEndpoint: "https://brunocostagallery.azurewebsites.net/api/SendEmail"
+    };
+    Gallery.API.sendEmail = function (fromEmail, fromName, subject, body, onSuccess, onError) {
+        $.ajax({
+            url: Gallery.API.Endpoints.sendEmailEndpoint,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({
+                senderEmail: fromEmail,
+                senderName: fromName,
+                subject: subject,
+                message: body
+            }),
+            success: function() {
+                if (typeof onSuccess === "function") {
+                    onSuccess();
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                if (typeof onError === "function") {
+                    onError(textStatus);
+                }
+            } 
+        });
+    };
+
     Gallery.App = function (options) {
         var _self = this;
-        var _cookieConsent = null;
+        var _cookieConsentObj = null;
 
         var _defaults = {
-            emailSenderEndpoint: '',
-            emailSenderKey: '',
-
             currentPageId: null,
 
             language: null,
+
+            contactEmailSentSucessfully: "contactEmailSentSucessfully",
+            contactEmailSentFailed: "contactEmailSentFailed",
             
             cookieConsentSettings: {
                 show: true,
-                consentModalDescription: 'consentModalDescription',
-                consentModalAcceptAll: 'consentModalAcceptAll',
-                settingsModalTitle: 'settingsModalTitle',
-                settingsModalSubtitle: 'settingsModalSubtitle',
-                settingsModalDescription: 'settingsModalDescription',
-                settingsModalMoreInformationTitle: 'settingsModalMoreInformationTitle',
-                settingsModalMoreInformationDescription: 'settingsModalMoreInformationDescription',
-                settingsModalClose: 'settingsModalClose',
-                settingsModalSave: 'settingsModalSave',
-                settingsModalAcceptAll: 'settingsModalAcceptAll',
-                settingsModalRejectAll: 'settingsModalRejectAll',
-                settingsModalStrictlyNecessaryTitle: 'settingsModalStrictlyNecessaryTitle',
-                settingsModalStrictlyNecessaryDescription: 'settingsModalStrictlyNecessaryDescription',
-                settingsModalPerformanceAndAnalyticsTitle: 'settingsModalPerformanceAndAnalyticsTitle',
-                settingsModalPerformanceAndAnalyticsDescription: 'settingsModalPerformanceAndAnalyticsDescription'
+                consentModalDescription: "consentModalDescription",
+                consentModalAcceptAll: "consentModalAcceptAll",
+                settingsModalTitle: "settingsModalTitle",
+                settingsModalSubtitle: "settingsModalSubtitle",
+                settingsModalDescription: "settingsModalDescription",
+                settingsModalMoreInformationTitle: "settingsModalMoreInformationTitle",
+                settingsModalMoreInformationDescription: "settingsModalMoreInformationDescription",
+                settingsModalClose: "settingsModalClose",
+                settingsModalSave: "settingsModalSave",
+                settingsModalAcceptAll: "settingsModalAcceptAll",
+                settingsModalRejectAll: "settingsModalRejectAll",
+                settingsModalStrictlyNecessaryTitle: "settingsModalStrictlyNecessaryTitle",
+                settingsModalStrictlyNecessaryDescription: "settingsModalStrictlyNecessaryDescription",
+                settingsModalPerformanceAndAnalyticsTitle: "settingsModalPerformanceAndAnalyticsTitle",
+                settingsModalPerformanceAndAnalyticsDescription: "settingsModalPerformanceAndAnalyticsDescription"
             }
         };
 
@@ -107,20 +135,20 @@ var Gallery = Gallery || {};
         var _initCookieConsents = function () {
             Gallery.Utils.debug("Cookie Consents - Initializing...");
 
-            _cookieConsent = initCookieConsent();
+            _cookieConsentObj = initCookieConsent();
     
-            _cookieConsent.run({
+            _cookieConsentObj.run({
                 autorun: _options.cookieConsentSettings.show,
                 gui_options: {
                     consent_modal: {
-                        layout: 'cloud',
-                        position: 'bottom center',
-                        transition: 'slide',
+                        layout: "cloud",
+                        position: "bottom center",
+                        transition: "slide",
                         swap_buttons: false
                     },
                     settings_modal: {
-                        layout: 'box',
-                        transition: 'slide'
+                        layout: "box",
+                        transition: "slide"
                     }
                 },
                 current_lang: "default",
@@ -210,12 +238,12 @@ var Gallery = Gallery || {};
             var cm = $(".nav-button"),
                 nh = $(".nav-inner"),
                 no = $(".nav-overlay"),
-                hidmen = $('#hid-men');
+                hidmen = $("#hid-men");
 
             hidmen.css({
-                'position' : 'absolute',
-                'top' : '50%',
-                'margin-top' : -hidmen.height()/2
+                "position" : "absolute",
+                "top" : "50%",
+                "margin-top" : -hidmen.height()/2
             });
             hidmen.menu();
             function showmenu() {
@@ -250,7 +278,7 @@ var Gallery = Gallery || {};
         };
 
         var _initAnimations = function () {
-            document.addEventListener('gesturestart', function (e) {
+            document.addEventListener("gesturestart", function (e) {
                 e.preventDefault();
             });
 
@@ -298,7 +326,7 @@ var Gallery = Gallery || {};
             if (conhold.hasClass("fl-con-wrap")) hideheader(); else showheader();
             if (conhold.hasClass("no-vis-footer")) hidefooter();
             var $window = $(window);
-            $window.on('resize', function(){
+            $window.on("resize", function(){
                 if ($(".resize-carousel-holder").hasClass("res-protoc")) if ($(window).width() > 756) location.reload();
             });
             $window.on("scroll", function(a) {
@@ -308,7 +336,7 @@ var Gallery = Gallery || {};
                     $(".to-top").fadeOut(500);
                 }
             });
-            $('<a class="to-top"><i class="fa fa-long-arrow-up"></i></a>').appendTo(".column-wrap");
+            $("<a class='to-top'><i class='fa fa-long-arrow-up'></i></a>").appendTo(".column-wrap");
             $(".to-top").on("click", function(a) {
                 a.preventDefault();
                 $("html, body").animate({
@@ -329,11 +357,11 @@ var Gallery = Gallery || {};
                         transitionDuration: "700ms",
                         resizable: true,
                         getSortData: {
-                            number: '[data-position] parseInt'
+                            number: "[data-position] parseInt"
                         },
                         sortBy: "number",
                         sortAscending: false,
-                        layoutMode: 'fitRows'
+                        layoutMode: "fitRows"
                     });
                     a.imagesLoaded(function() {
                         a.isotope("layout");
@@ -341,9 +369,9 @@ var Gallery = Gallery || {};
                     $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                         b.preventDefault();
                         var c = $(this).attr("data-filter");
-                        var layout = 'fitRows';
-                        if (c !== '*')
-                            layout = 'packery';
+                        var layout = "fitRows";
+                        if (c !== "*")
+                            layout = "packery";
                         a.isotope({
                             filter: c,
                             layoutMode: layout
@@ -416,7 +444,7 @@ var Gallery = Gallery || {};
                     $(".gallery-filters").on("click", "a", function(a) {
                         a.preventDefault();
                         var b = $(this).attr("data-filter");
-                        $('.p_horizontal_wrap').animate({scrollLeft: 2}, 500);
+                        $(".p_horizontal_wrap").animate({scrollLeft: 2}, 500);
                         setTimeout(function () {
                             d.isotope({
                                 filter: b
@@ -442,14 +470,53 @@ var Gallery = Gallery || {};
 
         var _initShare = function () {
             $(".share-container").share({
-                networks: ['facebook','twitter','linkedin','pinterest']
+                networks: ["facebook","twitter","linkedin","pinterest"]
             });
+        };
+        
+        var _initContactForm = function () {
+            Gallery.Utils.debug("Contact Form - Initializing...");
+
+            $("#contactform").submit(function(e) {
+                e.preventDefault();
+
+                $("#response").show(function() {
+                    $("#response").hide();
+                    $("#submit").attr("disabled", "disabled");
+
+                    var name = $("#name").val();
+                    var email = $("#email").val();
+                    var message = $("#message").val();
+
+                    var showResponse = (responseMessage) => {
+                        $("#response").html("<p><center><b>" + responseMessage + "</b></center></p>");
+                        $("#response").show();
+                        $("#submit").removeAttr("disabled");
+                    };
+
+                    Gallery.API.sendEmail(email, name, "Bruno Costa Gallery - Contact", message,
+                        () => {
+                            showResponse(_options.contactEmailSentSucessfully);
+                        },
+                        (response) => {
+                            showResponse(_options.contactEmailSentFailed);
+                        });
+                });
+
+                return false;
+            });
+
+            $("#contactform input, #contactform textarea").keyup(function() {
+                $("#response").hide();
+            });
+
+            Gallery.Utils.debug("Contact Form - Initialized");
         };
 
         // ========================================================================================
         // Events
         // ========================================================================================
-        var initializedEventName = 'brunocostagallery.initialized';
+        var initializedEventName = "brunocostagallery.initialized";
 
         // ========================================================================================
         // Prototype
@@ -475,6 +542,9 @@ var Gallery = Gallery || {};
 
             _initShare.call(_self);
 
+            if (_options.currentPageId === "contact-page")
+                _initContactForm.call(_self);
+
             Gallery.Utils.triggerEvent(initializedEventName);
 
             Gallery.Utils.debug("Initialized");
@@ -495,23 +565,6 @@ var Gallery = Gallery || {};
 
         this.shouldResetGoogleAnalyticsUserPrefs = function () {
             return Gallery.Utils.getCookie(Gallery.Cookies.GoogleAnalyticsResetUserPrefsCookieName) !== "true";
-        };
-
-        this.sendEmail = function (from, subject, body) {
-            $.ajax({
-                type: 'POST',
-                url: _options.emailSenderEndpoint,
-                data: {
-                  key: _options.emailSenderKey,
-                  message: {
-                    from: from,
-                    subject: subject,
-                    body: body
-                  }
-                }
-               }).done(function(response) {
-                 console.log(response);
-               });
         };
     };
 

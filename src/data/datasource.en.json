@@ -59,7 +59,9 @@
             "name": "Name",
             "email": "E-mail",
             "message": "Message",
-            "send": "Send"
+            "send": "Send",
+            "sentSucessfully": "Message sent successfully.",
+            "sentFailed": "Failed to send message. Please try again later."
         }
     },
     "terms_conditions": {
