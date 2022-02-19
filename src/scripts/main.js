@@ -65,7 +65,8 @@ var Gallery = Gallery || {};
 
     Gallery.API = Gallery.API || {};
     Gallery.API.Endpoints = {
-        sendEmailEndpoint: "https://brunocostagallery.azurewebsites.net/api/SendEmail"
+        sendEmailEndpoint: "https://brunocostagallery.azurewebsites.net/api/sendemail",
+        registerCookieAcceptanceEndpoint: "https://brunocostagallery.azurewebsites.net/api/registercookieacceptance"
     };
     Gallery.API.sendEmail = function (fromEmail, fromName, subject, body, onSuccess, onError) {
         $.ajax({
@@ -88,6 +89,21 @@ var Gallery = Gallery || {};
                     onError(textStatus);
                 }
             } 
+        });
+    };
+    Gallery.API.registerCookieAcceptance = function (analyticsAccepted, isUpdate) {
+        $.ajax({
+            url: Gallery.API.Endpoints.registerCookieAcceptanceEndpoint,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({
+                cookies : document.cookie,
+                analyticsAccepted: analyticsAccepted,
+                isUpdate: isUpdate
+            }),
+            success: function() {
+                Gallery.Utils.debug("Cookie acceptance has been sucessfully registered");
+            }
         });
     };
 
@@ -164,6 +180,7 @@ var Gallery = Gallery || {};
                     cookie["level"] = cookie["level"] || [];
                     
                     var analyticsAccepted = cookie["level"].includes("analytics");
+                    Gallery.API.registerCookieAcceptance(analyticsAccepted, false);
                 },
     
                 onAccept: function (cookie) {
@@ -180,6 +197,8 @@ var Gallery = Gallery || {};
                     
                     var analyticsAccepted = cookie["level"].includes("analytics");
                     var analyticsChanged = changed_categories.includes("analytics");
+                    if (analyticsChanged)
+                        Gallery.API.registerCookieAcceptance(analyticsAccepted, true);
                 },
     
                 languages: {
