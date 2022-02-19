@@ -880,6 +880,10 @@ section , article.single-article {
 .five-columns.grid-sizer-second {
 	width:33.33333333333333%;
 }
+.five-columns .gallery-item-three,
+.five-columns.grid-sizer-three {
+	width:66.66666666666667%;
+}
 .gallery-item img, .grid-sizer img {
 	width: 100%;
 	height: auto;

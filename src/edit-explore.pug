@@ -18,7 +18,7 @@ block view_content
         .gallery-items.five-columns
             each work_item in works
                 if work_item.images.main.show_on_explore
-                    .gallery-item(class=work_item.images.main.explore_tags + ' ' + (work_item.images.main.explore_2x ? ' gallery-item-second ' : '') data-position=work_item.images.main.explore_position)
+                    .gallery-item(class=work_item.images.main.explore_tags + ' ' + work_item.images.main.explore_custom_class data-position=work_item.images.main.explore_position)
                         .grid-item-holder
                             a.fill-div(href=base_url + '/work/' + work_item.slug)
                                 img(src=imagens_path + '/' + work_item.images.main.explore_thumbnail_path alt='')
@@ -28,7 +28,7 @@ block view_content
                 if work_item.images.secondary
                     each work_item_secondary_image in  work_item.images.secondary
                         if work_item_secondary_image.show_on_explore
-                            .gallery-item(class=work_item_secondary_image.explore_tags + ' ' + (work_item_secondary_image.explore_2x ? ' gallery-item-second ' : '')  data-position=work_item_secondary_image.explore_position)
+                            .gallery-item(class=work_item_secondary_image.explore_tags + ' ' + work_item_secondary_image.explore_custom_class data-position=work_item_secondary_image.explore_position)
                                 .grid-item-holder
                                     a.fill-div(href=base_url + '/work/' + work_item.slug)
                                         img(src=imagens_path + '/' + work_item_secondary_image.explore_thumbnail_path alt='')
@@ -36,7 +36,7 @@ block view_content
                                             h3 #{work_item.title}
             
             each preview_item in explore.previews
-                .gallery-item(class=preview_item.tags + ' ' + (preview_item['2x'] ? ' gallery-item-second ' : '') data-position=preview_item.position)
+                .gallery-item(class=preview_item.tags + ' ' + preview_item.custom_class data-position=preview_item.position)
                     .grid-item-holder
                         img(src=imagens_path + '/' + preview_item.thumbnail_path alt='')
 

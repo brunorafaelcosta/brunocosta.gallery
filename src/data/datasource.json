@@ -57,7 +57,7 @@
                     "thumbnail_path": "work/beginnings/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/beginnings/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 0,
                     "explore_tags": "street"
                 }
@@ -73,7 +73,7 @@
                     "thumbnail_path": "work/well-kept-secret/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/well-kept-secret/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 100008,
                     "explore_tags": "nature"
                 }
@@ -89,7 +89,7 @@
                     "thumbnail_path": "work/old-fisherman/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/old-fisherman/main_explore_thumbnail.jpg",
-                    "explore_2x": false,
+                    "explore_custom_class": "",
                     "explore_position": 100007,
                     "explore_tags": "sea people"
                 }
@@ -105,7 +105,7 @@
                     "thumbnail_path": "work/o-bliss/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/o-bliss/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 100009,
                     "explore_tags": "sea nature people"
                 }
@@ -121,7 +121,7 @@
                     "thumbnail_path": "work/alfacinhas-on-foot/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/alfacinhas-on-foot/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 99999,
                     "explore_tags": "street people"
                 },
@@ -131,7 +131,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1655_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1655_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79995,
                         "explore_tags": "street people"
                     },
@@ -140,7 +140,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1658_thumbnail.jpg",
                         "show_on_explore": false,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1658_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 0,
                         "explore_tags": "street people"
                     },
@@ -149,7 +149,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1715_thumbnail.jpg",
                         "show_on_explore": false,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1715_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 0,
                         "explore_tags": "street people"
                     },
@@ -158,7 +158,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1753_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1753_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79997,
                         "explore_tags": "street people"
                     },
@@ -167,7 +167,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1763_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1763_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79993,
                         "explore_tags": "street people"
                     },
@@ -176,7 +176,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1797_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1797_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79996,
                         "explore_tags": "street people"
                     },
@@ -185,7 +185,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1813_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1813_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79994,
                         "explore_tags": "street people"
                     },
@@ -194,7 +194,7 @@
                         "thumbnail_path": "work/alfacinhas-on-foot/DSCF1848_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/alfacinhas-on-foot/DSCF1848_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79993,
                         "explore_tags": "street people"
                     }
@@ -211,7 +211,7 @@
                     "thumbnail_path": "work/where-sea-is-bluest/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/where-sea-is-bluest/main_explore_thumbnail.jpg",
-                    "explore_2x": false,
+                    "explore_custom_class": "",
                     "explore_position": 79992,
                     "explore_tags": "sea street people"
                 },
@@ -221,7 +221,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF0462_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF0462_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79988,
                         "explore_tags": "sea street"
                     },
@@ -230,7 +230,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF0479_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF0479_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79987,
                         "explore_tags": "sea street people"
                     },
@@ -239,7 +239,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF1432_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1432_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79989,
                         "explore_tags": "sea street"
                     },
@@ -248,7 +248,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF1460_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1460_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79990,
                         "explore_tags": "sea street"
                     },
@@ -257,7 +257,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF1474_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1474_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79991,
                         "explore_tags": "sea street people"
                     },
@@ -266,7 +266,7 @@
                         "thumbnail_path": "work/where-sea-is-bluest/DSCF1494_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/where-sea-is-bluest/DSCF1494_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 100010,
                         "explore_tags": "sea street people"
                     }
@@ -283,7 +283,7 @@
                     "thumbnail_path": "work/all-beginnings-are-involuntary/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/all-beginnings-are-involuntary/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 100000,
                     "explore_tags": "street"
                 }
@@ -299,7 +299,7 @@
                     "thumbnail_path": "work/coimbra-old-town/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/coimbra-old-town/main_explore_thumbnail.jpg",
-                    "explore_2x": true,
+                    "explore_custom_class": "gallery-item-second",
                     "explore_position": 99998,
                     "explore_tags": "street"
                 },
@@ -309,7 +309,7 @@
                         "thumbnail_path": "work/coimbra-old-town/DSCF1030_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/coimbra-old-town/DSCF1030_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79999,
                         "explore_tags": "street"
                     },
@@ -318,7 +318,7 @@
                         "thumbnail_path": "work/coimbra-old-town/DSCF1072_thumbnail.jpg",
                         "show_on_explore": true,
                         "explore_thumbnail_path": "work/coimbra-old-town/DSCF1072_explore_thumbnail.jpg",
-                        "explore_2x": false,
+                        "explore_custom_class": "",
                         "explore_position": 79998,
                         "explore_tags": "street"
                     }
@@ -337,67 +337,67 @@
         "previews": {
             "DSCF0574": {
                 "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
-                "2x": true,
+                "custom_class": "gallery-item-second",
                 "position": -1,
                 "tags": "street people"
             },
             "DSCF0995": {
                 "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -2,
                 "tags": "street"
             },
             "DSCF1017": {
                 "thumbnail_path": "preview/DSCF1017_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -3,
                 "tags": "street people"
             },
             "DSCF1057": {
                 "thumbnail_path": "preview/DSCF1057_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -4,
                 "tags": "street people"
             },
             "DSCF1112": {
                 "thumbnail_path": "preview/DSCF1112_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -5,
                 "tags": "street people"
             },
             "DSCF1092": {
                 "thumbnail_path": "preview/DSCF1092_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -6,
                 "tags": "street"
             },
             "DSCF0552": {
                 "thumbnail_path": "preview/DSCF0552_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -7,
                 "tags": "street people"
             },
             "DSC03344": {
                 "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
-                "2x": true,
+                "custom_class": "gallery-item-second",
                 "position": -8,
                 "tags": "street"
             },
             "DSC02295": {
                 "thumbnail_path": "preview/DSC02295_explore_thumbnail.jpg",
-                "2x": true,
+                "custom_class": "gallery-item-second",
                 "position": -9,
                 "tags": "street"
             },
             "DSCF1577": {
                 "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -10,
                 "tags": "street"
             },
             "DSCF0577": {
                 "thumbnail_path": "preview/DSCF0577_explore_thumbnail.jpg",
-                "2x": false,
+                "custom_class": "",
                 "position": -11,
                 "tags": "street people"
             }
