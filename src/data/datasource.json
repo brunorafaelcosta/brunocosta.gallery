@@ -121,7 +121,7 @@
                     "thumbnail_path": "work/alfacinhas-on-foot/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/alfacinhas-on-foot/main_explore_thumbnail.jpg",
-                    "explore_custom_class": "gallery-item-second",
+                    "explore_custom_class": "gallery-item-25",
                     "explore_position": 99999,
                     "explore_tags": "street people"
                 },
@@ -283,41 +283,68 @@
                     "thumbnail_path": "work/all-beginnings-are-involuntary/main_thumbnail.jpg",
                     "show_on_explore": true,
                     "explore_thumbnail_path": "work/all-beginnings-are-involuntary/main_explore_thumbnail.jpg",
-                    "explore_custom_class": "gallery-item-second",
+                    "explore_custom_class": "gallery-item-25",
                     "explore_position": 100000,
                     "explore_tags": "street"
                 }
             }
         },
-        "coimbra-old-town": {
-            "menu_item_id": "coimbra-old-town",
+        "houses-and-people": {
+            "menu_item_id": "houses-and-people",
             "menu_item_visible": true,
-            "slug": "coimbra-old-town.html",
+            "slug": "houses-and-people.html",
             "images": {
                 "main": {
-                    "path": "work/coimbra-old-town/main.jpg",
-                    "thumbnail_path": "work/coimbra-old-town/main_thumbnail.jpg",
+                    "path": "work/houses-and-people/main.jpg",
+                    "thumbnail_path": "work/houses-and-people/main_thumbnail.jpg",
                     "show_on_explore": true,
-                    "explore_thumbnail_path": "work/coimbra-old-town/main_explore_thumbnail.jpg",
-                    "explore_custom_class": "gallery-item-second",
-                    "explore_position": 99998,
+                    "explore_thumbnail_path": "work/houses-and-people/main_explore_thumbnail.jpg",
+                    "explore_custom_class": "gallery-item-25",
+                    "explore_position": 99997,
                     "explore_tags": "street"
                 },
                 "secondary": {
-                    "DSCF1030": {
-                        "path": "work/coimbra-old-town/DSCF1030.jpg",
-                        "thumbnail_path": "work/coimbra-old-town/DSCF1030_thumbnail.jpg",
+                    "DSCF3693": {
+                        "path": "work/houses-and-people/DSCF3693.jpg",
+                        "thumbnail_path": "work/houses-and-people/DSCF3693_thumbnail.jpg",
                         "show_on_explore": true,
-                        "explore_thumbnail_path": "work/coimbra-old-town/DSCF1030_explore_thumbnail.jpg",
+                        "explore_thumbnail_path": "work/houses-and-people/DSCF3693_explore_thumbnail.jpg",
+                        "explore_custom_class": "gallery-item-25",
+                        "explore_position": 99998,
+                        "explore_tags": "street"
+                    },
+                    "DSCF3674": {
+                        "path": "work/houses-and-people/DSCF3674.jpg",
+                        "thumbnail_path": "work/houses-and-people/DSCF3674_thumbnail.jpg",
+                        "show_on_explore": true,
+                        "explore_thumbnail_path": "work/houses-and-people/DSCF3674_explore_thumbnail.jpg",
                         "explore_custom_class": "",
                         "explore_position": 79999,
                         "explore_tags": "street"
                     },
+                    "DSCF3646": {
+                        "path": "work/houses-and-people/DSCF3646.jpg",
+                        "thumbnail_path": "work/houses-and-people/DSCF3646_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": null,
+                        "explore_custom_class": null,
+                        "explore_position": null,
+                        "explore_tags": null
+                    },
+                    "DSCF1030": {
+                        "path": "work/houses-and-people/DSCF1030.jpg",
+                        "thumbnail_path": "work/houses-and-people/DSCF1030_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": null,
+                        "explore_custom_class": null,
+                        "explore_position": null,
+                        "explore_tags": null
+                    },
                     "DSCF1072": {
-                        "path": "work/coimbra-old-town/DSCF1072.jpg",
-                        "thumbnail_path": "work/coimbra-old-town/DSCF1072_thumbnail.jpg",
+                        "path": "work/houses-and-people/DSCF1072.jpg",
+                        "thumbnail_path": "work/houses-and-people/DSCF1072_thumbnail.jpg",
                         "show_on_explore": true,
-                        "explore_thumbnail_path": "work/coimbra-old-town/DSCF1072_explore_thumbnail.jpg",
+                        "explore_thumbnail_path": "work/houses-and-people/DSCF1072_explore_thumbnail.jpg",
                         "explore_custom_class": "",
                         "explore_position": 79998,
                         "explore_tags": "street"
@@ -335,11 +362,11 @@
             "people": ""
         },
         "previews": {
-            "DSCF0574": {
-                "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
+            "DSC03344": {
+                "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
                 "custom_class": "gallery-item-second",
                 "position": -1,
-                "tags": "street people"
+                "tags": "street"
             },
             "DSCF0995": {
                 "thumbnail_path": "preview/DSCF0995_explore_thumbnail.jpg",
@@ -377,30 +404,43 @@
                 "position": -7,
                 "tags": "street people"
             },
-            "DSC03344": {
-                "thumbnail_path": "preview/DSC03344_explore_thumbnail.jpg",
+            "DSCF1637": {
+                "thumbnail_path": "preview/DSCF1637_explore_thumbnail.jpg",
                 "custom_class": "gallery-item-second",
                 "position": -8,
+                "tags": "street"
+            },
+            "DSCF0574": {
+                "thumbnail_path": "preview/DSCF0574_explore_thumbnail.jpg",
+                "custom_class": "gallery-item-second",
+                "position": -9,
+                "tags": "street people"
+            },
+            "DSCF0577": {
+                "thumbnail_path": "preview/DSCF0577_explore_thumbnail.jpg",
+                "custom_class": "",
+                "position": -10,
+                "tags": "street people"
+            },
+            "DSCF1577": {
+                "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
+                "custom_class": "",
+                "position": -11,
+                "tags": "street"
+            },
+            "DSC02280": {
+                "thumbnail_path": "preview/DSC02280_explore_thumbnail.jpg",
+                "custom_class": "gallery-item-second",
+                "position": -12,
                 "tags": "street"
             },
             "DSC02295": {
                 "thumbnail_path": "preview/DSC02295_explore_thumbnail.jpg",
                 "custom_class": "gallery-item-second",
-                "position": -9,
+                "position": -13,
                 "tags": "street"
-            },
-            "DSCF1577": {
-                "thumbnail_path": "preview/DSCF1577_explore_thumbnail.jpg",
-                "custom_class": "",
-                "position": -10,
-                "tags": "street"
-            },
-            "DSCF0577": {
-                "thumbnail_path": "preview/DSCF0577_explore_thumbnail.jpg",
-                "custom_class": "",
-                "position": -11,
-                "tags": "street people"
             }
+            
         }
     }
 }

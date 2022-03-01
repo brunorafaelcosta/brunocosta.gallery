@@ -155,6 +155,7 @@ var Gallery = Gallery || {};
     
             _cookieConsentObj.run({
                 autorun: _options.cookieConsentSettings.show,
+                delay: 1000,
                 gui_options: {
                     consent_modal: {
                         layout: "cloud",
@@ -170,7 +171,7 @@ var Gallery = Gallery || {};
                 current_lang: "default",
                 autoclear_cookies: false,
                 page_scripts: true,
-                force_consent: true,
+                force_consent: false,
                 revision: 0,
                 cookie_name: Gallery.Cookies.CookieConsentSettingsCookieName,
                 cookie_expiration: Gallery.Cookies.CookieConsentSettingsCookieExpirationDays,
@@ -218,7 +219,7 @@ var Gallery = Gallery || {};
                             title: _options.cookieConsentSettings.settingsModalTitle,
                             save_settings_btn: _options.cookieConsentSettings.settingsModalSave,
                             accept_all_btn: _options.cookieConsentSettings.settingsModalAcceptAll,
-                            //- reject_all_btn: _options.cookieConsentSettings.settingsModalRejectAll,
+                            reject_all_btn: _options.cookieConsentSettings.settingsModalRejectAll,
                             close_btn_label: _options.cookieConsentSettings.settingsModalClose,
                             blocks: [
                                 {
@@ -380,7 +381,7 @@ var Gallery = Gallery || {};
                         },
                         sortBy: "number",
                         sortAscending: false,
-                        layoutMode: "fitRows"
+                        layoutMode: "packery"
                     });
                     a.imagesLoaded(function() {
                         a.isotope("layout");
@@ -388,7 +389,7 @@ var Gallery = Gallery || {};
                     $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                         b.preventDefault();
                         var c = $(this).attr("data-filter");
-                        var layout = "fitRows";
+                        var layout = "packery";
                         if (c !== "*")
                             layout = "packery";
                         a.isotope({

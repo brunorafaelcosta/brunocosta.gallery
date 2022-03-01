@@ -90,7 +90,7 @@
         "title": "Politique de Cookies",
         "consent_modal": {
             "description": "On utilise des cookies, propres et tiers, pour améliorer la navigation sur ce site et analyser et personnaliser son utilisation. Pour plus d'informations, lire notre <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
-            "accept_all": "Tout autoriser"
+            "accept_all": "Autoriser"
         },
         "settings_modal": {
             "title": "Préférences",
@@ -108,7 +108,7 @@
             "more_information_description": "Tu peux à tout moment en savoir plus sur les cookies et modifier tes préférences sur la page des cookies."
         },
         "text": {
-            "page_last_update": "Dernière mise à jour : février 2022",
+            "page_last_update": "Dernière mise à jour : Mars 2022",
             "page_what_are_cookies": "Que sont les cookies ?",
             "page_what_are_cookies_line_1": "Les cookies sont de petits fichiers texte uniques qu'un site envoie à ton ordinateur lorsque tu le visites - il peut s'agir de cookies de session qui se terminent lorsque tu fermes ton navigateur ou de cookies persistants qui restent jusqu'à ce que tu les supprimes. Par exemple, nous utilisons un cookie persistant avec ta sélection de langue, tu n'as donc pas à le sélectionner à chaque fois que tu nous rends visite.",
             "page_what_are_cookies_line_2": "Pour plus de détails sur les cookies, tu peux visiter <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",
@@ -247,14 +247,49 @@
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         },
-        "coimbra-old-town": {
-            "title": "Vieille ville de Coimbra",
+        "houses-and-people": {
+            "title": "These houses and these people...",
+            "text": {
+                "quote_1_1": "Street full of empty sunlight. Walled houses, people walking.",
+                "quote_1_1_translation_source": "Na rua cheia de sol vago há casas paradas e gente que anda.",
+                "quote_1_2": "A fearful sadness chills me.",
+                "quote_1_2_translation_source": "Uma tristeza cheia de pavor esfria-me.",
+                "quote_1_3": "I foresee something happening behind the façades, in the movement.",
+                "quote_1_3_translation_source": "Pressinto um acontecimento do lado de lá das frontarias e dos movimentos.",
+                "quote_1_4": "No, no, not that!",
+                "quote_1_4_translation_source": "Não, não, isso não!",
+                "quote_1_5": "Anything but knowing what the Mystery is!",
+                "quote_1_5_translation_source": "Tudo menos saber o que é o Mistério!",
+                "quote_1_6": "Surface of the Universe, O Lowered Eyelids,",
+                "quote_1_6_translation_source": "Superfície do Universo, ó Pálpebras Descidas,",
+                "quote_1_7": "Don't ever raise yourselves!",
+                "quote_1_7_translation_source": "Não vos ergais nunca!",
+                "quote_1_8": "The sight of Ultimate Truth couldn't be endured!",
+                "quote_1_8_translation_source": "O olhar da Verdade Final não deve poder suportar-se!",
+                "quote_1_9": "Let me live without knowing anything, and die without coming to know anything!",
+                "quote_1_9_translation_source": "Deixai-me viver sem saber nada, e morrer sem ir saber nada!",
+                "quote_1_10": "The reason for being, the reason for there being beings, for everything being,",
+                "quote_1_10_translation_source": "A razão de haver ser, a razão de haver seres, de haver tudo,",
+                "quote_1_11": "Would bring on a madness greater than the spaces",
+                "quote_1_11_translation_source": "Deve trazer uma loucura maior que os espaços",
+                "quote_1_12": "Between souls, between stars.",
+                "quote_1_12_translation_source": "Entre as almas e entre as estrelas.",
+                "quote_1_13": "No, no, not the truth! Leave me these houses and these people,",
+                "quote_1_13_translation_source": "Não, não, a verdade não! Deixai-me estas casas e esta gente;",
+                "quote_1_14": "Just this, nothing else, houses and people...",
+                "quote_1_14_translation_source": "Assim mesmo, sem mais nada, estas casas e esta gente...",
+                "quote_1_15": "What cold horrible breath touches my closed eyes?",
+                "quote_1_15_translation_source": "Que bafo horrível e frio me toca em olhos fechados?",
+                "quote_1_16": "I don't want to open them from living! O Truth, forget about me!",
+                "quote_1_16_translation_source": "Não os quero abrir de viver! Ó Verdade, esquece-te de mim!",
+                "quote_1_author": "Álvaro de Campos, Demogorgon"
+            },
             "details": {
                 "location": {
                     "url": "https://www.google.fr/maps/place/Coimbra",
                     "value": "Coimbra, Portugal"
                 },
-                "date": "2021",
+                "date": "2021 et 2022",
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         }

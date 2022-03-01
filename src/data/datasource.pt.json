@@ -90,7 +90,7 @@
         "title": "Política de Cookies",
         "consent_modal": {
             "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
-            "accept_all": "Autorizar todos"
+            "accept_all": "Autorizar"
         },
         "settings_modal": {
             "title": "Preferências",
@@ -108,7 +108,7 @@
             "more_information_description": "Poderás, a qualquer momento, saber mais sobre os cookies e alterar as tuas preferências na página de cookies."
         },
         "text": {
-            "page_last_update": "Última atualização: fevereiro de 2022",
+            "page_last_update": "Última atualização: março de 2022",
             "page_what_are_cookies": "O que são cookies?",
             "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, usamos um cookie persistente com a tua seleção de idioma, para que não precises selecioná-lo sempre que nos visitas.",
             "page_what_are_cookies_line_2": "Para mais detalhes sobre cookies, podes visitar <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",
@@ -247,14 +247,51 @@
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         },
-        "coimbra-old-town": {
-            "title": "Cidade velha de Coimbra",
+        "houses-and-people": {
+            "title": "Estas casas e esta gente...",
+            "text": {
+                "quote_1_1": "Na rua cheia de sol vago há casas paradas e gente que anda.",
+                "quote_1_1_translation_source": "",
+                "quote_1_2": "Uma tristeza cheia de pavor esfria-me.",
+                "quote_1_2_translation_source": "",
+                "quote_1_3": "Pressinto um acontecimento do lado de lá das frontarias e dos movimentos.",
+                "quote_1_3_translation_source": "",
+                "quote_1_4": "Não, não, isso não!",
+                "quote_1_4_translation_source": "",
+                "quote_1_5": "Tudo menos saber o que é o Mistério!",
+                "quote_1_5_translation_source": "",
+                "quote_1_6": "Superfície do Universo, ó Pálpebras Descidas,",
+                "quote_1_6_translation_source": "",
+                "quote_1_7": "Não vos ergais nunca!",
+                "quote_1_7_translation_source": "",
+                "quote_1_8": "O olhar da Verdade Final não deve poder suportar-se!",
+                "quote_1_8_translation_source": "",
+
+                "quote_1_9": "Deixai-me viver sem saber nada, e morrer sem ir saber nada!",
+                "quote_1_9_translation_source": "",
+                "quote_1_10": "A razão de haver ser, a razão de haver seres, de haver tudo,",
+                "quote_1_10_translation_source": "",
+                "quote_1_11": "Deve trazer uma loucura maior que os espaços",
+                "quote_1_11_translation_source": "",
+                "quote_1_12": "Entre as almas e entre as estrelas.",
+                "quote_1_12_translation_source": "",
+                "quote_1_13": "Não, não, a verdade não! Deixai-me estas casas e esta gente;",
+                "quote_1_13_translation_source": "",
+                "quote_1_14": "Assim mesmo, sem mais nada, estas casas e esta gente...",
+                "quote_1_14_translation_source": "",
+                "quote_1_15": "Que bafo horrível e frio me toca em olhos fechados?",
+                "quote_1_15_translation_source": "",
+                "quote_1_16": "Não os quero abrir de viver! Ó Verdade, esquece-te de mim!",
+                "quote_1_16_translation_source": "",
+                
+                "quote_1_author": "Álvaro de Campos, Demogorgon"
+            },
             "details": {
                 "location": {
                     "url": "https://www.google.pt/maps/place/Coimbra",
                     "value": "Coimbra, Portugal"
                 },
-                "date": "2021",
+                "date": "2021 e 2022",
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
         }
