@@ -77,6 +77,7 @@ blockquote p:first-child {
 	font-family: 'Libre Baskerville', serif;
 	font-style:italic;
 	font-size: 100%;
+	white-space: pre;
 }
 /* ---------Page preload--------------------------------------*/
 .loader {
@@ -2376,6 +2377,10 @@ a.fill-div {
 
 	.thumb-info {
 		display: none;
+	}
+
+	blockquote p:first-child {
+		white-space: normal;
 	}
 }
 

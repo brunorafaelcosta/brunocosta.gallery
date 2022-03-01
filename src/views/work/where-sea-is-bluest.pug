@@ -26,7 +26,7 @@ block view_content
 
                 .section-content
                     blockquote.music-blockquote
-                        p(style='white-space:pre;')
+                        p
                             | #{work.text.quote_1_1}
                             if (work.text.quote_1_1_translation_source.length)
                                 br
@@ -44,6 +44,11 @@ block view_content
                         p #{work.text.quote_1_author}
                     .gallery-items.boxed-folio.hid-port-info
 
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF0462_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF0462.jpg')
+                                    i.fa.fa-search
                         
                         .gallery-item.gallery-item-second
                             .grid-item-holder
@@ -51,12 +56,6 @@ block view_content
                                 a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF0479.jpg')
                                     i.fa.fa-search
                         
-                        .gallery-item.gallery-item-second
-                            .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF0462_thumbnail.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF0462.jpg')
-                                    i.fa.fa-search
-
                         .gallery-item.gallery-item-second
                             .grid-item-holder
                                 img(src=work_imagens_path + '/DSCF1494_thumbnail.jpg' alt='')
