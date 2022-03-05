@@ -89,13 +89,14 @@
     "cookie_policy": {
         "title": "Política de Cookies",
         "consent_modal": {
-            "description": "Utilizamos cookies, próprios e de terceiros, para melhorar a navegação e desempenho deste site e analisar e personalizar a sua utilização.<br/>Para mais informações, consulta a nossa <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
+            "title": "Os cookies proporcionam uma experiência personalizada",
+            "description": "Não estou a falar daqueles biscoitos crocantes e saborosos. Estes cookies ajudam a manter o site seguro e a personalizar a sua utilização. Não serão ativados se não o permitires.<br/>Para mais informações, consulta a <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
             "accept_all": "Autorizar"
         },
         "settings_modal": {
             "title": "Preferências",
             "subtitle": "Utilização de cookies 📢",
-            "description": "Sabe mais sobre os tipos de cookies que utilizamos e seleciona aqueles que autorizas.",
+            "description": "Sabe mais sobre os tipos de cookies que são utilizados e seleciona aqueles que autorizas.",
             "save": "Guardar",
             "accept_all": "Autorizar todos",
             "accept_necessary": "Autorizar o necessário",
@@ -103,18 +104,18 @@
             "strictly_necessary_cookies_title": "Cookies essenciais (obrigatório)",
             "strictly_necessary_cookies_description": "Cookies próprios e de terceiros imprescindíveis para o bom funcionamento do site.",
             "performance_and_analytics_cookies_title": "Cookies de desempenho e de personalização",
-            "performance_and_analytics_cookies_description": "Cookies que recolhem e analisam a informação sobre a utilização do site, permitindo melhorar e personalizar a experiência de navegação.",
+            "performance_and_analytics_cookies_description": "Cookies que recolhem e analisam anonimamente a informação sobre a utilização do site, permitindo melhorar e personalizar a experiência de navegação.",
             "more_information_title": "Mais Informações",
             "more_information_description": "Poderás, a qualquer momento, saber mais sobre os cookies e alterar as tuas preferências na página de cookies."
         },
         "text": {
             "page_last_update": "Última atualização: março de 2022",
             "page_what_are_cookies": "O que são cookies?",
-            "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, usamos um cookie persistente com a tua seleção de idioma, para que não precises selecioná-lo sempre que nos visitas.",
+            "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, está a ser usado um cookie persistente com a tua seleção de idioma, para que não precises de selecioná-lo sempre que visitas o site.",
             "page_what_are_cookies_line_2": "Para mais detalhes sobre cookies, podes visitar <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",
-            "page_how_do_we_use_cookies": "Como usamos cookies?",
-            "page_how_do_we_use_cookies_line_1": "Para além do cookie que persiste a seleção de idioma, também estamos a utilizar os seguintes serviços que por sua vez também podem usar cookies:",
-            "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Usado para coletar informações sobre como os utilizadores navegam no nosso site. Usamos a informação para compilar relatórios de forma a nos ajudar a melhorar a experiência do utilizador.",
+            "page_how_do_we_use_cookies": "Como estão a ser usados os cookies?",
+            "page_how_do_we_use_cookies_line_1": "Para além do cookie que persiste a seleção de idioma, também são utilizados os seguintes serviços que por sua vez também podem usar cookies:",
+            "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Usado para coletar informações anonimizadas sobre como os utilizadores navegam no site. A informação é usada para compilar relatórios de forma a ajudar a melhorar a experiência do utilizador.",
             "page_how_do_we_use_cookies_line_2": "Para mais informações, <a href='/pt/contact.html'>entra em contacto</a>.",
             "page_cookie_preferences": "Como podes alterar as tuas preferências de cookies?",
             "page_cookie_preferences_line_1": "Podes autorizar ou rejeitar os vários cookies a qualquer momento e de acordo com as tuas preferências. Para isso, basta acederes à janela de configuração:"

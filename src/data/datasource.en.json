@@ -89,13 +89,14 @@
     "cookie_policy": {
         "title": "Cookie Policy",
         "consent_modal": {
-            "description": "We use cookies, own and third-party, to improve this site's navigation and analyse and personalise its use. For more information, please see our <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
+            "title": "Cookies provide a personalized experience",
+            "description": "I'm not talking about the crunchy, tasty kind. These cookies help keep this website safe and personalise its use. They won't be turn on unless you accept. For more information, please see the <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
             "accept_all": "Authorise"
         },
         "settings_modal": {
             "title": "Preferences",
             "subtitle": "Cookie usage 📢",
-            "description": "Learn more about the types of cookies we use and select the ones you consent to.",
+            "description": "Learn more about the types of cookies that are used and select the ones you consent to.",
             "save": "Save",
             "accept_all": "Authorise all",
             "accept_necessary": "Authorize the necessary",
@@ -103,19 +104,19 @@
             "strictly_necessary_cookies_title": "Essential cookies (required)",
             "strictly_necessary_cookies_description": "Own and third-party cookies that ensure the website works properly.",
             "performance_and_analytics_cookies_title": "Performance and personalisation cookies",
-            "performance_and_analytics_cookies_description": "Cookies that collect and analyse information about the use of the website, allowing us to improve and personalise the navigation experience.",
+            "performance_and_analytics_cookies_description": "Cookies that anonymously collect and analyze information about the use of the website, allowing to improve and personalize the navigation experience.",
             "more_information_title": "More information",
             "more_information_description": "You may at any time learn more about the cookies and change your preferences on the cookies page."
         },
         "text": {
             "page_last_update": "Last updated: March 2022",
             "page_what_are_cookies": "What are cookies?",
-            "page_what_are_cookies_line_1": "Cookies are small, unique text files that a website sends to your computer when you visit it - these can be session cookies which terminate when you close a browser, or persistent cookies which will remain until you delete them. For example, we use a persistent cookie for your language selection, so that you don't need to select it every time you visit us.",
+            "page_what_are_cookies_line_1": "Cookies are small, unique text files that a website sends to your computer when you visit it - these can be session cookies which terminate when you close a browser, or persistent cookies which will remain until you delete them. For example, a persistent cookie is being used with your language selection, so you don't need to select it each time you visit the site.",
             "page_what_are_cookies_line_2": "For more details about cookies you can visit <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",
-            "page_how_do_we_use_cookies": "How do we use cookies?",
-            "page_how_do_we_use_cookies_line_1": "In addition to the cookie that persists the language selection, we are also using the following services which in turn may also use cookies:",
-            "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Used to collect information about how visitors navigate our website. We use the information to compile reports to help us improve the user experience.",
-            "page_how_do_we_use_cookies_line_2": "For more information, <a href='/en/contact.html'>contact us</a>.",
+            "page_how_do_we_use_cookies": "How are cookies being used?",
+            "page_how_do_we_use_cookies_line_1": "In addition to the cookie that persists the language selection, the following services are also beeing used which in turn may also use cookies:",
+            "page_how_do_we_use_cookies_google_analytics": "<a href='https://analytics.google.com/' target='_blank'>Google Analytics</a> - Used to collect anonymized information about how visitors navigate the site. The information is used to compile reports to help improve the user experience.",
+            "page_how_do_we_use_cookies_line_2": "For more information, <a href='/en/contact.html'>get in touch</a>.",
             "page_cookie_preferences": "How can you change your cookies preferences?",
             "page_cookie_preferences_line_1": "You can authorise or reject the various cookies at any time and according to your preferences. To do so, simply access the configuration window:"
         }

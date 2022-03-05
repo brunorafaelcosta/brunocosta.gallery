@@ -121,6 +121,7 @@ var Gallery = Gallery || {};
             
             cookieConsentSettings: {
                 show: true,
+                consentModalTitle: "consentModalTitle",
                 consentModalDescription: "consentModalDescription",
                 consentModalAcceptAll: "consentModalAcceptAll",
                 settingsModalTitle: "settingsModalTitle",
@@ -205,6 +206,7 @@ var Gallery = Gallery || {};
                 languages: {
                     "default": {
                         consent_modal: {
+                            title: _options.cookieConsentSettings.consentModalTitle,
                             description: _options.cookieConsentSettings.consentModalDescription,
                             primary_btn: {
                                 text: _options.cookieConsentSettings.consentModalAcceptAll,

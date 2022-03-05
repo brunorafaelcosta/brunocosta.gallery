@@ -41,32 +41,6 @@ block view_content
                             if (work.text.quote_1_3_translation_source.length)
                                 br
                                 span.blockquote-line-translation_source #{work.text.quote_1_3_translation_source}
-                            br
-                            br
-                            | #{work.text.quote_1_4}
-                            if (work.text.quote_1_4_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_4_translation_source}
-                            br
-                            | #{work.text.quote_1_5}
-                            if (work.text.quote_1_5_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_5_translation_source}
-                            br
-                            | #{work.text.quote_1_6}
-                            if (work.text.quote_1_6_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_6_translation_source}
-                            br
-                            | #{work.text.quote_1_7}
-                            if (work.text.quote_1_7_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_7_translation_source}
-                            br
-                            | #{work.text.quote_1_8}
-                            if (work.text.quote_1_8_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_8_translation_source}
                     
                     .gallery-items.boxed-folio.hid-port-info
 
@@ -85,14 +59,61 @@ block view_content
                     .clearfix
                     br
                     br
+                    br
                     
-                    blockquote
+                    blockquote.without-quote-icon
                         p(style='white-space: normal;')
-                            | #{work.text.quote_1_9}
-                            if (work.text.quote_1_9_translation_source.length)
+                            | #{work.text.quote_1_4}
+                            if (work.text.quote_1_4_translation_source.length)
                                 br
-                                span.blockquote-line-translation_source #{work.text.quote_1_9_translation_source}
+                                span.blockquote-line-translation_source #{work.text.quote_1_4_translation_source}
                             br
+                            | #{work.text.quote_1_5}
+                            if (work.text.quote_1_5_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_5_translation_source}
+                            //- br
+                            //- | #{work.text.quote_1_6}
+                            //- if (work.text.quote_1_6_translation_source.length)
+                            //-     br
+                            //-     span.blockquote-line-translation_source #{work.text.quote_1_6_translation_source}
+                            //- br
+                            //- | #{work.text.quote_1_7}
+                            //- if (work.text.quote_1_7_translation_source.length)
+                            //-     br
+                            //-     span.blockquote-line-translation_source #{work.text.quote_1_7_translation_source}
+                            br
+                            | #{work.text.quote_1_8}
+                            if (work.text.quote_1_8_translation_source.length)
+                                br
+                                span.blockquote-line-translation_source #{work.text.quote_1_8_translation_source}
+                    
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF3646_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF3646.jpg')
+                                    i.fa.fa-search
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF3674_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF3674.jpg')
+                                    i.fa.fa-search
+                    
+                    .clearfix
+                    br
+                    br
+                    br
+                    
+                    blockquote.without-quote-icon
+                        p(style='white-space: normal;')
+                            //- | #{work.text.quote_1_9}
+                            //- if (work.text.quote_1_9_translation_source.length)
+                            //-     br
+                            //-     span.blockquote-line-translation_source #{work.text.quote_1_9_translation_source}
+                            //- br
                             | #{work.text.quote_1_10}
                             if (work.text.quote_1_10_translation_source.length)
                                 br
@@ -118,32 +139,18 @@ block view_content
                             if (work.text.quote_1_14_translation_source.length)
                                 br
                                 span.blockquote-line-translation_source #{work.text.quote_1_14_translation_source}
-                            br
-                            | #{work.text.quote_1_15}
-                            if (work.text.quote_1_15_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_15_translation_source}
-                            br
-                            | #{work.text.quote_1_16}
-                            if (work.text.quote_1_16_translation_source.length)
-                                br
-                                span.blockquote-line-translation_source #{work.text.quote_1_16_translation_source}
+                            //- br
+                            //- | #{work.text.quote_1_15}
+                            //- if (work.text.quote_1_15_translation_source.length)
+                            //-     br
+                            //-     span.blockquote-line-translation_source #{work.text.quote_1_15_translation_source}
+                            //- br
+                            //- | #{work.text.quote_1_16}
+                            //- if (work.text.quote_1_16_translation_source.length)
+                            //-     br
+                            //-     span.blockquote-line-translation_source #{work.text.quote_1_16_translation_source}
                         p #{work.text.quote_1_author}
-
-                    .gallery-items.boxed-folio.hid-port-info
-
-                        .gallery-item.gallery-item-second
-                            .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF3646_thumbnail.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF3646.jpg')
-                                    i.fa.fa-search
-
-                        .gallery-item.gallery-item-second
-                            .grid-item-holder
-                                img(src=work_imagens_path + '/DSCF3674_thumbnail.jpg' alt='')
-                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF3674.jpg')
-                                    i.fa.fa-search
-                        
+                    
                     ul.work-details
                         li
                             span #{text.location} : 

@@ -79,6 +79,12 @@ blockquote p:first-child {
 	font-size: 100%;
 	white-space: pre;
 }
+blockquote.without-quote-icon {
+	padding-top: 10px;
+}
+blockquote.without-quote-icon:before {
+	display: none;
+}
 /* ---------Page preload--------------------------------------*/
 .loader {
 	position:fixed;
@@ -2552,6 +2558,10 @@ blockquote span.blockquote-line-translation_source:last-child {
 
 #cookie-consent-preferences button {
 	float: left;
+}
+
+#contact-page .bg {
+	background-position: bottom;
 }
 
 /* cookieconsent.css */
