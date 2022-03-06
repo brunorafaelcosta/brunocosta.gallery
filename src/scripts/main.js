@@ -393,7 +393,7 @@ var Gallery = Gallery || {};
                         var c = $(this).attr("data-filter");
                         var layout = "packery";
                         if (c !== "*")
-                            layout = "packery";
+                            layout = "masonry";
                         a.isotope({
                             filter: c,
                             layoutMode: layout
