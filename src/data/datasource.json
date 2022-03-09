@@ -325,10 +325,10 @@
                     "DSCF3646": {
                         "path": "work/houses-and-people/DSCF3646.jpg",
                         "thumbnail_path": "work/houses-and-people/DSCF3646_thumbnail.jpg",
-                        "show_on_explore": true,
+                        "show_on_explore": false,
                         "explore_thumbnail_path": "work/houses-and-people/DSCF3646_explore_thumbnail.jpg",
-                        "explore_custom_class": "gallery-item-second",
-                        "explore_position": -14,
+                        "explore_custom_class": null,
+                        "explore_position": null,
                         "explore_tags": "street people"
                     },
                     "DSCF1072": {
@@ -343,19 +343,19 @@
                     "DSCF3789": {
                         "path": "work/houses-and-people/DSCF3789.jpg",
                         "thumbnail_path": "work/houses-and-people/DSCF3789_thumbnail.jpg",
-                        "show_on_explore": true,
+                        "show_on_explore": false,
                         "explore_thumbnail_path": "work/houses-and-people/DSCF3789_explore_thumbnail.jpg",
-                        "explore_custom_class": "gallery-item-second",
-                        "explore_position": -16,
+                        "explore_custom_class": null,
+                        "explore_position": null,
                         "explore_tags": "street people"
                     },
                     "DSCF3847": {
                         "path": "work/houses-and-people/DSCF3847.jpg",
                         "thumbnail_path": "work/houses-and-people/DSCF3847_thumbnail.jpg",
-                        "show_on_explore": true,
+                        "show_on_explore": false,
                         "explore_thumbnail_path": "work/houses-and-people/DSCF3847_explore_thumbnail.jpg",
-                        "explore_custom_class": "gallery-item-second",
-                        "explore_position": -15,
+                        "explore_custom_class": null,
+                        "explore_position": null,
                         "explore_tags": "street people"
                     }
                 }

@@ -90,7 +90,7 @@
         "title": "Politique de Cookies",
         "consent_modal": {
             "title": "Les cookies offrent une expérience personnalisée",
-            "description": "Il ne s'agit pas ici de bons petits biscuits croustillants. Ces cookies permettent de sécuriser le site et de personnaliser son utilisation. Ils ne seront pas activés si tu ne le permets pas. Pour plus d'informations, lire la <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
+            "description": "Il ne s'agit pas ici de bons petits biscuits croustillants &#128523; <br/> Ces cookies permettent de sécuriser le site et de personnaliser son utilisation. Ils ne seront pas activés si tu ne le permets pas. Pour plus d'informations, lire la <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/fr/cookie-policy-popup.html&quot;, &quot;Politique de Cookies&quot;); return false;'>Politique de Cookies</a>.",
             "accept_all": "Autoriser"
         },
         "settings_modal": {
@@ -109,7 +109,7 @@
             "more_information_description": "Tu peux à tout moment en savoir plus sur les cookies et modifier tes préférences sur la page des cookies."
         },
         "text": {
-            "page_last_update": "Dernière mise à jour : Mars 2022",
+            "page_last_update": "Dernière mise à jour : 7 mars 2022",
             "page_what_are_cookies": "Que sont les cookies ?",
             "page_what_are_cookies_line_1": "Les cookies sont de petits fichiers texte uniques qu'un site envoie à ton ordinateur lorsque tu le visites - il peut s'agir de cookies de session qui se terminent lorsque tu fermes ton navigateur ou de cookies persistants qui restent jusqu'à ce que tu les supprimes. Par exemple, un cookie persistant est utilisé avec ta sélection de langue, tu n'as donc pas à le sélectionner à chaque fois que tu visites le site.",
             "page_what_are_cookies_line_2": "Pour plus de détails sur les cookies, tu peux visiter <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

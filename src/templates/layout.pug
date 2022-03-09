@@ -1,5 +1,5 @@
-- var cssCacheVersion = '20220305'
-- var jsCacheVersion = '20220305'
+- var cssCacheVersion = '20220307'
+- var jsCacheVersion = '20220307'
 
 block variables
     - var page_id = ''
@@ -61,9 +61,7 @@ html(lang="en")
                 f.parentNode.insertBefore(j, f);
             })(window, document, "script", "dataLayer", "GTM-KJ8DFHQ");
             
-            let shouldResetUserPrefs = (typeof(window.galleryApp) !== "undefined" && window.galleryApp !== null)
-                ? window.galleryApp.shouldResetGoogleAnalyticsUserPrefs()
-                : true;
+            var shouldResetUserPrefs=true;try{var shouldResetUserPrefsCookieValue=document.cookie.match("(^|;)\\s*brunocostagallery.ga_userprefs_kept\\s*=\\s*([^;]+)")?.pop()||"";shouldResetUserPrefs=shouldResetUserPrefsCookieValue!=="true"}catch(e){shouldResetUserPrefs=true}
             if (shouldResetUserPrefs) {
                 window["_gaUserPrefs"] = {};
                 console.debug("Google Analytics - Reset UserPrefs");

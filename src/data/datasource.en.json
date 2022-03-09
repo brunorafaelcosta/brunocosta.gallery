@@ -90,7 +90,7 @@
         "title": "Cookie Policy",
         "consent_modal": {
             "title": "Cookies provide a personalized experience",
-            "description": "I'm not talking about the crunchy, tasty kind. These cookies help keep this website safe and personalise its use. They won't be turn on unless you accept. For more information, please see the <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
+            "description": "I'm not talking about the crunchy, tasty kind &#128523; <br/> These cookies help keep this website safe and personalise its use. They won't be turn on unless you accept. For more information, please see the <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/en/cookie-policy-popup.html&quot;, &quot;Cookie Policy&quot;); return false;'>Cookie Policy</a>.",
             "accept_all": "Authorise"
         },
         "settings_modal": {
@@ -109,7 +109,7 @@
             "more_information_description": "You may at any time learn more about the cookies and change your preferences on the cookies page."
         },
         "text": {
-            "page_last_update": "Last updated: March 2022",
+            "page_last_update": "Last updated: March 7, 2022",
             "page_what_are_cookies": "What are cookies?",
             "page_what_are_cookies_line_1": "Cookies are small, unique text files that a website sends to your computer when you visit it - these can be session cookies which terminate when you close a browser, or persistent cookies which will remain until you delete them. For example, a persistent cookie is being used with your language selection, so you don't need to select it each time you visit the site.",
             "page_what_are_cookies_line_2": "For more details about cookies you can visit <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

@@ -90,7 +90,7 @@
         "title": "Política de Cookies",
         "consent_modal": {
             "title": "Os cookies proporcionam uma experiência personalizada",
-            "description": "Não estou a falar daqueles biscoitos crocantes e saborosos. Estes cookies ajudam a manter o site seguro e a personalizar a sua utilização. Não serão ativados se não o permitires.<br/>Para mais informações, consulta a <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
+            "description": "Não estou a falar daqueles biscoitos crocantes e saborosos &#128523; <br/> Estes cookies ajudam a manter o site seguro e a personalizar a sua utilização. Não serão ativados se não o permitires.<br/>Para mais informações, consulta a <a href='#' onclick='window.galleryApp.showCookiePolicyPopup(&quot;/pt/cookie-policy-popup.html&quot;, &quot;Política de Cookies&quot;); return false;'>Política de Cookies</a>.",
             "accept_all": "Autorizar"
         },
         "settings_modal": {
@@ -109,7 +109,7 @@
             "more_information_description": "Poderás, a qualquer momento, saber mais sobre os cookies e alterar as tuas preferências na página de cookies."
         },
         "text": {
-            "page_last_update": "Última atualização: março de 2022",
+            "page_last_update": "Última atualização: 7 de março de 2022",
             "page_what_are_cookies": "O que são cookies?",
             "page_what_are_cookies_line_1": "Cookies são pequenos arquivos de texto únicos que um site envia para o teu computador quando o visitas - podem ser cookies de sessão que terminam quando fechas o navegador ou cookies persistentes que permanecem até que os excluas. Por exemplo, está a ser usado um cookie persistente com a tua seleção de idioma, para que não precises de selecioná-lo sempre que visitas o site.",
             "page_what_are_cookies_line_2": "Para mais detalhes sobre cookies, podes visitar <a href='https://www.aboutcookies.org' target='_blank'>www.aboutcookies.org</a>.",

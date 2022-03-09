@@ -9,6 +9,8 @@ var Gallery = Gallery || {};
         LanguageCookieExpirationDays: 36525,
         CookieConsentSettingsCookieName: "brunocostagallery.cookie_consent_status",
         CookieConsentSettingsCookieExpirationDays: 365,
+        CookiePolicyReadCookieName: "brunocostagallery.cookie_policy_read",
+        CookiePolicyReadCookieExpirationDays: 365,
         GoogleAnalyticsResetUserPrefsCookieName: "brunocostagallery.ga_userprefs_kept"
     };
 
@@ -121,6 +123,7 @@ var Gallery = Gallery || {};
             
             cookieConsentSettings: {
                 show: true,
+                force: false,
                 consentModalTitle: "consentModalTitle",
                 consentModalDescription: "consentModalDescription",
                 consentModalAcceptAll: "consentModalAcceptAll",
@@ -153,10 +156,13 @@ var Gallery = Gallery || {};
             Gallery.Utils.debug("Cookie Consents - Initializing...");
 
             _cookieConsentObj = initCookieConsent();
-    
+            
+            var force = _options.cookieConsentSettings.force;
+            var delay = force ? 0 : 1000;
+
             _cookieConsentObj.run({
                 autorun: _options.cookieConsentSettings.show,
-                delay: 1000,
+                delay: delay,
                 gui_options: {
                     consent_modal: {
                         layout: "cloud",
@@ -172,7 +178,7 @@ var Gallery = Gallery || {};
                 current_lang: "default",
                 autoclear_cookies: false,
                 page_scripts: true,
-                force_consent: false,
+                force_consent: force,
                 revision: 0,
                 cookie_name: Gallery.Cookies.CookieConsentSettingsCookieName,
                 cookie_expiration: Gallery.Cookies.CookieConsentSettingsCookieExpirationDays,
@@ -304,15 +310,6 @@ var Gallery = Gallery || {};
                 e.preventDefault();
             });
 
-            $(".loader").fadeOut(500, function() {
-                $("#main").animate({
-                    opacity: "1"
-                }, 500);
-                setTimeout(function() {
-                    $(".content-holder").removeClass("scale-bg2");
-                }, 450);
-            });
-
             $(".bg").each(function(a) {
                 if ($(this).attr("data-bg")) $(this).css("background-image", "url(" + $(this).data("bg") + ")");
             });
@@ -367,9 +364,19 @@ var Gallery = Gallery || {};
                 return false;
             });
         };
+        var _initLoader = function () {
+            $(".loader").fadeOut(500, function() {
+                $("#main").animate({
+                    opacity: "1"
+                }, 500);
+                setTimeout(function() {
+                    $(".content-holder").removeClass("scale-bg2");
+                }, 450);
+            });
+        };
 
         var _initExplore = function () {
-            function isotope() {
+            function isotope(appRef) {
                 if ($(".gallery-items").length) {
                     var a = $(".gallery-items").isotope({
                         singleMode: true,
@@ -387,6 +394,7 @@ var Gallery = Gallery || {};
                     });
                     a.imagesLoaded(function() {
                         a.isotope("layout");
+                        _initLoader.call(appRef);
                     });
                     $(".gallery-filters").on("click", "a.gallery-filter", function(b) {
                         b.preventDefault();
@@ -478,7 +486,7 @@ var Gallery = Gallery || {};
         
                 });
             }
-            isotope();
+            isotope(this);
         };
 
         var _initLightGallery = function () {
@@ -545,12 +553,14 @@ var Gallery = Gallery || {};
         // ========================================================================================
         this.init = function () {
             Gallery.Utils.debug("Initializing...");
-
+            
             _initCookieConsents.call(_self);
 
             _initMenu.call(_self);
 
             _initAnimations.call(_self);
+            if (_options.currentPageId !== "index-page")
+                _initLoader.call(_self);
 
             _initLightGallery.call(_self);
 
@@ -582,6 +592,7 @@ var Gallery = Gallery || {};
         };
 
         this.showCookiePolicyPopup = function (slug, title) {
+            Gallery.Utils.setCookie(Gallery.Cookies.CookiePolicyReadCookieName, "true", Gallery.Cookies.CookiePolicyReadCookieExpirationDays);
             Gallery.Utils.showPopup(slug, title, 720, 480);
         };
 
