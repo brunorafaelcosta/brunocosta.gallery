@@ -2014,6 +2014,22 @@ ul.children li.thecomment {
 }
 /*------  Responsive ------------------------------------------------------*/
 
+@media only screen and  (min-width: 1840px) {
+	.content.column-filter-wrap {
+		padding-left: 0!important;
+	}
+	.column-filter {
+		left: 50%;
+		transform: translateX(-920px);
+	}
+	.gallery-items {
+		max-width: 1440px;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 @media only screen and  (max-width: 1036px) {
 #main{
 	position:relative;
