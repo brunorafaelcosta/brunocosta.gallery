@@ -77,6 +77,13 @@ blockquote p:first-child {
 	font-family: 'Libre Baskerville', serif;
 	font-style:italic;
 	font-size: 100%;
+	white-space: pre;
+}
+blockquote.without-quote-icon {
+	padding-top: 10px;
+}
+blockquote.without-quote-icon:before {
+	display: none;
 }
 /* ---------Page preload--------------------------------------*/
 .loader {
@@ -880,6 +887,13 @@ section , article.single-article {
 .five-columns.grid-sizer-second {
 	width:33.33333333333333%;
 }
+.five-columns .gallery-item-25 {
+	width:25%;
+}
+.five-columns .gallery-item-three,
+.five-columns.grid-sizer-three {
+	width:66.66666666666667%;
+}
 .gallery-item img, .grid-sizer img {
 	width: 100%;
 	height: auto;
@@ -1298,66 +1312,6 @@ section , article.single-article {
 	top:34px;
 	position:relative;
 }
-.info-wrap {
-	position:fixed;
-	top:50px;
-	right:-10%;
-	bottom:80px;
-	visibility:hidden;
-	opacity:0;
-	overflow:auto;
-	z-index:22;
-	width:50%;
-	padding:50px 60px 100px 60px;
- 	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	overflow:auto;
-}
-.info-overlay {
-	position:fixed;
-	top:50px;
-	right:0;
-	bottom:80px;
-	overflow:auto;
-	z-index:21;
-	width:100%;
- 	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	background:rgba(51,51,51,0.71);
-	visibility:hidden;
-	opacity:0;
-}
-.fl-con-wrap .info-wrap , .fl-con-wrap  .info-overlay {
-	bottom:0;
-	top:0;
-}
-.info-overlay.visinover {
-	opacity:1;
-	visibility:visible;
-}
-.info-wrap.visinwrap {
-	right:0;
-	opacity:1;
-	visibility:visible;
-}
-.info-inner {
-	position:relative;
-	margin:0 auto;
-	padding-top:100px;
-	max-width:650px;
-	z-index:3;
-}
-.fe {
-	display:none;
-}
-.info-inner h2 {
-	float:left;
-	width:100%;
-	font-size: 22px;
-    text-align: left;
-    font-weight: 700;
-	padding-bottom:40px;
-}
 .port-fixed-link {
 	font-family: 'Libre Baskerville', serif;
 	font-style:italic;
@@ -1380,34 +1334,16 @@ section , article.single-article {
 .single-image:last-child {
 	margin-bottom:0;
 }
-/*------ Contats ------------------------------------------------------*/
-.contact-list {
-	margin:30px 0;
-}
-.contact-list li {
-	float:left;
-	padding:10px 0;
-	width:100%;
-	text-align:left;
-}
-.contact-list li span {
-	float:left;
-	padding-right:10px;
-	font-family: 'Libre Baskerville', serif;
-	font-style:italic;
-}
-.contact-list li a {
-	font-family: 'Libre Baskerville', serif;
-	font-style:italic;
-	float:left;
-}
-
+/*------ Contacts ------------------------------------------------------*/
 #contact-form {
 	max-width:450px;
 	-webkit-transition: all 400ms linear;
     transition: all 400ms linear;
 }
-#contact-form input[type="text"] , #contact-form textarea , #comment-form input[type="text"]  , #comment-form textarea{
+#contact-form p {
+	text-align: justify;
+}
+#contact-form input[type="text"], #contact-form input[type="email"] , #contact-form textarea , #comment-form input[type="text"]  , #comment-form textarea{
 	float:left;
 	width: 100%;
 	background:none;
@@ -1474,42 +1410,6 @@ section , article.single-article {
 }
 #message fieldset {
 	border:none;
-}
-.close-contact , .close-info{
-	position:absolute;
-	top:80px;
-	right:70px;
-	width:20px;
-	height:20px;
-	cursor:pointer;
-	overflow:hidden;
-	z-index:22;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
- .close-contact:hover:before  , .close-info:hover:before{
-	height:50%;
-}
- .close-contact:hover:after , .close-info:hover:after{
-	width:50%;
-}
-.close-contact:after , .close-contact:before  , .close-info:before , .close-info:after{
-	content:'';
-	position:absolute;
-	-webkit-transition: all 400ms linear;
-    transition: all 400ms linear;
-}
- .close-contact:before , .close-info:before{
-	width:1px;
-	height:100%;
-	top:1px;
-	left:50%;
-}
- .close-contact:after , .close-info:after{
-	width:100%;
-	height:1px;
-	top:50%;
-	left:1px;
 }
 /*------ share------------------------------------------------*/
 .share-holder {
@@ -2114,6 +2014,22 @@ ul.children li.thecomment {
 }
 /*------  Responsive ------------------------------------------------------*/
 
+@media only screen and  (min-width: 1840px) {
+	.content.column-filter-wrap {
+		padding-left: 0!important;
+	}
+	.column-filter {
+		left: 50%;
+		transform: translateX(-920px);
+	}
+	.gallery-items {
+		max-width: 1440px;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 @media only screen and  (max-width: 1036px) {
 #main{
 	position:relative;
@@ -2136,26 +2052,13 @@ ul.children li.thecomment {
     right: 15px;
     margin-right: 0;
 }
-.contact-form-holder {
-	position: relative;
-	top:0;
-	width:100%;
-	bottom:0;
-	visibility: visible;
-	float:left;
-}
-.contact-form-wrap {
-	top:0;
-	margin-top:0 !important;
-	padding:0 50px;
-}
 #contact-form {
 	width:100%;
 	float:left;
 	max-width:100%;
 	margin-bottom:100px;
 }
-.show-form  , .close-contact{
+.show-form  {
 	display:none;
 }
 section {
@@ -2359,19 +2262,7 @@ footer {
 	width:100%;
 	height:auto !important;
 }
-.info-wrap {
-	position: relative;
-	top:0;
-	right:0;
-	bottom:0;
-	visibility: visible;
-	opacity:1;
-	overflow:auto;
-	z-index:22;
-	width:100%;
-	padding:0 20px;
-}
-.close-info  , .gallery_horizontal .customNavigation{
+.gallery_horizontal .customNavigation{
 	display:none;
 }
 .info-inner {
@@ -2481,11 +2372,38 @@ a.fill-div {
 	background-color: rgba(255,255,255,0.95);
 }
 
-.terms-conditions {
+.policy-box .cookie-policy {
+	display: none;
+}
+.policy-box .terms-conditions,
+.policy-box .cookie-policy {
+	margin-left: 5px;
+}
+.policy-box .terms-conditions a,
+.policy-box .cookie-policy a {
 	opacity: 0.5;
 }
-.terms-conditions:hover {
+.policy-box .terms-conditions a:hover,
+.policy-box .cookie-policy a:hover {
 	opacity: 1;
+}
+@media only screen and  (max-width: 576px) {
+	.policy-box .terms-conditions,
+	.policy-box .cookie-policy {
+		display: none;
+	}
+	
+	.nav-button .nav-text {
+		display: none;
+	}
+
+	.thumb-info {
+		display: none;
+	}
+
+	blockquote p:first-child {
+		white-space: normal;
+	}
 }
 
 
@@ -2654,6 +2572,14 @@ blockquote span.blockquote-line-translation_source:last-child {
 	padding: 25px;
 }
 
+#cookie-consent-preferences button {
+	float: left;
+}
+
+#contact-page .bg {
+	background-position: bottom;
+}
+
 /* cookieconsent.css */
 :root {
 	--cc-bg: #fff;
@@ -2679,13 +2605,13 @@ blockquote span.blockquote-line-translation_source:last-child {
 	--cc-webkit-scrollbar-bg-hover: #ccc;
 }
 
-#cm.bottom {
+#cm.cloud.bottom {
     bottom: 4em;
     top: auto;
 }
 
 @media screen and (max-width: 688px) {
-    #cm.bottom{
+    #cm.cloud.bottom{
         bottom: 4em;
         top: auto;
     }
