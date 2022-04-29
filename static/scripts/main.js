@@ -524,12 +524,20 @@ var Gallery = Gallery || {};
                         $("#submit").removeAttr("disabled");
                     };
 
+                    var clearForm = () => {
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#message").val("");
+                    };
+
                     Gallery.API.sendEmail(email, name, "Bruno Costa Gallery - Contact", message,
                         () => {
                             showResponse(_options.contactEmailSentSucessfully);
+                            clearForm();
                         },
                         (response) => {
                             showResponse(_options.contactEmailSentFailed);
+                            clearForm();
                         });
                 });
 
