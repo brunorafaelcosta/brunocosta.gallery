@@ -554,6 +554,9 @@ var Gallery = Gallery || {};
         this.init = function () {
             Gallery.Utils.debug("Initializing...");
             
+            if (!["index-page", "terms-conditions-page"].includes(_options.currentPageId))
+                _options.cookieConsentSettings.force = true;
+            
             _initCookieConsents.call(_self);
 
             _initMenu.call(_self);
