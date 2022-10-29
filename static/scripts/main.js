@@ -537,7 +537,6 @@ var Gallery = Gallery || {};
                         },
                         (response) => {
                             showResponse(_options.contactEmailSentFailed);
-                            clearForm();
                         });
                 });
 
