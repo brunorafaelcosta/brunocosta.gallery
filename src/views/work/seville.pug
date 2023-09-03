@@ -1,0 +1,107 @@
+extends ../../templates/view.pug
+
+block append variables
+    - var work = works['seville']
+    - var page_id = 'seville-work-page'
+    - var current_slug = 'work/' + work.slug
+    - var selected_menu_option = work.menu_item_id
+    - var selected_works_is_active = true
+    - var title = work.title
+    - var static_folder_path = '../../static'
+    - var work_imagens_path = static_folder_path + '/images/work/seville'
+
+block view_content
+    .fixed-column
+        .bg.bg-blur(data-bg=work_imagens_path + '/main_thumbnail.jpg')
+        .work-main-image.with-max-width
+            img.respimg(src=work_imagens_path + '/main_thumbnail.jpg' alt='')
+            a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/main.jpg')
+                i.fa.fa-search
+
+    .column-wrap
+        .content
+            section
+                .section-title
+                    h2 #{work.title}
+
+                .section-content
+                    
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5282_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5282.jpg')
+                                    i.fa.fa-search
+                        
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5302_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5302.jpg')
+                                    i.fa.fa-search
+
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5374_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5374.jpg')
+                                    i.fa.fa-search
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5290_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5290.jpg')
+                                    i.fa.fa-search
+
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-full
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5420_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5420.jpg')
+                                    i.fa.fa-search
+                    
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5379_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5379.jpg')
+                                    i.fa.fa-search
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5398_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5398.jpg')
+                                    i.fa.fa-search
+                    
+                    .gallery-items.boxed-folio.hid-port-info
+
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5421_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5421.jpg')
+                                    i.fa.fa-search
+                        
+                        .gallery-item.gallery-item-second
+                            .grid-item-holder
+                                img(src=work_imagens_path + '/DSCF5329_thumbnail.jpg' alt='')
+                                a.single-popup-image.slider-zoom(data-src=work_imagens_path + '/DSCF5329.jpg')
+                                    i.fa.fa-search
+                    
+                    ul.work-details
+                        li
+                            span #{text.location} : 
+                            a(href=work.details.location.url target='_blank') #{work.details.location.value}
+                        li
+                            span #{text.date} : 
+                            a(href='#') #{work.details.date}
+                        li
+                            span #{text.gear} : 
+                            a(href='#') #{work.details.gear}
+                    
+                    if share_enabled
+                        div.share-holder.no-fix-share
+                            span #{text.share} :
+                            div.share-container

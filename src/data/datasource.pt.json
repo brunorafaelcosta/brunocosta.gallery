@@ -295,6 +295,22 @@
                 "date": "2021 e 2022",
                 "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
             }
+        },
+        "seville": {
+            "title": "Sevilha",
+            "text": {
+                "quote_1_1": "",
+                "quote_1_1_translation_source": "",
+                "quote_1_author": ""
+            },
+            "details": {
+                "location": {
+                    "url": "https://www.google.pt/maps/place/Sevilha",
+                    "value": "Sevilha, Espanha"
+                },
+                "date": "22 de agosto de 2023",
+                "gear": "Fujifilm X-T3 + XF 35mm f/2 R WR"
+            }
         }
     },
 

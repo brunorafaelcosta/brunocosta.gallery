@@ -360,6 +360,105 @@
                     }
                 }
             }
+        },
+        "seville": {
+            "menu_item_id": "seville",
+            "menu_item_visible": true,
+            "slug": "seville.html",
+            "images": {
+                "main": {
+                    "path": "work/seville/main.jpg",
+                    "thumbnail_path": "work/seville/main_thumbnail.jpg",
+                    "show_on_explore": false,
+                    "explore_thumbnail_path": "work/seville/main_explore_thumbnail.jpg",
+                    "explore_custom_class": "gallery-item-25",
+                    "explore_position": 0,
+                    "explore_tags": "street people"
+                },
+                "secondary": {
+                    "DSCF5302": {
+                        "path": "work/seville/DSCF5302.jpg",
+                        "thumbnail_path": "work/seville/DSCF5302_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5302_explore_thumbnail.jpg",
+                        "explore_custom_class": "gallery-item-25",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5290": {
+                        "path": "work/seville/DSCF5290.jpg",
+                        "thumbnail_path": "work/seville/DSCF5290_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5290_explore_thumbnail.jpg",
+                        "explore_custom_class": "gallery-item-25",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5282": {
+                        "path": "work/seville/DSCF5282.jpg",
+                        "thumbnail_path": "work/seville/DSCF5282_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5282_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5374": {
+                        "path": "work/seville/DSCF5374.jpg",
+                        "thumbnail_path": "work/seville/DSCF5374_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5374_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5420": {
+                        "path": "work/seville/DSCF5420.jpg",
+                        "thumbnail_path": "work/seville/DSCF5420_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5420_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5379": {
+                        "path": "work/seville/DSCF5379.jpg",
+                        "thumbnail_path": "work/seville/DSCF5379_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5379_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5398": {
+                        "path": "work/seville/DSCF5398.jpg",
+                        "thumbnail_path": "work/seville/DSCF5398_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5398_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5329": {
+                        "path": "work/seville/DSCF5329.jpg",
+                        "thumbnail_path": "work/seville/DSCF5329_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5329_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    },
+                    "DSCF5421": {
+                        "path": "work/seville/DSCF5421.jpg",
+                        "thumbnail_path": "work/seville/DSCF5421_thumbnail.jpg",
+                        "show_on_explore": false,
+                        "explore_thumbnail_path": "work/seville/DSCF5421_explore_thumbnail.jpg",
+                        "explore_custom_class": "",
+                        "explore_position": 0,
+                        "explore_tags": "street people"
+                    }
+                }
+            }
         }
     },
 
