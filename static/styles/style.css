@@ -873,6 +873,9 @@ section , article.single-article {
 .grid-sizer-three {
 	width: 75%;
 }
+.gallery-item-full {
+	width: 100%;
+}
 .three-columns .gallery-item {
 	width:33.3%;
 }
